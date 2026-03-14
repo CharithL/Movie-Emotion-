@@ -1,0 +1,17 @@
+NEURON COUNT vs MODEL QUALITY ANALYSIS
+============================================================
+
+Correlations (n=14 patients):
+  total_neurons vs mean_CC:   r=0.599, p=0.0236
+  n_input vs mean_CC:         r=0.449, p=0.1073
+  best_pilot_CC vs mean_CC:   r=0.960, p=0.0000
+
+Threshold analysis:
+  >=  30 neurons:  8 pts, 1 OK (mean CC=0.165)
+  >=  50 neurons:  5 pts, 1 OK (mean CC=0.213)
+  >=  60 neurons:  3 pts, 1 OK (mean CC=0.297)
+  >=  80 neurons:  2 pts, 1 OK (mean CC=0.338)
+  >= 100 neurons:  2 pts, 1 OK (mean CC=0.338)
+
+Minimum neurons for CC>=0.3: 100
+OK patients: ['sub-CS48']

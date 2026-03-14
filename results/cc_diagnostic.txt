@@ -1,0 +1,34 @@
+CC DIAGNOSTIC TABLE
+==============================================================================================================
+Patient    | n_in  | n_out | CC>0.3 | CC>0.2 | CC>0.1 | Best CC  | Max xCorr | Top-K?
+--------------------------------------------------------------------------------------------------------------
+sub-CS42   | 15    | 30    | 0      | 0      | 1      | 0.108    | 0.094     | YES   
+sub-CS43   | 18    | 11    | 0      | 0      | 1      | 0.108    | 0.074     | YES   
+sub-CS44   | 15    | 31    | 0      | 0      | 7      | 0.162    | 0.139     | YES   
+sub-CS47   | 31    | 24    | 0      | 0      | 2      | 0.160    | 0.088     | YES   
+sub-CS48   | 46    | 54    | 11     | 12     | 13     | 0.747    | 0.550     | no    
+sub-CS51   | 5     | 8     | 0      | 1      | 1      | 0.250    | 0.094     | YES   
+sub-CS53   | 5     | 18    | 0      | 0      | 1      | 0.102    | 0.060     | YES   
+sub-CS54   | 64    | 41    | 0      | 0      | 1      | 0.106    | 0.097     | YES   
+sub-CS55   | 27    | 24    | 0      | 1      | 1      | 0.253    | 0.226     | YES   
+sub-CS56   | 17    | 12    | 0      | 0      | 2      | 0.125    | 0.122     | YES   
+sub-CS57   | 7     | 23    | 0      | 0      | 0      | 0.088    | 0.084     | YES   
+sub-CS58   | 36    | 27    | 1      | 2      | 6      | 0.420    | 0.206     | YES   
+sub-CS60   | 8     | 19    | 0      | 0      | 0      | 0.073    | 0.069     | YES   
+sub-CS62   | 19    | 8     | 0      | 0      | 0      | 0.063    | 0.060     | YES   
+--------------------------------------------------------------------------------------------------------------
+
+DIAGNOSIS:
+----------------------------------------
+  Pearson(total_neurons, best_CC) = 0.571 (p=0.0329)
+  Pearson(total_neurons, max_cross_corr) = 0.634 (p=0.0150)
+  Neurons >= 30: 8 patients, 2 with CC>0.3
+  Neurons <  30: 6 patients, 0 with CC>0.3
+  Neurons >= 50: 5 patients, 2 with CC>0.3
+  Neurons <  50: 9 patients, 0 with CC>0.3
+  Neurons >= 60: 3 patients, 2 with CC>0.3
+  Neurons <  60: 11 patients, 0 with CC>0.3
+  Neurons >= 80: 2 patients, 1 with CC>0.3
+  Neurons <  80: 12 patients, 1 with CC>0.3
+  Neurons >= 100: 2 patients, 1 with CC>0.3
+  Neurons <  100: 12 patients, 1 with CC>0.3

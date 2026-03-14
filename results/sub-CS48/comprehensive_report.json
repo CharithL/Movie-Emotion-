@@ -1,0 +1,215 @@
+{
+  "patient_id": "sub-CS48",
+  "dataset": {
+    "n_input": 46,
+    "n_output": 54,
+    "n_focused": 11,
+    "input_regions": {
+      "Left amygdala": 16,
+      "Left hippocampus": 12,
+      "Right amygdala": 1,
+      "Right hippocampus": 17
+    },
+    "output_regions": {
+      "Left ACC": 11,
+      "Left preSMA": 11,
+      "Right ACC": 18,
+      "Right preSMA": 8,
+      "Left vmPFC": 4,
+      "Right vmPFC": 2
+    },
+    "n_windows_total": 954,
+    "movie_duration_s": 478.848214
+  },
+  "model_quality": {
+    "mean_cc": 0.6069466053427115,
+    "cc_std": 0.0021144990168297582,
+    "quality_flag": "OK"
+  },
+  "probing_results": {
+    "arousal": {
+      "method": "ridge",
+      "metric_trained": -1.0,
+      "metric_untrained": -1.0,
+      "delta": 0.0,
+      "delta_std_across_seeds": 0.0,
+      "seed_consistency": "0/10",
+      "sign_positive_seeds": 0,
+      "valid": false,
+      "status": "zombie"
+    },
+    "threat_pe": {
+      "method": "ridge",
+      "metric_trained": -0.7987056975668462,
+      "metric_untrained": -0.8071104565858163,
+      "delta": 0.008404759018970165,
+      "delta_std_across_seeds": 0.04032655552973953,
+      "seed_consistency": "1/10",
+      "sign_positive_seeds": 6,
+      "valid": false,
+      "status": "zombie"
+    },
+    "emotion_category": {
+      "method": "classification",
+      "metric_trained": 0.3348373683275859,
+      "metric_untrained": 0.3251315341121431,
+      "delta": 0.0097058342154429,
+      "delta_std_across_seeds": 0.06709170193504937,
+      "seed_consistency": "4/10",
+      "sign_positive_seeds": 4,
+      "valid": true,
+      "status": "zombie"
+    },
+    "event_boundaries": {
+      "method": "ridge",
+      "metric_trained": -0.4673830621401063,
+      "metric_untrained": -0.4965340186346925,
+      "delta": 0.02915095649458625,
+      "delta_std_across_seeds": 0.04861717860959167,
+      "seed_consistency": "1/10",
+      "sign_positive_seeds": 7,
+      "valid": false,
+      "status": "zombie"
+    },
+    "population_synchrony": {
+      "method": "ridge",
+      "metric_trained": -0.05387064258831006,
+      "metric_untrained": -0.049388076542814324,
+      "delta": -0.004482566045495724,
+      "delta_std_across_seeds": 0.03478292705966168,
+      "seed_consistency": "0/10",
+      "sign_positive_seeds": 4,
+      "valid": false,
+      "status": "zombie"
+    },
+    "temporal_stability": {
+      "method": "ridge",
+      "metric_trained": 0.01601310632555018,
+      "metric_untrained": -0.06233304793730955,
+      "delta": 0.07834615426285974,
+      "delta_std_across_seeds": 0.01832621646733094,
+      "seed_consistency": "9/10",
+      "sign_positive_seeds": 10,
+      "valid": true,
+      "status": "CANDIDATE"
+    },
+    "theta_power": {
+      "method": "ridge",
+      "metric_trained": -0.5195852374150107,
+      "metric_untrained": -0.5321053181135256,
+      "delta": 0.012520080698514824,
+      "delta_std_across_seeds": 0.04192428788230342,
+      "seed_consistency": "2/10",
+      "sign_positive_seeds": 5,
+      "valid": false,
+      "status": "zombie"
+    },
+    "gamma_power": {
+      "method": "ridge",
+      "metric_trained": -0.08187238252595744,
+      "metric_untrained": -0.08059080697856105,
+      "delta": -0.0012815755473963915,
+      "delta_std_across_seeds": 0.01809545118625938,
+      "seed_consistency": "0/10",
+      "sign_positive_seeds": 4,
+      "valid": false,
+      "status": "zombie"
+    },
+    "encoding_success": {
+      "method": "ridge",
+      "metric_trained": -0.8405281246378514,
+      "metric_untrained": -0.8638896895409609,
+      "delta": 0.023361564903109377,
+      "delta_std_across_seeds": 0.06744881351169482,
+      "seed_consistency": "6/10",
+      "sign_positive_seeds": 6,
+      "valid": false,
+      "status": "zombie"
+    }
+  },
+  "window_level_probing": {
+    "arousal": {
+      "window_delta_r2": -0.005953383445739739,
+      "window_delta_std": 0.008419355610972607,
+      "window_r2_trained": -1.0,
+      "window_r2_untrained": -0.9940466165542602,
+      "window_valid": false,
+      "bin_delta_r2": 0.0,
+      "bin_status": "zombie",
+      "improvement": -0.005953383445739739
+    },
+    "theta_power": {
+      "window_delta_r2": 0.15504238605499265,
+      "window_delta_std": 0.18467182554762598,
+      "window_r2_trained": -0.74874263604482,
+      "window_r2_untrained": -0.9037850220998128,
+      "window_valid": false,
+      "bin_delta_r2": 0.012520080698514824,
+      "bin_status": "zombie",
+      "improvement": 0.14252230535647784
+    },
+    "threat_pe": {
+      "window_delta_r2": 0.031526033083597804,
+      "window_delta_std": 0.05321462044011047,
+      "window_r2_trained": -0.8495930830637614,
+      "window_r2_untrained": -0.8811191161473593,
+      "window_valid": false,
+      "bin_delta_r2": 0.008404759018970165,
+      "bin_status": "zombie",
+      "improvement": 0.02312127406462764
+    },
+    "event_boundaries": {
+      "window_delta_r2": 0.007161839803059881,
+      "window_delta_std": 0.010128370981030739,
+      "window_r2_trained": -0.99283816019694,
+      "window_r2_untrained": -1.0,
+      "window_valid": false,
+      "bin_delta_r2": 0.02915095649458625,
+      "bin_status": "zombie",
+      "improvement": -0.021989116691526367
+    },
+    "temporal_stability": {
+      "window_delta_r2": 0.03541971445083619,
+      "window_delta_std": 0.15862001027604444,
+      "window_r2_trained": -0.6342473983764648,
+      "window_r2_untrained": -0.6696671128273012,
+      "window_valid": false,
+      "bin_delta_r2": 0.07834615426285974,
+      "bin_status": "CANDIDATE",
+      "improvement": -0.04292643981202354
+    },
+    "gamma_power": {
+      "window_delta_r2": 0.0011725902557372752,
+      "window_delta_std": 0.19501801101287186,
+      "window_r2_trained": -0.8484673817952474,
+      "window_r2_untrained": -0.8496399720509847,
+      "window_valid": false,
+      "bin_delta_r2": -0.0012815755473963915,
+      "bin_status": "zombie",
+      "improvement": 0.0024541658031336667
+    },
+    "population_synchrony": {
+      "window_delta_r2": 0.2874083002408346,
+      "window_delta_std": 0.183861280694877,
+      "window_r2_trained": -0.541610062122345,
+      "window_r2_untrained": -0.8290183623631795,
+      "window_valid": false,
+      "bin_delta_r2": -0.004482566045495724,
+      "bin_status": "zombie",
+      "improvement": 0.2918908662863303
+    },
+    "encoding_success": {
+      "window_delta_r2": -0.09938809076944984,
+      "window_delta_std": 0.08160107952712359,
+      "window_r2_trained": -0.9971365769704184,
+      "window_r2_untrained": -0.8977484862009684,
+      "window_valid": false,
+      "bin_delta_r2": 0.023361564903109377,
+      "bin_status": "zombie",
+      "improvement": -0.12274965567255922
+    }
+  },
+  "candidate_targets": [
+    "temporal_stability"
+  ]
+}

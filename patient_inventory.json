@@ -1,0 +1,429 @@
+[
+  {
+    "subject_id": "sub-CS41",
+    "primary_session": "R1",
+    "has_R2": true,
+    "total_units": 7,
+    "n_trials": 41,
+    "n_input": 1,
+    "n_output": 6,
+    "region_detail": {
+      "input_amygdala": 1,
+      "output_ACC": 4,
+      "output_vmPFC": 2
+    },
+    "raw_regions": {
+      "Left amygdala": 1,
+      "Right ACC": 4,
+      "Left vmPFC": 2
+    },
+    "included": false,
+    "exclusion_reason": "input neurons too few (1 < 5); total too few (7 < 15)",
+    "R2_n_units": 7
+  },
+  {
+    "subject_id": "sub-CS42",
+    "primary_session": "R1",
+    "has_R2": true,
+    "total_units": 50,
+    "n_trials": 41,
+    "n_input": 16,
+    "n_output": 34,
+    "region_detail": {
+      "output_ACC": 16,
+      "output_preSMA": 18,
+      "input_amygdala": 12,
+      "input_hippocampus": 4
+    },
+    "raw_regions": {
+      "Right ACC": 16,
+      "Right preSMA": 18,
+      "Right amygdala": 12,
+      "Right hippocampus": 4
+    },
+    "included": true,
+    "exclusion_reason": "INCLUDED",
+    "R2_n_units": 46
+  },
+  {
+    "subject_id": "sub-CS43",
+    "primary_session": "R1",
+    "has_R2": true,
+    "total_units": 32,
+    "n_trials": 41,
+    "n_input": 19,
+    "n_output": 13,
+    "region_detail": {
+      "input_amygdala": 1,
+      "input_hippocampus": 18,
+      "output_vmPFC": 13
+    },
+    "raw_regions": {
+      "Left amygdala": 1,
+      "Left hippocampus": 1,
+      "Right hippocampus": 17,
+      "Right vmPFC": 13
+    },
+    "included": true,
+    "exclusion_reason": "INCLUDED",
+    "R2_n_units": 32
+  },
+  {
+    "subject_id": "sub-CS44",
+    "primary_session": "R1",
+    "has_R2": false,
+    "total_units": 49,
+    "n_trials": 41,
+    "n_input": 16,
+    "n_output": 33,
+    "region_detail": {
+      "output_ACC": 13,
+      "output_preSMA": 20,
+      "input_amygdala": 8,
+      "input_hippocampus": 8
+    },
+    "raw_regions": {
+      "Left ACC": 13,
+      "Left preSMA": 20,
+      "Left amygdala": 7,
+      "Right amygdala": 1,
+      "Right hippocampus": 8
+    },
+    "included": true,
+    "exclusion_reason": "INCLUDED"
+  },
+  {
+    "subject_id": "sub-CS47",
+    "primary_session": "R1",
+    "has_R2": true,
+    "total_units": 75,
+    "n_trials": 41,
+    "n_input": 48,
+    "n_output": 27,
+    "region_detail": {
+      "output_preSMA": 8,
+      "input_amygdala": 47,
+      "input_hippocampus": 1,
+      "output_vmPFC": 19
+    },
+    "raw_regions": {
+      "Left preSMA": 6,
+      "Left amygdala": 34,
+      "Right preSMA": 2,
+      "Right amygdala": 13,
+      "Right hippocampus": 1,
+      "Left vmPFC": 3,
+      "Right vmPFC": 16
+    },
+    "included": true,
+    "exclusion_reason": "INCLUDED",
+    "R2_n_units": 73
+  },
+  {
+    "subject_id": "sub-CS48",
+    "primary_session": "R1",
+    "has_R2": true,
+    "total_units": 143,
+    "n_trials": 41,
+    "n_input": 70,
+    "n_output": 73,
+    "region_detail": {
+      "output_ACC": 36,
+      "output_preSMA": 31,
+      "input_amygdala": 30,
+      "input_hippocampus": 40,
+      "output_vmPFC": 6
+    },
+    "raw_regions": {
+      "Left ACC": 16,
+      "Left preSMA": 16,
+      "Left amygdala": 18,
+      "Left hippocampus": 12,
+      "Right ACC": 20,
+      "Right preSMA": 15,
+      "Right amygdala": 12,
+      "Right hippocampus": 28,
+      "Left vmPFC": 4,
+      "Right vmPFC": 2
+    },
+    "included": true,
+    "exclusion_reason": "INCLUDED",
+    "R2_n_units": 114
+  },
+  {
+    "subject_id": "sub-CS49",
+    "primary_session": "R1",
+    "has_R2": true,
+    "total_units": 12,
+    "n_trials": 41,
+    "n_input": 3,
+    "n_output": 9,
+    "region_detail": {
+      "output_ACC": 3,
+      "output_preSMA": 5,
+      "input_amygdala": 3,
+      "output_vmPFC": 1
+    },
+    "raw_regions": {
+      "Left ACC": 3,
+      "Left preSMA": 1,
+      "Right preSMA": 4,
+      "Right amygdala": 3,
+      "Right vmPFC": 1
+    },
+    "included": false,
+    "exclusion_reason": "input neurons too few (3 < 5); total too few (12 < 15)",
+    "R2_n_units": 14
+  },
+  {
+    "subject_id": "sub-CS51",
+    "primary_session": "R1",
+    "has_R2": true,
+    "total_units": 30,
+    "n_trials": 41,
+    "n_input": 15,
+    "n_output": 15,
+    "region_detail": {
+      "output_ACC": 10,
+      "output_preSMA": 5,
+      "input_amygdala": 7,
+      "input_hippocampus": 8
+    },
+    "raw_regions": {
+      "Left ACC": 3,
+      "Left preSMA": 2,
+      "Left amygdala": 6,
+      "Left hippocampus": 5,
+      "Right ACC": 7,
+      "Right preSMA": 3,
+      "Right amygdala": 1,
+      "Right hippocampus": 3
+    },
+    "included": true,
+    "exclusion_reason": "INCLUDED",
+    "R2_n_units": 46
+  },
+  {
+    "subject_id": "sub-CS53",
+    "primary_session": "R1",
+    "has_R2": true,
+    "total_units": 34,
+    "n_trials": 41,
+    "n_input": 12,
+    "n_output": 22,
+    "region_detail": {
+      "output_preSMA": 16,
+      "input_amygdala": 11,
+      "output_ACC": 3,
+      "input_hippocampus": 1,
+      "output_vmPFC": 3
+    },
+    "raw_regions": {
+      "Left preSMA": 9,
+      "Left amygdala": 11,
+      "Right ACC": 3,
+      "Right preSMA": 7,
+      "Right hippocampus": 1,
+      "Left vmPFC": 2,
+      "Right vmPFC": 1
+    },
+    "included": true,
+    "exclusion_reason": "INCLUDED",
+    "R2_n_units": 48
+  },
+  {
+    "subject_id": "sub-CS54",
+    "primary_session": "R1",
+    "has_R2": true,
+    "total_units": 123,
+    "n_trials": 41,
+    "n_input": 76,
+    "n_output": 47,
+    "region_detail": {
+      "output_preSMA": 21,
+      "input_amygdala": 37,
+      "input_hippocampus": 39,
+      "output_ACC": 4,
+      "output_vmPFC": 22
+    },
+    "raw_regions": {
+      "Left preSMA": 15,
+      "Left amygdala": 23,
+      "Left hippocampus": 28,
+      "Right ACC": 4,
+      "Right preSMA": 6,
+      "Right amygdala": 14,
+      "Right hippocampus": 11,
+      "Left vmPFC": 12,
+      "Right vmPFC": 10
+    },
+    "included": true,
+    "exclusion_reason": "INCLUDED",
+    "R2_n_units": 112
+  },
+  {
+    "subject_id": "sub-CS55",
+    "primary_session": "R1",
+    "has_R2": true,
+    "total_units": 57,
+    "n_trials": 41,
+    "n_input": 33,
+    "n_output": 24,
+    "region_detail": {
+      "output_ACC": 2,
+      "input_amygdala": 27,
+      "input_hippocampus": 6,
+      "output_preSMA": 16,
+      "output_vmPFC": 6
+    },
+    "raw_regions": {
+      "Left ACC": 1,
+      "Left amygdala": 5,
+      "Left hippocampus": 5,
+      "Right ACC": 1,
+      "Right preSMA": 16,
+      "Right amygdala": 22,
+      "Right hippocampus": 1,
+      "Left vmPFC": 2,
+      "Right vmPFC": 4
+    },
+    "included": true,
+    "exclusion_reason": "INCLUDED",
+    "R2_n_units": 29
+  },
+  {
+    "subject_id": "sub-CS56",
+    "primary_session": "R1",
+    "has_R2": true,
+    "total_units": 30,
+    "n_trials": 41,
+    "n_input": 18,
+    "n_output": 12,
+    "region_detail": {
+      "output_preSMA": 5,
+      "input_amygdala": 16,
+      "input_hippocampus": 2,
+      "output_ACC": 2,
+      "output_vmPFC": 5
+    },
+    "raw_regions": {
+      "Left preSMA": 4,
+      "Left amygdala": 7,
+      "Left hippocampus": 2,
+      "Right ACC": 2,
+      "Right preSMA": 1,
+      "Right amygdala": 9,
+      "Right vmPFC": 5
+    },
+    "included": true,
+    "exclusion_reason": "INCLUDED",
+    "R2_n_units": 29
+  },
+  {
+    "subject_id": "sub-CS57",
+    "primary_session": "R1",
+    "has_R2": true,
+    "total_units": 33,
+    "n_trials": 41,
+    "n_input": 9,
+    "n_output": 24,
+    "region_detail": {
+      "output_ACC": 7,
+      "output_preSMA": 8,
+      "input_amygdala": 8,
+      "input_hippocampus": 1,
+      "output_vmPFC": 9
+    },
+    "raw_regions": {
+      "Left ACC": 6,
+      "Left preSMA": 8,
+      "Left amygdala": 3,
+      "Left hippocampus": 1,
+      "Right ACC": 1,
+      "Right amygdala": 5,
+      "Left vmPFC": 9
+    },
+    "included": true,
+    "exclusion_reason": "INCLUDED",
+    "R2_n_units": 28
+  },
+  {
+    "subject_id": "sub-CS58",
+    "primary_session": "R1",
+    "has_R2": false,
+    "total_units": 89,
+    "n_trials": 41,
+    "n_input": 43,
+    "n_output": 46,
+    "region_detail": {
+      "output_ACC": 28,
+      "output_preSMA": 18,
+      "input_amygdala": 18,
+      "input_hippocampus": 25
+    },
+    "raw_regions": {
+      "Left ACC": 14,
+      "Left preSMA": 12,
+      "Left amygdala": 11,
+      "Left hippocampus": 12,
+      "Right ACC": 14,
+      "Right preSMA": 6,
+      "Right amygdala": 7,
+      "Right hippocampus": 13
+    },
+    "included": true,
+    "exclusion_reason": "INCLUDED"
+  },
+  {
+    "subject_id": "sub-CS60",
+    "primary_session": "R1",
+    "has_R2": false,
+    "total_units": 27,
+    "n_trials": 41,
+    "n_input": 8,
+    "n_output": 19,
+    "region_detail": {
+      "output_ACC": 10,
+      "output_preSMA": 5,
+      "input_amygdala": 5,
+      "input_hippocampus": 3,
+      "output_vmPFC": 4
+    },
+    "raw_regions": {
+      "Left ACC": 6,
+      "Left preSMA": 4,
+      "Right ACC": 4,
+      "Right preSMA": 1,
+      "Right amygdala": 5,
+      "Right hippocampus": 3,
+      "Left vmPFC": 1,
+      "Right vmPFC": 3
+    },
+    "included": true,
+    "exclusion_reason": "INCLUDED"
+  },
+  {
+    "subject_id": "sub-CS62",
+    "primary_session": "R1",
+    "has_R2": true,
+    "total_units": 44,
+    "n_trials": 41,
+    "n_input": 35,
+    "n_output": 9,
+    "region_detail": {
+      "output_vmPFC": 2,
+      "output_ACC": 1,
+      "output_preSMA": 6,
+      "input_amygdala": 35
+    },
+    "raw_regions": {
+      "Right vmPFC": 2,
+      "Right ACC": 1,
+      "Right preSMA": 6,
+      "Right amygdala": 35
+    },
+    "included": true,
+    "exclusion_reason": "INCLUDED",
+    "R2_n_units": 44
+  }
+]

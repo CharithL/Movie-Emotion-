@@ -1,0 +1,86 @@
+================================================================================
+DESCARTES CIRCUIT 5 -- COMPREHENSIVE PATIENT REPORT
+Patient: sub-CS48
+================================================================================
+
+1. DATASET CHARACTERISTICS
+----------------------------------------
+  Total neurons: 100 (46 input, 54 output)
+  Focused output neurons: 11 (CC > 0.3, natural selection)
+  Top-K fallback: NO
+
+  Input regions (limbic):
+    Left amygdala: 16 neurons
+    Left hippocampus: 12 neurons
+    Right amygdala: 1 neurons
+    Right hippocampus: 17 neurons
+
+  Output regions (prefrontal):
+    Left ACC: 11 neurons
+    Left preSMA: 11 neurons
+    Left vmPFC: 4 neurons
+    Right ACC: 18 neurons
+    Right preSMA: 8 neurons
+    Right vmPFC: 2 neurons
+
+  Total windows: 954 (572 train / 191 val / 191 test)
+  Movie duration: 478.8 seconds
+
+
+2. MODEL QUALITY
+----------------------------------------
+  Mean CC across 10 seeds: 0.6069 +/- 0.0021
+  Quality flag: OK
+
+  Per-neuron CC distribution (all 54 output neurons):
+    Min:    -0.055
+    25th:   0.004
+    Median: 0.037
+    75th:   0.085
+    Max:    0.747
+
+  Focused neuron CCs: ['0.747', '0.710', '0.691', '0.671', '0.624', '0.604', '0.603', '0.581', '0.571', '0.470', '0.404']
+
+
+3. PROBING RESULTS (9 targets)
+----------------------------------------
+Target                    | dR2/dAcc   | R2_tr    | R2_un    | Consist  | Valid  | Status
+------------------------------------------------------------------------------------------
+arousal                   |    +0.0000 |  -1.0000 |  -1.0000 |     0/10 |     no | zombie
+threat_pe                 |    +0.0084 |  -0.7987 |  -0.8071 |     1/10 |     no | zombie
+emotion_category          |    +0.0097 |   0.3348 |   0.3251 |     4/10 |    YES | zombie
+event_boundaries          |    +0.0292 |  -0.4674 |  -0.4965 |     1/10 |     no | zombie
+population_synchrony      |    -0.0045 |  -0.0539 |  -0.0494 |     0/10 |     no | zombie
+temporal_stability        |    +0.0783 |   0.0160 |  -0.0623 |     9/10 |    YES | CANDIDATE
+theta_power               |    +0.0125 |  -0.5196 |  -0.5321 |     2/10 |     no | zombie
+gamma_power               |    -0.0013 |  -0.0819 |  -0.0806 |     0/10 |     no | zombie
+encoding_success          |    +0.0234 |  -0.8405 |  -0.8639 |     6/10 |     no | zombie
+------------------------------------------------------------------------------------------
+
+
+4. WINDOW-LEVEL PROBING COMPARISON
+----------------------------------------
+Target                    | Bin dR2    | Window dR2 | Change    
+----------------------------------------------------------------------
+arousal                   |    +0.0000 |    -0.0060 |    -0.0060
+theta_power               |    +0.0125 |    +0.1550 |    +0.1425
+threat_pe                 |    +0.0084 |    +0.0315 |    +0.0231
+event_boundaries          |    +0.0292 |    +0.0072 |    -0.0220
+temporal_stability        |    +0.0783 |    +0.0354 |    -0.0429
+gamma_power               |    -0.0013 |    +0.0012 |    +0.0025
+population_synchrony      |    -0.0045 |    +0.2874 |    +0.2919
+encoding_success          |    +0.0234 |    -0.0994 |    -0.1227
+----------------------------------------------------------------------
+
+
+5. INTERPRETATION
+----------------------------------------
+  CANDIDATE+ targets (1):
+    - temporal_stability: dR2=+0.0783 [CANDIDATE]
+      Plausibility: HIGH. Temporal stability of population firing patterns is a known signature of sustained cognitive processing. Replicated from Circuits 3-4.
+
+  Cross-circuit comparison:
+    C2 (HC navigation): theta_power MANDATORY
+    C3 (mouse WM): temporal_stability MANDATORY
+    C4 (human WM): temporal_stability Variable
+    C5 (emotion): temporal_stability = CANDIDATE

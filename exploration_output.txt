@@ -1,0 +1,556 @@
+Found 29 NWB files
+
+================================================================================
+EXPLORING: data\000623\sub-CS41\sub-CS41_ses-P41CSR1_behavior+ecephys.nwb
+================================================================================
+
+Session: Movie watching and new/old recognition task for session: P41CS_R1
+Subject: subject pynwb.file.Subject at 0x1528556869520
+Fields:
+  age: P21Y
+  age__reference: birth
+  description: epilepsy diagnosis: Left Other
+  sex: F
+  species: Homo sapiens
+  subject_id: CS41
+
+Session start: 2016-08-01 00:00:00-07:00
+Identifier: P41CS_R1
+
+--- UNITS (Single Neurons) ---
+  Number of units: 7
+  Column names: ('unit_id', 'unit_id_session', 'electrode_id', 'electrodegroup_label', 'origcluster_id', 'waveform_mean_encoding', 'waveform_mean_recognition', 'isolationdist', 'meanSNR', 'peakSNR', 'isibelow', 'cv2', 'waveform_mean_sampling_rate', 'spike_times', 'electrodes')
+  unit_id: type=str, example=21_1_679_4
+  unit_id_session: type=str, example=P41CS_R1_21_1_679_4
+  electrode_id: type=int64, example=20
+  electrodegroup_label: type=str, example=Neuralynx-Atlas-microwire-21
+  origcluster_id: type=int64, example=679
+  waveform_mean_encoding: type=ndarray, example=[-2.78385326e+00 -2.78385326e+00 -2.78385326e+00 -2.78385326e+00
+ -2.78385326e+00 -2.78385326e+00 -2
+  waveform_mean_recognition: type=ndarray, example=[ -0.74706596  -0.74706596  -0.74706596  -0.74706596  -0.74706596
+  -0.74706596  -0.74706596  -0.747
+  isolationdist: type=float64, example=nan
+  meanSNR: type=float64, example=1.3924871256073275
+  peakSNR: type=float64, example=4.376532614345778
+  isibelow: type=float64, example=1.0781671159029649
+  cv2: type=float64, example=0.933615834658633
+  waveform_mean_sampling_rate: type=ndarray, example=[100000]
+  spike_times: type=ndarray, example=[  3.43207675   4.39507675   5.16801325   5.26245075   6.93732575
+   7.4379185    7.81994975   7.909
+  electrodes: type=DataFrame, example=         location  ...      z
+id                 ...       
+20  Left amygdala  ... -13.35
+
+[1 rows x
+
+  Region column found: 'electrodes'
+  Unique regions: {'id\n20    Left amygdala\nName: location, dtype: object', 'id\n70    Left vmPFC\nName: location, dtype: object', 'id\n39    Right ACC\nName: location, dtype: object', 'id\n37    Right ACC\nName: location, dtype: object', 'id\n38    Right ACC\nName: location, dtype: object', 'id\n69    Left vmPFC\nName: location, dtype: object'}
+    id
+20    Left amygdala
+Name: location, dtype: object: 1 neurons
+    id
+37    Right ACC
+Name: location, dtype: object: 1 neurons
+    id
+38    Right ACC
+Name: location, dtype: object: 1 neurons
+    id
+39    Right ACC
+Name: location, dtype: object: 2 neurons
+    id
+69    Left vmPFC
+Name: location, dtype: object: 1 neurons
+    id
+70    Left vmPFC
+Name: location, dtype: object: 1 neurons
+
+--- ELECTRODES ---
+  Number of electrodes: 176
+  Column names: ('location', 'group', 'group_name', 'origchannel', 'pairwise_distances', 'origchannel_name', 'x', 'y', 'z')
+  location: type=str, example=Left ACC
+  group: type=ElectrodeGroup, example=Neuralynx-Atlas-microwire-1 pynwb.ecephys.ElectrodeGroup at 0x1528573854864
+Fields:
+  description: B
+  group_name: type=str, example=Neuralynx-Atlas-microwire-1
+  origchannel: type=str, example=micro-1
+  pairwise_distances: type=str, example=NA
+  origchannel_name: type=str, example=LACC1
+  x: type=float64, example=0.18
+  y: type=float64, example=26.56
+  z: type=float64, example=17.92
+
+--- ELECTRODE GROUPS ---
+  Neuralynx-Atlas-macros-1: location=Left vmPFC, description=macros
+  Neuralynx-Atlas-macros-10: location=Left ACC, description=macros
+  Neuralynx-Atlas-macros-11: location=Left ACC, description=macros
+  Neuralynx-Atlas-macros-12: location=Left ACC, description=macros
+  Neuralynx-Atlas-macros-13: location=Left ACC, description=macros
+  Neuralynx-Atlas-macros-14: location=Left ACC, description=macros
+  Neuralynx-Atlas-macros-15: location=Left ACC, description=macros
+  Neuralynx-Atlas-macros-16: location=Left ACC, description=macros
+  Neuralynx-Atlas-macros-17: location=Left preSMA, description=macros
+  Neuralynx-Atlas-macros-18: location=Left preSMA, description=macros
+  Neuralynx-Atlas-macros-19: location=Left preSMA, description=macros
+  Neuralynx-Atlas-macros-2: location=Left vmPFC, description=macros
+  Neuralynx-Atlas-macros-20: location=Left preSMA, description=macros
+  Neuralynx-Atlas-macros-21: location=Left preSMA, description=macros
+  Neuralynx-Atlas-macros-22: location=Left preSMA, description=macros
+  Neuralynx-Atlas-macros-23: location=Left preSMA, description=macros
+  Neuralynx-Atlas-macros-24: location=Left preSMA, description=macros
+  Neuralynx-Atlas-macros-25: location=Left amygdala, description=macros
+  Neuralynx-Atlas-macros-26: location=Left amygdala, description=macros
+  Neuralynx-Atlas-macros-27: location=Left amygdala, description=macros
+  Neuralynx-Atlas-macros-28: location=Left amygdala, description=macros
+  Neuralynx-Atlas-macros-29: location=Left amygdala, description=macros
+  Neuralynx-Atlas-macros-3: location=Left vmPFC, description=macros
+  Neuralynx-Atlas-macros-30: location=Left amygdala, description=macros
+  Neuralynx-Atlas-macros-31: location=Left amygdala, description=macros
+  Neuralynx-Atlas-macros-32: location=Left amygdala, description=macros
+  Neuralynx-Atlas-macros-33: location=Left hippocampus, description=macros
+  Neuralynx-Atlas-macros-34: location=Left hippocampus, description=macros
+  Neuralynx-Atlas-macros-35: location=Left hippocampus, description=macros
+  Neuralynx-Atlas-macros-36: location=Left hippocampus, description=macros
+  Neuralynx-Atlas-macros-37: location=Left hippocampus, description=macros
+  Neuralynx-Atlas-macros-38: location=Left hippocampus, description=macros
+  Neuralynx-Atlas-macros-39: location=Left hippocampus, description=macros
+  Neuralynx-Atlas-macros-4: location=Left vmPFC, description=macros
+  Neuralynx-Atlas-macros-40: location=Left hippocampus, description=macros
+  Neuralynx-Atlas-macros-41: location=LSPE, description=macros
+  Neuralynx-Atlas-macros-42: location=LSPE, description=macros
+  Neuralynx-Atlas-macros-43: location=LSPE, description=macros
+  Neuralynx-Atlas-macros-44: location=LSPE, description=macros
+  Neuralynx-Atlas-macros-45: location=LSPE, description=macros
+  Neuralynx-Atlas-macros-46: location=LSPE, description=macros
+  Neuralynx-Atlas-macros-47: location=LSPE, description=macros
+  Neuralynx-Atlas-macros-48: location=LSPE, description=macros
+  Neuralynx-Atlas-macros-49: location=Right vmPFC, description=macros
+  Neuralynx-Atlas-macros-5: location=Left vmPFC, description=macros
+  Neuralynx-Atlas-macros-50: location=Right vmPFC, description=macros
+  Neuralynx-Atlas-macros-51: location=Right vmPFC, description=macros
+  Neuralynx-Atlas-macros-52: location=Right vmPFC, description=macros
+  Neuralynx-Atlas-macros-53: location=Right vmPFC, description=macros
+  Neuralynx-Atlas-macros-54: location=Right vmPFC, description=macros
+  Neuralynx-Atlas-macros-55: location=Right vmPFC, description=macros
+  Neuralynx-Atlas-macros-56: location=Right vmPFC, description=macros
+  Neuralynx-Atlas-macros-57: location=Right ACC, description=macros
+  Neuralynx-Atlas-macros-58: location=Right ACC, description=macros
+  Neuralynx-Atlas-macros-59: location=Right ACC, description=macros
+  Neuralynx-Atlas-macros-6: location=Left vmPFC, description=macros
+  Neuralynx-Atlas-macros-60: location=Right ACC, description=macros
+  Neuralynx-Atlas-macros-61: location=Right ACC, description=macros
+  Neuralynx-Atlas-macros-62: location=Right ACC, description=macros
+  Neuralynx-Atlas-macros-63: location=Right ACC, description=macros
+  Neuralynx-Atlas-macros-64: location=Right ACC, description=macros
+  Neuralynx-Atlas-macros-65: location=Right preSMA, description=macros
+  Neuralynx-Atlas-macros-66: location=Right preSMA, description=macros
+  Neuralynx-Atlas-macros-67: location=Right preSMA, description=macros
+  Neuralynx-Atlas-macros-68: location=Right preSMA, description=macros
+  Neuralynx-Atlas-macros-69: location=Right preSMA, description=macros
+  Neuralynx-Atlas-macros-7: location=Left vmPFC, description=macros
+  Neuralynx-Atlas-macros-70: location=Right preSMA, description=macros
+  Neuralynx-Atlas-macros-71: location=Right preSMA, description=macros
+  Neuralynx-Atlas-macros-72: location=Right preSMA, description=macros
+  Neuralynx-Atlas-macros-73: location=Right amygdala, description=macros
+  Neuralynx-Atlas-macros-74: location=Right amygdala, description=macros
+  Neuralynx-Atlas-macros-75: location=Right amygdala, description=macros
+  Neuralynx-Atlas-macros-76: location=Right amygdala, description=macros
+  Neuralynx-Atlas-macros-77: location=Right amygdala, description=macros
+  Neuralynx-Atlas-macros-78: location=Right amygdala, description=macros
+  Neuralynx-Atlas-macros-79: location=Right amygdala, description=macros
+  Neuralynx-Atlas-macros-8: location=Left vmPFC, description=macros
+  Neuralynx-Atlas-macros-80: location=Right amygdala, description=macros
+  Neuralynx-Atlas-macros-81: location=Right hippocampus, description=macros
+  Neuralynx-Atlas-macros-82: location=Right hippocampus, description=macros
+  Neuralynx-Atlas-macros-83: location=Right hippocampus, description=macros
+  Neuralynx-Atlas-macros-84: location=Right hippocampus, description=macros
+  Neuralynx-Atlas-macros-85: location=Right hippocampus, description=macros
+  Neuralynx-Atlas-macros-86: location=Right hippocampus, description=macros
+  Neuralynx-Atlas-macros-87: location=Right hippocampus, description=macros
+  Neuralynx-Atlas-macros-88: location=Right hippocampus, description=macros
+  Neuralynx-Atlas-macros-89: location=RSPE, description=macros
+  Neuralynx-Atlas-macros-9: location=Left ACC, description=macros
+  Neuralynx-Atlas-macros-90: location=RSPE, description=macros
+  Neuralynx-Atlas-macros-91: location=RSPE, description=macros
+  Neuralynx-Atlas-macros-92: location=RSPE, description=macros
+  Neuralynx-Atlas-macros-93: location=RSPE, description=macros
+  Neuralynx-Atlas-macros-94: location=RSPE, description=macros
+  Neuralynx-Atlas-macros-95: location=RSPE, description=macros
+  Neuralynx-Atlas-macros-96: location=RSPE, description=macros
+  Neuralynx-Atlas-microwire-1: location=Left ACC, description=Behnke Fried/Micro Inner Wire Bundle (Behnke-Fried BF08R-SP05X-000 and WB09R-SP00X-0B6; Ad-Tech Medical)
+  Neuralynx-Atlas-microwire-10: location=Left preSMA, description=Behnke Fried/Micro Inner Wire Bundle (Behnke-Fried BF08R-SP05X-000 and WB09R-SP00X-0B6; Ad-Tech Medical)
+  Neuralynx-Atlas-microwire-11: location=Left preSMA, description=Behnke Fried/Micro Inner Wire Bundle (Behnke-Fried BF08R-SP05X-000 and WB09R-SP00X-0B6; Ad-Tech Medical)
+  Neuralynx-Atlas-microwire-12: location=Left preSMA, description=Behnke Fried/Micro Inner Wire Bundle (Behnke-Fried BF08R-SP05X-000 and WB09R-SP00X-0B6; Ad-Tech Medical)
+  Neuralynx-Atlas-microwire-13: location=Left preSMA, description=Behnke Fried/Micro Inner Wire Bundle (Behnke-Fried BF08R-SP05X-000 and WB09R-SP00X-0B6; Ad-Tech Medical)
+  Neuralynx-Atlas-microwire-14: location=Left preSMA, description=Behnke Fried/Micro Inner Wire Bundle (Behnke-Fried BF08R-SP05X-000 and WB09R-SP00X-0B6; Ad-Tech Medical)
+  Neuralynx-Atlas-microwire-15: location=Left preSMA, description=Behnke Fried/Micro Inner Wire Bundle (Behnke-Fried BF08R-SP05X-000 and WB09R-SP00X-0B6; Ad-Tech Medical)
+  Neuralynx-Atlas-microwire-16: location=Left preSMA, description=Behnke Fried/Micro Inner Wire Bundle (Behnke-Fried BF08R-SP05X-000 and WB09R-SP00X-0B6; Ad-Tech Medical)
+  Neuralynx-Atlas-microwire-17: location=Left amygdala, description=Behnke Fried/Micro Inner Wire Bundle (Behnke-Fried BF08R-SP05X-000 and WB09R-SP00X-0B6; Ad-Tech Medical)
+  Neuralynx-Atlas-microwire-18: location=Left amygdala, description=Behnke Fried/Micro Inner Wire Bundle (Behnke-Fried BF08R-SP05X-000 and WB09R-SP00X-0B6; Ad-Tech Medical)
+  Neuralynx-Atlas-microwire-19: location=Left amygdala, description=Behnke Fried/Micro Inner Wire Bundle (Behnke-Fried BF08R-SP05X-000 and WB09R-SP00X-0B6; Ad-Tech Medical)
+  Neuralynx-Atlas-microwire-2: location=Left ACC, description=Behnke Fried/Micro Inner Wire Bundle (Behnke-Fried BF08R-SP05X-000 and WB09R-SP00X-0B6; Ad-Tech Medical)
+  Neuralynx-Atlas-microwire-20: location=Left amygdala, description=Behnke Fried/Micro Inner Wire Bundle (Behnke-Fried BF08R-SP05X-000 and WB09R-SP00X-0B6; Ad-Tech Medical)
+  Neuralynx-Atlas-microwire-21: location=Left amygdala, description=Behnke Fried/Micro Inner Wire Bundle (Behnke-Fried BF08R-SP05X-000 and WB09R-SP00X-0B6; Ad-Tech Medical)
+  Neuralynx-Atlas-microwire-22: location=Left amygdala, description=Behnke Fried/Micro Inner Wire Bundle (Behnke-Fried BF08R-SP05X-000 and WB09R-SP00X-0B6; Ad-Tech Medical)
+  Neuralynx-Atlas-microwire-23: location=Left amygdala, description=Behnke Fried/Micro Inner Wire Bundle (Behnke-Fried BF08R-SP05X-000 and WB09R-SP00X-0B6; Ad-Tech Medical)
+  Neuralynx-Atlas-microwire-24: location=Left amygdala, description=Behnke Fried/Micro Inner Wire Bundle (Behnke-Fried BF08R-SP05X-000 and WB09R-SP00X-0B6; Ad-Tech Medical)
+  Neuralynx-Atlas-microwire-25: location=Left hippocampus, description=Behnke Fried/Micro Inner Wire Bundle (Behnke-Fried BF08R-SP05X-000 and WB09R-SP00X-0B6; Ad-Tech Medical)
+  Neuralynx-Atlas-microwire-26: location=Left hippocampus, description=Behnke Fried/Micro Inner Wire Bundle (Behnke-Fried BF08R-SP05X-000 and WB09R-SP00X-0B6; Ad-Tech Medical)
+  Neuralynx-Atlas-microwire-27: location=Left hippocampus, description=Behnke Fried/Micro Inner Wire Bundle (Behnke-Fried BF08R-SP05X-000 and WB09R-SP00X-0B6; Ad-Tech Medical)
+  Neuralynx-Atlas-microwire-28: location=Left hippocampus, description=Behnke Fried/Micro Inner Wire Bundle (Behnke-Fried BF08R-SP05X-000 and WB09R-SP00X-0B6; Ad-Tech Medical)
+  Neuralynx-Atlas-microwire-29: location=Left hippocampus, description=Behnke Fried/Micro Inner Wire Bundle (Behnke-Fried BF08R-SP05X-000 and WB09R-SP00X-0B6; Ad-Tech Medical)
+  Neuralynx-Atlas-microwire-3: location=Left ACC, description=Behnke Fried/Micro Inner Wire Bundle (Behnke-Fried BF08R-SP05X-000 and WB09R-SP00X-0B6; Ad-Tech Medical)
+  Neuralynx-Atlas-microwire-30: location=Left hippocampus, description=Behnke Fried/Micro Inner Wire Bundle (Behnke-Fried BF08R-SP05X-000 and WB09R-SP00X-0B6; Ad-Tech Medical)
+  Neuralynx-Atlas-microwire-31: location=Left hippocampus, description=Behnke Fried/Micro Inner Wire Bundle (Behnke-Fried BF08R-SP05X-000 and WB09R-SP00X-0B6; Ad-Tech Medical)
+  Neuralynx-Atlas-microwire-32: location=Left hippocampus, description=Behnke Fried/Micro Inner Wire Bundle (Behnke-Fried BF08R-SP05X-000 and WB09R-SP00X-0B6; Ad-Tech Medical)
+  Neuralynx-Atlas-microwire-33: location=Right ACC, description=Behnke Fried/Micro Inner Wire Bundle (Behnke-Fried BF08R-SP05X-000 and WB09R-SP00X-0B6; Ad-Tech Medical)
+  Neuralynx-Atlas-microwire-34: location=Right ACC, description=Behnke Fried/Micro Inner Wire Bundle (Behnke-Fried BF08R-SP05X-000 and WB09R-SP00X-0B6; Ad-Tech Medical)
+  Neuralynx-Atlas-microwire-35: location=Right ACC, description=Behnke Fried/Micro Inner Wire Bundle (Behnke-Fried BF08R-SP05X-000 and WB09R-SP00X-0B6; Ad-Tech Medical)
+  Neuralynx-Atlas-microwire-36: location=Right ACC, description=Behnke Fried/Micro Inner Wire Bundle (Behnke-Fried BF08R-SP05X-000 and WB09R-SP00X-0B6; Ad-Tech Medical)
+  Neuralynx-Atlas-microwire-37: location=Right ACC, description=Behnke Fried/Micro Inner Wire Bundle (Behnke-Fried BF08R-SP05X-000 and WB09R-SP00X-0B6; Ad-Tech Medical)
+  Neuralynx-Atlas-microwire-38: location=Right ACC, description=Behnke Fried/Micro Inner Wire Bundle (Behnke-Fried BF08R-SP05X-000 and WB09R-SP00X-0B6; Ad-Tech Medical)
+  Neuralynx-Atlas-microwire-39: location=Right ACC, description=Behnke Fried/Micro Inner Wire Bundle (Behnke-Fried BF08R-SP05X-000 and WB09R-SP00X-0B6; Ad-Tech Medical)
+  Neuralynx-Atlas-microwire-4: location=Left ACC, description=Behnke Fried/Micro Inner Wire Bundle (Behnke-Fried BF08R-SP05X-000 and WB09R-SP00X-0B6; Ad-Tech Medical)
+  Neuralynx-Atlas-microwire-40: location=Right ACC, description=Behnke Fried/Micro Inner Wire Bundle (Behnke-Fried BF08R-SP05X-000 and WB09R-SP00X-0B6; Ad-Tech Medical)
+  Neuralynx-Atlas-microwire-41: location=Right preSMA, description=Behnke Fried/Micro Inner Wire Bundle (Behnke-Fried BF08R-SP05X-000 and WB09R-SP00X-0B6; Ad-Tech Medical)
+  Neuralynx-Atlas-microwire-42: location=Right preSMA, description=Behnke Fried/Micro Inner Wire Bundle (Behnke-Fried BF08R-SP05X-000 and WB09R-SP00X-0B6; Ad-Tech Medical)
+  Neuralynx-Atlas-microwire-43: location=Right preSMA, description=Behnke Fried/Micro Inner Wire Bundle (Behnke-Fried BF08R-SP05X-000 and WB09R-SP00X-0B6; Ad-Tech Medical)
+  Neuralynx-Atlas-microwire-44: location=Right preSMA, description=Behnke Fried/Micro Inner Wire Bundle (Behnke-Fried BF08R-SP05X-000 and WB09R-SP00X-0B6; Ad-Tech Medical)
+  Neuralynx-Atlas-microwire-45: location=Right preSMA, description=Behnke Fried/Micro Inner Wire Bundle (Behnke-Fried BF08R-SP05X-000 and WB09R-SP00X-0B6; Ad-Tech Medical)
+  Neuralynx-Atlas-microwire-46: location=Right preSMA, description=Behnke Fried/Micro Inner Wire Bundle (Behnke-Fried BF08R-SP05X-000 and WB09R-SP00X-0B6; Ad-Tech Medical)
+  Neuralynx-Atlas-microwire-47: location=Right preSMA, description=Behnke Fried/Micro Inner Wire Bundle (Behnke-Fried BF08R-SP05X-000 and WB09R-SP00X-0B6; Ad-Tech Medical)
+  Neuralynx-Atlas-microwire-48: location=Right preSMA, description=Behnke Fried/Micro Inner Wire Bundle (Behnke-Fried BF08R-SP05X-000 and WB09R-SP00X-0B6; Ad-Tech Medical)
+  Neuralynx-Atlas-microwire-49: location=Right amygdala, description=Behnke Fried/Micro Inner Wire Bundle (Behnke-Fried BF08R-SP05X-000 and WB09R-SP00X-0B6; Ad-Tech Medical)
+  Neuralynx-Atlas-microwire-5: location=Left ACC, description=Behnke Fried/Micro Inner Wire Bundle (Behnke-Fried BF08R-SP05X-000 and WB09R-SP00X-0B6; Ad-Tech Medical)
+  Neuralynx-Atlas-microwire-50: location=Right amygdala, description=Behnke Fried/Micro Inner Wire Bundle (Behnke-Fried BF08R-SP05X-000 and WB09R-SP00X-0B6; Ad-Tech Medical)
+  Neuralynx-Atlas-microwire-51: location=Right amygdala, description=Behnke Fried/Micro Inner Wire Bundle (Behnke-Fried BF08R-SP05X-000 and WB09R-SP00X-0B6; Ad-Tech Medical)
+  Neuralynx-Atlas-microwire-52: location=Right amygdala, description=Behnke Fried/Micro Inner Wire Bundle (Behnke-Fried BF08R-SP05X-000 and WB09R-SP00X-0B6; Ad-Tech Medical)
+  Neuralynx-Atlas-microwire-53: location=Right amygdala, description=Behnke Fried/Micro Inner Wire Bundle (Behnke-Fried BF08R-SP05X-000 and WB09R-SP00X-0B6; Ad-Tech Medical)
+  Neuralynx-Atlas-microwire-54: location=Right amygdala, description=Behnke Fried/Micro Inner Wire Bundle (Behnke-Fried BF08R-SP05X-000 and WB09R-SP00X-0B6; Ad-Tech Medical)
+  Neuralynx-Atlas-microwire-55: location=Right amygdala, description=Behnke Fried/Micro Inner Wire Bundle (Behnke-Fried BF08R-SP05X-000 and WB09R-SP00X-0B6; Ad-Tech Medical)
+  Neuralynx-Atlas-microwire-56: location=Right amygdala, description=Behnke Fried/Micro Inner Wire Bundle (Behnke-Fried BF08R-SP05X-000 and WB09R-SP00X-0B6; Ad-Tech Medical)
+  Neuralynx-Atlas-microwire-57: location=Right hippocampus, description=Behnke Fried/Micro Inner Wire Bundle (Behnke-Fried BF08R-SP05X-000 and WB09R-SP00X-0B6; Ad-Tech Medical)
+  Neuralynx-Atlas-microwire-58: location=Right hippocampus, description=Behnke Fried/Micro Inner Wire Bundle (Behnke-Fried BF08R-SP05X-000 and WB09R-SP00X-0B6; Ad-Tech Medical)
+  Neuralynx-Atlas-microwire-59: location=Right hippocampus, description=Behnke Fried/Micro Inner Wire Bundle (Behnke-Fried BF08R-SP05X-000 and WB09R-SP00X-0B6; Ad-Tech Medical)
+  Neuralynx-Atlas-microwire-6: location=Left ACC, description=Behnke Fried/Micro Inner Wire Bundle (Behnke-Fried BF08R-SP05X-000 and WB09R-SP00X-0B6; Ad-Tech Medical)
+  Neuralynx-Atlas-microwire-60: location=Right hippocampus, description=Behnke Fried/Micro Inner Wire Bundle (Behnke-Fried BF08R-SP05X-000 and WB09R-SP00X-0B6; Ad-Tech Medical)
+  Neuralynx-Atlas-microwire-61: location=Right hippocampus, description=Behnke Fried/Micro Inner Wire Bundle (Behnke-Fried BF08R-SP05X-000 and WB09R-SP00X-0B6; Ad-Tech Medical)
+  Neuralynx-Atlas-microwire-62: location=Right hippocampus, description=Behnke Fried/Micro Inner Wire Bundle (Behnke-Fried BF08R-SP05X-000 and WB09R-SP00X-0B6; Ad-Tech Medical)
+  Neuralynx-Atlas-microwire-63: location=Right hippocampus, description=Behnke Fried/Micro Inner Wire Bundle (Behnke-Fried BF08R-SP05X-000 and WB09R-SP00X-0B6; Ad-Tech Medical)
+  Neuralynx-Atlas-microwire-64: location=Right hippocampus, description=Behnke Fried/Micro Inner Wire Bundle (Behnke-Fried BF08R-SP05X-000 and WB09R-SP00X-0B6; Ad-Tech Medical)
+  Neuralynx-Atlas-microwire-65: location=Left vmPFC, description=Behnke Fried/Micro Inner Wire Bundle (Behnke-Fried BF08R-SP05X-000 and WB09R-SP00X-0B6; Ad-Tech Medical)
+  Neuralynx-Atlas-microwire-66: location=Left vmPFC, description=Behnke Fried/Micro Inner Wire Bundle (Behnke-Fried BF08R-SP05X-000 and WB09R-SP00X-0B6; Ad-Tech Medical)
+  Neuralynx-Atlas-microwire-67: location=Left vmPFC, description=Behnke Fried/Micro Inner Wire Bundle (Behnke-Fried BF08R-SP05X-000 and WB09R-SP00X-0B6; Ad-Tech Medical)
+  Neuralynx-Atlas-microwire-68: location=Left vmPFC, description=Behnke Fried/Micro Inner Wire Bundle (Behnke-Fried BF08R-SP05X-000 and WB09R-SP00X-0B6; Ad-Tech Medical)
+  Neuralynx-Atlas-microwire-69: location=Left vmPFC, description=Behnke Fried/Micro Inner Wire Bundle (Behnke-Fried BF08R-SP05X-000 and WB09R-SP00X-0B6; Ad-Tech Medical)
+  Neuralynx-Atlas-microwire-7: location=Left ACC, description=Behnke Fried/Micro Inner Wire Bundle (Behnke-Fried BF08R-SP05X-000 and WB09R-SP00X-0B6; Ad-Tech Medical)
+  Neuralynx-Atlas-microwire-70: location=Left vmPFC, description=Behnke Fried/Micro Inner Wire Bundle (Behnke-Fried BF08R-SP05X-000 and WB09R-SP00X-0B6; Ad-Tech Medical)
+  Neuralynx-Atlas-microwire-71: location=Left vmPFC, description=Behnke Fried/Micro Inner Wire Bundle (Behnke-Fried BF08R-SP05X-000 and WB09R-SP00X-0B6; Ad-Tech Medical)
+  Neuralynx-Atlas-microwire-72: location=Left vmPFC, description=Behnke Fried/Micro Inner Wire Bundle (Behnke-Fried BF08R-SP05X-000 and WB09R-SP00X-0B6; Ad-Tech Medical)
+  Neuralynx-Atlas-microwire-73: location=Right vmPFC, description=Behnke Fried/Micro Inner Wire Bundle (Behnke-Fried BF08R-SP05X-000 and WB09R-SP00X-0B6; Ad-Tech Medical)
+  Neuralynx-Atlas-microwire-74: location=Right vmPFC, description=Behnke Fried/Micro Inner Wire Bundle (Behnke-Fried BF08R-SP05X-000 and WB09R-SP00X-0B6; Ad-Tech Medical)
+  Neuralynx-Atlas-microwire-75: location=Right vmPFC, description=Behnke Fried/Micro Inner Wire Bundle (Behnke-Fried BF08R-SP05X-000 and WB09R-SP00X-0B6; Ad-Tech Medical)
+  Neuralynx-Atlas-microwire-76: location=Right vmPFC, description=Behnke Fried/Micro Inner Wire Bundle (Behnke-Fried BF08R-SP05X-000 and WB09R-SP00X-0B6; Ad-Tech Medical)
+  Neuralynx-Atlas-microwire-77: location=Right vmPFC, description=Behnke Fried/Micro Inner Wire Bundle (Behnke-Fried BF08R-SP05X-000 and WB09R-SP00X-0B6; Ad-Tech Medical)
+  Neuralynx-Atlas-microwire-78: location=Right vmPFC, description=Behnke Fried/Micro Inner Wire Bundle (Behnke-Fried BF08R-SP05X-000 and WB09R-SP00X-0B6; Ad-Tech Medical)
+  Neuralynx-Atlas-microwire-79: location=Right vmPFC, description=Behnke Fried/Micro Inner Wire Bundle (Behnke-Fried BF08R-SP05X-000 and WB09R-SP00X-0B6; Ad-Tech Medical)
+  Neuralynx-Atlas-microwire-8: location=Left ACC, description=Behnke Fried/Micro Inner Wire Bundle (Behnke-Fried BF08R-SP05X-000 and WB09R-SP00X-0B6; Ad-Tech Medical)
+  Neuralynx-Atlas-microwire-80: location=Right vmPFC, description=Behnke Fried/Micro Inner Wire Bundle (Behnke-Fried BF08R-SP05X-000 and WB09R-SP00X-0B6; Ad-Tech Medical)
+  Neuralynx-Atlas-microwire-9: location=Left preSMA, description=Behnke Fried/Micro Inner Wire Bundle (Behnke-Fried BF08R-SP05X-000 and WB09R-SP00X-0B6; Ad-Tech Medical)
+
+--- PROCESSING MODULES ---
+  Module: behavior
+    Blink: BehavioralTimeSeries
+    EyeTracking: EyeTracking
+      Spatial series keys: ['SpatialSeries']
+        SpatialSeries: shape=(374801, 2), rate=500.0 Hz
+    Fixation: BehavioralTimeSeries
+    PupilTracking: PupilTracking
+    Saccade: BehavioralTimeSeries
+  Module: ecephys
+    LFP_macro: LFP
+    LFP_micro: LFP
+
+--- ACQUISITION ---
+  events_ttl: TimeSeries
+    Shape: (603,), Rate: None Hz
+  experiment_ids: TimeSeries
+    Shape: (603,), Rate: None Hz
+
+--- TRIALS ---
+  Number of trials: 41
+  Column names: ('start_time', 'stop_time', 'stim_phase', 'stimulus_file', 'response_correct', 'response_confidence', 'actual_response', 'response_time')
+  start_time: type=float64, example=0.0
+  stop_time: type=float64, example=478.85512
+  stim_phase: type=str, example=encoding
+  stimulus_file: type=str, example=bd_movie
+  response_correct: type=float64, example=nan
+  response_confidence: type=float64, example=nan
+  actual_response: type=float64, example=nan
+  response_time: type=float64, example=478.85512
+
+  First 3 trials:
+    Trial 0: {'start_time': '0.0', 'stop_time': '478.85512', 'stim_phase': 'encoding', 'stimulus_file': 'bd_movie', 'response_correct': 'nan', 'response_confidence': 'nan', 'actual_response': 'nan', 'response_time': '478.85512'}
+    Trial 1: {'start_time': '566.34646', 'stop_time': '577.078362', 'stim_phase': 'recognition', 'stimulus_file': 'old015.png', 'response_correct': '1.0', 'response_confidence': '2.0', 'actual_response': '5.0', 'response_time': '577.078362'}
+    Trial 2: {'start_time': '578.122799', 'stop_time': '582.712578', 'stim_phase': 'recognition', 'stimulus_file': 'new021.png', 'response_correct': '1.0', 'response_confidence': '3.0', 'actual_response': '1.0', 'response_time': '582.712578'}
+
+--- INTERVALS ---
+  trials: 41 intervals
+    Columns: ('start_time', 'stop_time', 'stim_phase', 'stimulus_file', 'response_correct', 'response_confidence', 'actual_response', 'response_time')
+
+--- STIMULUS ---
+  movieframe_time: AnnotationSeries
+    Shape: (11971,)
+
+================================================================================
+EXPLORATION COMPLETE
+================================================================================
+
+
+================================================================================
+CROSS-SUBJECT SUMMARY
+================================================================================
+
+sub-CS41_ses-P41CSR1_behavior+ecephys: 7 units, 41 trials
+  Left amygdala: 1
+  Left vmPFC: 2
+  Right ACC: 4
+
+sub-CS41_ses-P41CSR2_behavior+ecephys: 7 units, 41 trials
+  Left amygdala: 1
+  Left vmPFC: 2
+  Right ACC: 4
+
+sub-CS42_ses-P42CSR1_behavior+ecephys: 50 units, 41 trials
+  Right ACC: 16
+  Right amygdala: 12
+  Right hippocampus: 4
+  Right preSMA: 18
+
+sub-CS42_ses-P42CSR2_behavior+ecephys: 46 units, 41 trials
+  Right ACC: 16
+  Right amygdala: 8
+  Right hippocampus: 3
+  Right preSMA: 19
+
+sub-CS43_ses-P43CSR1_behavior+ecephys: 32 units, 41 trials
+  Left amygdala: 1
+  Left hippocampus: 1
+  Right hippocampus: 17
+  Right vmPFC: 13
+
+sub-CS43_ses-P43CSR2_behavior+ecephys: 32 units, 41 trials
+  Left amygdala: 1
+  Left hippocampus: 1
+  Right hippocampus: 17
+  Right vmPFC: 13
+
+sub-CS44_ses-P44CSR1_behavior+ecephys: 49 units, 41 trials
+  Left ACC: 13
+  Left amygdala: 7
+  Left preSMA: 20
+  Right amygdala: 1
+  Right hippocampus: 8
+
+sub-CS47_ses-P47CSR1_behavior+ecephys: 75 units, 41 trials
+  Left amygdala: 34
+  Left preSMA: 6
+  Left vmPFC: 3
+  Right amygdala: 13
+  Right hippocampus: 1
+  Right preSMA: 2
+  Right vmPFC: 16
+
+sub-CS47_ses-P47CSR2_behavior+ecephys: 73 units, 41 trials
+  Left amygdala: 30
+  Left hippocampus: 4
+  Left preSMA: 1
+  Left vmPFC: 3
+  Right amygdala: 10
+  Right hippocampus: 1
+  Right preSMA: 9
+  Right vmPFC: 15
+
+sub-CS48_ses-P48CSR1_behavior+ecephys: 143 units, 41 trials
+  Left ACC: 16
+  Left amygdala: 18
+  Left hippocampus: 12
+  Left preSMA: 16
+  Left vmPFC: 4
+  Right ACC: 20
+  Right amygdala: 12
+  Right hippocampus: 28
+  Right preSMA: 15
+  Right vmPFC: 2
+
+sub-CS48_ses-P48CSR2_behavior+ecephys: 114 units, 41 trials
+  Left ACC: 9
+  Left amygdala: 17
+  Left preSMA: 8
+  Left vmPFC: 7
+  Right ACC: 16
+  Right amygdala: 17
+  Right hippocampus: 28
+  Right preSMA: 10
+  Right vmPFC: 2
+
+sub-CS49_ses-P49CSR1_behavior+ecephys: 12 units, 41 trials
+  Left ACC: 3
+  Left preSMA: 1
+  Right amygdala: 3
+  Right preSMA: 4
+  Right vmPFC: 1
+
+sub-CS49_ses-P49CSR2_behavior+ecephys: 14 units, 41 trials
+  Left preSMA: 2
+  Left vmPFC: 2
+  Right amygdala: 1
+  Right hippocampus: 8
+  Right preSMA: 1
+
+sub-CS51_ses-P51CSR1_behavior+ecephys: 30 units, 41 trials
+  Left ACC: 3
+  Left amygdala: 6
+  Left hippocampus: 5
+  Left preSMA: 2
+  Right ACC: 7
+  Right amygdala: 1
+  Right hippocampus: 3
+  Right preSMA: 3
+
+sub-CS51_ses-P51CSR2_behavior+ecephys: 46 units, 41 trials
+  Left ACC: 4
+  Left amygdala: 5
+  Left hippocampus: 5
+  Left vmPFC: 1
+  Right ACC: 18
+  Right amygdala: 1
+  Right hippocampus: 5
+  Right preSMA: 5
+  Right vmPFC: 2
+
+sub-CS53_ses-P53CSR1_behavior+ecephys: 34 units, 41 trials
+  Left amygdala: 11
+  Left preSMA: 9
+  Left vmPFC: 2
+  Right ACC: 3
+  Right hippocampus: 1
+  Right preSMA: 7
+  Right vmPFC: 1
+
+sub-CS53_ses-P53CSR2_behavior+ecephys: 48 units, 35 trials
+  Left ACC: 14
+  Left amygdala: 6
+  Left preSMA: 19
+  Left vmPFC: 1
+  Right ACC: 4
+  Right hippocampus: 4
+
+sub-CS54_ses-P54CSR1_behavior+ecephys: 123 units, 41 trials
+  Left amygdala: 23
+  Left hippocampus: 28
+  Left preSMA: 15
+  Left vmPFC: 12
+  Right ACC: 4
+  Right amygdala: 14
+  Right hippocampus: 11
+  Right preSMA: 6
+  Right vmPFC: 10
+
+sub-CS54_ses-P54CSR2_behavior+ecephys: 112 units, 41 trials
+  Left amygdala: 31
+  Left hippocampus: 23
+  Left preSMA: 14
+  Left vmPFC: 9
+  Right ACC: 3
+  Right amygdala: 14
+  Right hippocampus: 5
+  Right preSMA: 4
+  Right vmPFC: 9
+
+sub-CS55_ses-P55CSR1_behavior+ecephys: 57 units, 41 trials
+  Left ACC: 1
+  Left amygdala: 5
+  Left hippocampus: 5
+  Left vmPFC: 2
+  Right ACC: 1
+  Right amygdala: 22
+  Right hippocampus: 1
+  Right preSMA: 16
+  Right vmPFC: 4
+
+sub-CS55_ses-P55CSR2_behavior+ecephys: 29 units, 41 trials
+  Left amygdala: 8
+  Left vmPFC: 1
+  Right amygdala: 10
+  Right preSMA: 9
+  Right vmPFC: 1
+
+sub-CS56_ses-P56CSR1_behavior+ecephys: 30 units, 41 trials
+  Left amygdala: 7
+  Left hippocampus: 2
+  Left preSMA: 4
+  Right ACC: 2
+  Right amygdala: 9
+  Right preSMA: 1
+  Right vmPFC: 5
+
+sub-CS56_ses-P56CSR2_behavior+ecephys: 29 units, 41 trials
+  Left amygdala: 5
+  Left hippocampus: 2
+  Left preSMA: 2
+  Left vmPFC: 5
+  Right ACC: 5
+  Right amygdala: 8
+  Right hippocampus: 1
+  Right vmPFC: 1
+
+sub-CS57_ses-P57CSR1_behavior+ecephys: 33 units, 41 trials
+  Left ACC: 6
+  Left amygdala: 3
+  Left hippocampus: 1
+  Left preSMA: 8
+  Left vmPFC: 9
+  Right ACC: 1
+  Right amygdala: 5
+
+sub-CS57_ses-P57CSR2_behavior+ecephys: 28 units, 41 trials
+  Left ACC: 3
+  Left amygdala: 2
+  Left hippocampus: 1
+  Left preSMA: 9
+  Left vmPFC: 7
+  Right amygdala: 6
+
+sub-CS58_ses-P58CSR1_behavior+ecephys: 89 units, 41 trials
+  Left ACC: 14
+  Left amygdala: 11
+  Left hippocampus: 12
+  Left preSMA: 12
+  Right ACC: 14
+  Right amygdala: 7
+  Right hippocampus: 13
+  Right preSMA: 6
+
+sub-CS60_ses-P60CSR1_behavior+ecephys: 27 units, 41 trials
+  Left ACC: 6
+  Left preSMA: 4
+  Left vmPFC: 1
+  Right ACC: 4
+  Right amygdala: 5
+  Right hippocampus: 3
+  Right preSMA: 1
+  Right vmPFC: 3
+
+sub-CS62_ses-P62CSR1_behavior+ecephys: 44 units, 41 trials
+  Right ACC: 1
+  Right amygdala: 35
+  Right preSMA: 6
+  Right vmPFC: 2
+
+sub-CS62_ses-P62CSR2_behavior+ecephys: 44 units, 41 trials
+  Right ACC: 1
+  Right amygdala: 35
+  Right preSMA: 6
+  Right vmPFC: 2
+
+Summary saved to exploration_summary.json

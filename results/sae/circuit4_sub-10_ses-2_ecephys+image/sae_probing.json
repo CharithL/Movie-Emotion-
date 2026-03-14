@@ -1,0 +1,178 @@
+{
+  "circuit": "Circuit 4 (Human WM)",
+  "patient_id": "sub-10_ses-2_ecephys+image",
+  "cc": 0.816015047452056,
+  "hidden_size": 128,
+  "n_trials": 56,
+  "n_bins_per_trial": 29,
+  "input_dim": 12,
+  "output_dim": 16,
+  "sae_config": {
+    "expansion_factor": 4,
+    "sparsity_coeff": 0.01
+  },
+  "sae_metrics": {
+    "bin_trained": {
+      "expansion_factor": 4,
+      "sparsity_coeff": 0.01,
+      "n_features": 512,
+      "recon_r2": 0.9992227552806567,
+      "mean_l0": 11.88115763546798,
+      "n_dead_features": 354
+    },
+    "bin_untrained": {
+      "expansion_factor": 4,
+      "sparsity_coeff": 0.01,
+      "n_features": 512,
+      "recon_r2": 0.9957058840919661,
+      "mean_l0": 3.5948275862068964,
+      "n_dead_features": 427
+    },
+    "win_trained": {
+      "expansion_factor": 4,
+      "sparsity_coeff": 0.01,
+      "n_features": 512,
+      "recon_r2": 0.9994515719842221,
+      "mean_l0": 58.035714285714285,
+      "n_dead_features": 449
+    },
+    "win_untrained": {
+      "expansion_factor": 4,
+      "sparsity_coeff": 0.01,
+      "n_features": 512,
+      "recon_r2": 0.998942460908237,
+      "mean_l0": 26.0,
+      "n_dead_features": 485
+    }
+  },
+  "probing": {
+    "bin_raw": {
+      "mean_firing_rate": {
+        "r2_trained": 0.05971782928816127,
+        "r2_untrained": 0.11948049133348482,
+        "delta_r2": -0.059762662045323545,
+        "valid": true
+      },
+      "population_rate": {
+        "r2_trained": 0.05971782928816127,
+        "r2_untrained": 0.11948049133348482,
+        "delta_r2": -0.059762662045323545,
+        "valid": true
+      },
+      "trial_variance": {
+        "r2_trained": 0.10044361474505281,
+        "r2_untrained": 0.13857269342441936,
+        "delta_r2": -0.038129078679366546,
+        "valid": true
+      },
+      "temporal_stability": {
+        "r2_trained": 0.0816656100301163,
+        "r2_untrained": 0.1250613486295027,
+        "delta_r2": -0.04339573859938639,
+        "valid": true
+      },
+      "population_synchrony": {
+        "r2_trained": 0.035547179351998026,
+        "r2_untrained": 0.07201063838269384,
+        "delta_r2": -0.03646345903069581,
+        "valid": true
+      }
+    },
+    "bin_sae": {
+      "mean_firing_rate": {
+        "r2_trained": -1.0,
+        "r2_untrained": -0.04293855605322339,
+        "delta_r2": -0.9570614439467766,
+        "valid": false
+      },
+      "population_rate": {
+        "r2_trained": -1.0,
+        "r2_untrained": -0.04293855605322339,
+        "delta_r2": -0.9570614439467766,
+        "valid": false
+      },
+      "trial_variance": {
+        "r2_trained": -1.0,
+        "r2_untrained": -0.025354239063941852,
+        "delta_r2": -0.9746457609360581,
+        "valid": false
+      },
+      "temporal_stability": {
+        "r2_trained": -0.9032106931204409,
+        "r2_untrained": -0.05595433932652827,
+        "delta_r2": -0.8472563537939126,
+        "valid": false
+      },
+      "population_synchrony": {
+        "r2_trained": -1.0,
+        "r2_untrained": -0.15497878870237192,
+        "delta_r2": -0.8450212112976281,
+        "valid": false
+      }
+    },
+    "window_raw": {
+      "mean_firing_rate": {
+        "r2_trained": -0.21162895343169308,
+        "r2_untrained": -0.3594044203095721,
+        "delta_r2": 0.147775466877879,
+        "valid": true
+      },
+      "population_rate": {
+        "r2_trained": -0.21162895343169308,
+        "r2_untrained": -0.3594044203095721,
+        "delta_r2": 0.147775466877879,
+        "valid": true
+      },
+      "trial_variance": {
+        "r2_trained": -0.3282917768559972,
+        "r2_untrained": -0.6375682545430517,
+        "delta_r2": 0.30927647768705446,
+        "valid": false
+      },
+      "temporal_stability": {
+        "r2_trained": -0.40023682185830656,
+        "r2_untrained": -0.3549702937764838,
+        "delta_r2": -0.04526652808182274,
+        "valid": false
+      },
+      "population_synchrony": {
+        "r2_trained": -1.0,
+        "r2_untrained": -1.0,
+        "delta_r2": 0.0,
+        "valid": false
+      }
+    },
+    "window_sae": {
+      "mean_firing_rate": {
+        "r2_trained": -1.0,
+        "r2_untrained": -0.37788722497920557,
+        "delta_r2": -0.6221127750207944,
+        "valid": false
+      },
+      "population_rate": {
+        "r2_trained": -1.0,
+        "r2_untrained": -0.37788722497920557,
+        "delta_r2": -0.6221127750207944,
+        "valid": false
+      },
+      "trial_variance": {
+        "r2_trained": -0.4870247332154025,
+        "r2_untrained": -0.8748537089066399,
+        "delta_r2": 0.3878289756912374,
+        "valid": false
+      },
+      "temporal_stability": {
+        "r2_trained": -0.8423441898965569,
+        "r2_untrained": -0.7565723434572103,
+        "delta_r2": -0.08577184643934666,
+        "valid": false
+      },
+      "population_synchrony": {
+        "r2_trained": -1.0,
+        "r2_untrained": -1.0,
+        "delta_r2": 0.0,
+        "valid": false
+      }
+    }
+  }
+}

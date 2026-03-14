@@ -1,0 +1,167 @@
+{
+  "circuit": "Circuit 3 (ALM->Thalamus)",
+  "session": "sub-440959_ses-20190223T173853_behavior+ecephys+image+ogen",
+  "hidden_size_label": "h128",
+  "hidden_dim": 128,
+  "n_samples": 51,
+  "sae_config": {
+    "expansion_factor": 4,
+    "sparsity_coeff": 0.01,
+    "n_sae_features": 512
+  },
+  "sae_metrics": {
+    "trained": {
+      "expansion_factor": 4,
+      "sparsity_coeff": 0.01,
+      "n_features": 512,
+      "recon_r2": 0.9995769363432127,
+      "mean_l0": 17.235294117647058,
+      "n_dead_features": 442
+    },
+    "untrained": {
+      "expansion_factor": 4,
+      "sparsity_coeff": 0.01,
+      "n_features": 512,
+      "recon_r2": 0.9987657579158467,
+      "mean_l0": 0.0784313725490196,
+      "n_dead_features": 510
+    }
+  },
+  "sweep_results": [
+    {
+      "expansion_factor": 4,
+      "sparsity_coeff": 0.0001,
+      "n_features": 512,
+      "recon_r2": 0.9997440461931596,
+      "mean_l0": 229.80392156862746,
+      "n_dead_features": 215
+    },
+    {
+      "expansion_factor": 4,
+      "sparsity_coeff": 0.0005,
+      "n_features": 512,
+      "recon_r2": 0.9997192494232437,
+      "mean_l0": 210.37254901960785,
+      "n_dead_features": 209
+    },
+    {
+      "expansion_factor": 4,
+      "sparsity_coeff": 0.001,
+      "n_features": 512,
+      "recon_r2": 0.9996551918734119,
+      "mean_l0": 165.15686274509804,
+      "n_dead_features": 239
+    },
+    {
+      "expansion_factor": 4,
+      "sparsity_coeff": 0.005,
+      "n_features": 512,
+      "recon_r2": 0.9993610523396127,
+      "mean_l0": 50.6078431372549,
+      "n_dead_features": 319
+    },
+    {
+      "expansion_factor": 4,
+      "sparsity_coeff": 0.01,
+      "n_features": 512,
+      "recon_r2": 0.9992571022733596,
+      "mean_l0": 24.941176470588236,
+      "n_dead_features": 391
+    },
+    {
+      "expansion_factor": 8,
+      "sparsity_coeff": 0.0001,
+      "n_features": 1024,
+      "recon_r2": 0.9998381462295868,
+      "mean_l0": 408.6078431372549,
+      "n_dead_features": 441
+    },
+    {
+      "expansion_factor": 8,
+      "sparsity_coeff": 0.0005,
+      "n_features": 1024,
+      "recon_r2": 0.9998319708878262,
+      "mean_l0": 355.4901960784314,
+      "n_dead_features": 449
+    },
+    {
+      "expansion_factor": 8,
+      "sparsity_coeff": 0.001,
+      "n_features": 1024,
+      "recon_r2": 0.9998031799084995,
+      "mean_l0": 289.1372549019608,
+      "n_dead_features": 478
+    },
+    {
+      "expansion_factor": 8,
+      "sparsity_coeff": 0.005,
+      "n_features": 1024,
+      "recon_r2": 0.9995380632632779,
+      "mean_l0": 72.80392156862744,
+      "n_dead_features": 682
+    },
+    {
+      "expansion_factor": 8,
+      "sparsity_coeff": 0.01,
+      "n_features": 1024,
+      "recon_r2": 0.999582641579176,
+      "mean_l0": 36.09803921568628,
+      "n_dead_features": 830
+    }
+  ],
+  "note": "Data already at trial/window level. No bin-level dimension exists.",
+  "proxy_probing": {
+    "raw_ridge": {
+      "PC1_trained": {
+        "r2_trained": 0.9997018409242904,
+        "r2_untrained": 0.696675705768875,
+        "delta_r2": 0.3030261351554153,
+        "valid": true
+      },
+      "PC2_trained": {
+        "r2_trained": 0.9992168376016277,
+        "r2_untrained": -0.538075977009544,
+        "delta_r2": 1.5372928146111717,
+        "valid": true
+      },
+      "trial_variance": {
+        "r2_trained": 0.8359871799032329,
+        "r2_untrained": -1.0,
+        "delta_r2": 1.835987179903233,
+        "valid": true
+      },
+      "trial_norm": {
+        "r2_trained": 0.8305681661865193,
+        "r2_untrained": -1.0,
+        "delta_r2": 1.8305681661865192,
+        "valid": true
+      }
+    },
+    "sae_probe": {
+      "PC1_trained": {
+        "r2_trained": 0.5591067668087125,
+        "r2_untrained": -0.05531227817679785,
+        "delta_r2": 0.6144190449855104,
+        "valid": true
+      },
+      "PC2_trained": {
+        "r2_trained": 0.8153899458650367,
+        "r2_untrained": -0.9572536653605728,
+        "delta_r2": 1.7726436112256094,
+        "valid": true
+      },
+      "trial_variance": {
+        "r2_trained": 0.7041826650880336,
+        "r2_untrained": -0.2622792029618868,
+        "delta_r2": 0.9664618680499204,
+        "valid": true
+      },
+      "trial_norm": {
+        "r2_trained": 0.9260811024381651,
+        "r2_untrained": -0.2382735172745316,
+        "delta_r2": 1.1643546197126966,
+        "valid": true
+      }
+    }
+  }
+}

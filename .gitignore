@@ -1,0 +1,34 @@
+# Data (too large for GitHub — download from DANDI)
+data/
+preprocessed_data/*.npz
+*.nwb
+*.h5
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Models (binary weights)
+models/*.pt
+results/*/best_model.pt
+results/sae/*/sae_model.pt
+
+# Temp
+*.tmp
+*.log
+bmovie-release-NWB-BIDS/

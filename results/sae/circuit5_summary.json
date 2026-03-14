@@ -1,0 +1,9 @@
+{
+  "circuit": "Circuit 5 (Limbic->Prefrontal)",
+  "patients_analyzed": [
+    "sub-CS48",
+    "sub-CS42"
+  ],
+  "sae_method": "Overcomplete sparse autoencoder on LSTM hidden states",
+  "key_question": "Do SAE features reveal biological variables invisible to linear Ridge probes?"
+}

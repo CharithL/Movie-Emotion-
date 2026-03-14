@@ -1,0 +1,167 @@
+{
+  "circuit": "Circuit 3 (ALM->Thalamus)",
+  "session": "sub-440956_ses-20190210T155629_behavior+ecephys+ogen",
+  "hidden_size_label": "h128",
+  "hidden_dim": 128,
+  "n_samples": 79,
+  "sae_config": {
+    "expansion_factor": 8,
+    "sparsity_coeff": 0.01,
+    "n_sae_features": 1024
+  },
+  "sae_metrics": {
+    "trained": {
+      "expansion_factor": 8,
+      "sparsity_coeff": 0.01,
+      "n_features": 1024,
+      "recon_r2": 0.9999109724012845,
+      "mean_l0": 3.392405063291139,
+      "n_dead_features": 1010
+    },
+    "untrained": {
+      "expansion_factor": 8,
+      "sparsity_coeff": 0.01,
+      "n_features": 1024,
+      "recon_r2": 0.9992191493689426,
+      "mean_l0": 1.5949367088607596,
+      "n_dead_features": 1009
+    }
+  },
+  "sweep_results": [
+    {
+      "expansion_factor": 4,
+      "sparsity_coeff": 0.0001,
+      "n_features": 512,
+      "recon_r2": 0.9999194228238973,
+      "mean_l0": 161.49367088607596,
+      "n_dead_features": 260
+    },
+    {
+      "expansion_factor": 4,
+      "sparsity_coeff": 0.0005,
+      "n_features": 512,
+      "recon_r2": 0.9998586674843285,
+      "mean_l0": 89.0886075949367,
+      "n_dead_features": 313
+    },
+    {
+      "expansion_factor": 4,
+      "sparsity_coeff": 0.001,
+      "n_features": 512,
+      "recon_r2": 0.999853320814678,
+      "mean_l0": 35.36708860759494,
+      "n_dead_features": 395
+    },
+    {
+      "expansion_factor": 4,
+      "sparsity_coeff": 0.005,
+      "n_features": 512,
+      "recon_r2": 0.9998896136055807,
+      "mean_l0": 4.443037974683544,
+      "n_dead_features": 498
+    },
+    {
+      "expansion_factor": 4,
+      "sparsity_coeff": 0.01,
+      "n_features": 512,
+      "recon_r2": 0.9998663330698616,
+      "mean_l0": 3.2531645569620253,
+      "n_dead_features": 502
+    },
+    {
+      "expansion_factor": 8,
+      "sparsity_coeff": 0.0001,
+      "n_features": 1024,
+      "recon_r2": 0.9999334103115749,
+      "mean_l0": 309.4177215189873,
+      "n_dead_features": 558
+    },
+    {
+      "expansion_factor": 8,
+      "sparsity_coeff": 0.0005,
+      "n_features": 1024,
+      "recon_r2": 0.9999034912772945,
+      "mean_l0": 166.40506329113924,
+      "n_dead_features": 627
+    },
+    {
+      "expansion_factor": 8,
+      "sparsity_coeff": 0.001,
+      "n_features": 1024,
+      "recon_r2": 0.9999225282216595,
+      "mean_l0": 82.58227848101266,
+      "n_dead_features": 755
+    },
+    {
+      "expansion_factor": 8,
+      "sparsity_coeff": 0.005,
+      "n_features": 1024,
+      "recon_r2": 0.9999133089771229,
+      "mean_l0": 6.0,
+      "n_dead_features": 1002
+    },
+    {
+      "expansion_factor": 8,
+      "sparsity_coeff": 0.01,
+      "n_features": 1024,
+      "recon_r2": 0.9999097558947606,
+      "mean_l0": 2.9367088607594938,
+      "n_dead_features": 1008
+    }
+  ],
+  "note": "Data already at trial/window level. No bin-level dimension exists.",
+  "proxy_probing": {
+    "raw_ridge": {
+      "PC1_trained": {
+        "r2_trained": 0.9999821971722581,
+        "r2_untrained": 0.9859754815686695,
+        "delta_r2": 0.014006715603588571,
+        "valid": true
+      },
+      "PC2_trained": {
+        "r2_trained": 0.9995380883738891,
+        "r2_untrained": 0.7931541310453157,
+        "delta_r2": 0.2063839573285734,
+        "valid": true
+      },
+      "trial_variance": {
+        "r2_trained": 0.9765880052938078,
+        "r2_untrained": 0.9726150595581278,
+        "delta_r2": 0.003972945735680078,
+        "valid": true
+      },
+      "trial_norm": {
+        "r2_trained": 0.9929308121208992,
+        "r2_untrained": 0.9874251244652446,
+        "delta_r2": 0.005505687655654623,
+        "valid": true
+      }
+    },
+    "sae_probe": {
+      "PC1_trained": {
+        "r2_trained": 0.999952458475381,
+        "r2_untrained": 0.9541052214090684,
+        "delta_r2": 0.04584723706631255,
+        "valid": true
+      },
+      "PC2_trained": {
+        "r2_trained": 0.9985818328777274,
+        "r2_untrained": -0.37015557652471465,
+        "delta_r2": 1.368737409402442,
+        "valid": true
+      },
+      "trial_variance": {
+        "r2_trained": 0.9766183499568204,
+        "r2_untrained": 0.8724564648939916,
+        "delta_r2": 0.10416188506282875,
+        "valid": true
+      },
+      "trial_norm": {
+        "r2_trained": 0.9913858158982624,
+        "r2_untrained": 0.9147819341668356,
+        "delta_r2": 0.07660388173142674,
+        "valid": true
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+DESCARTES CIRCUIT 5 -- PATIENT SUMMARY TABLE
+====================================================================================================
+Patient    | Neurons(in/out)  | Focused  | Mean CC    | Quality      | Best Probe Result
+----------------------------------------------------------------------------------------------------
+sub-CS42   |  15/30           |        5 |     0.0430 | LOW_QUALITY* | all zombie
+sub-CS43   |  18/11           |        5 |     0.0442 | LOW_QUALITY* | all zombie
+sub-CS44   |  15/31           |        5 |     0.1544 | LOW_QUALITY* | all zombie
+sub-CS47   |  31/24           |        5 |     0.0678 | LOW_QUALITY* | all zombie
+sub-CS48   |  46/54           |       11 |     0.6069 | OK           | temporal_stability +0.0783 [CANDIDATE]
+sub-CS51   |   5/8            |        5 |     0.1213 | LOW_QUALITY* | all zombie
+sub-CS53   |   5/18           |        5 |     0.0244 | LOW_QUALITY* | all zombie
+sub-CS54   |  64/41           |        5 |     0.0690 | LOW_QUALITY* | all zombie
+sub-CS55   |  27/24           |        5 |     0.1035 | LOW_QUALITY* | all zombie
+sub-CS56   |  17/12           |        5 |     0.1056 | LOW_QUALITY* | all zombie
+sub-CS57   |   7/23           |        5 |     0.0617 | LOW_QUALITY* | all zombie
+sub-CS58   |  36/27           |        5 |     0.2163 | LOW_QUALITY* | all zombie
+sub-CS60   |   8/19           |        5 |     0.0350 | LOW_QUALITY* | all zombie
+sub-CS62   |  19/8            |        5 |     0.0325 | LOW_QUALITY* | all zombie
+----------------------------------------------------------------------------------------------------
+* = used top-K fallback (all neurons below CC threshold)
+
+Total patients with reports: 14/14
+OK quality (CC >= 0.3): 1 -- sub-CS48
+LOW quality (CC < 0.3): 13
+
+
+====================================================================================================
+CROSS-PATIENT PROBE TARGET SUMMARY
+====================================================================================================
+Target                    | Valid pts  | STRONG  | CAND  | zombie  | INVALID | Mean dR2   | Learned?
+----------------------------------------------------------------------------------------------------
+arousal                   |  14/14     |       0 |     0 |      14 |       0 |        N/A | no
+threat_pe                 |  14/14     |       0 |     0 |      14 |       0 |        N/A | no
+emotion_category          |  14/14     |       0 |     0 |      14 |       0 |    +0.0055 | no
+event_boundaries          |  14/14     |       0 |     0 |      14 |       0 |        N/A | no
+population_synchrony      |  11/14     |       0 |     0 |      11 |       3 |        N/A | no
+temporal_stability        |  14/14     |       0 |     1 |      13 |       0 |    +0.0182 | no
+theta_power               |  14/14     |       0 |     0 |      14 |       0 |        N/A | no
+gamma_power               |  14/14     |       0 |     0 |      14 |       0 |        N/A | no
+encoding_success          |  14/14     |       0 |     0 |      14 |       0 |        N/A | no
+----------------------------------------------------------------------------------------------------

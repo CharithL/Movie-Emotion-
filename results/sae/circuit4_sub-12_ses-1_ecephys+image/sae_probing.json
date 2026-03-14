@@ -1,0 +1,178 @@
+{
+  "circuit": "Circuit 4 (Human WM)",
+  "patient_id": "sub-12_ses-1_ecephys+image",
+  "cc": 0.8730866592337162,
+  "hidden_size": 128,
+  "n_trials": 56,
+  "n_bins_per_trial": 269,
+  "input_dim": 4,
+  "output_dim": 14,
+  "sae_config": {
+    "expansion_factor": 4,
+    "sparsity_coeff": 0.01
+  },
+  "sae_metrics": {
+    "bin_trained": {
+      "expansion_factor": 4,
+      "sparsity_coeff": 0.01,
+      "n_features": 512,
+      "recon_r2": 0.9998636975260008,
+      "mean_l0": 7.201872012745619,
+      "n_dead_features": 491
+    },
+    "bin_untrained": {
+      "expansion_factor": 4,
+      "sparsity_coeff": 0.01,
+      "n_features": 512,
+      "recon_r2": 0.9996611760379854,
+      "mean_l0": 1.3375597450876262,
+      "n_dead_features": 506
+    },
+    "win_trained": {
+      "expansion_factor": 4,
+      "sparsity_coeff": 0.01,
+      "n_features": 512,
+      "recon_r2": 0.9985310181471784,
+      "mean_l0": 34.125,
+      "n_dead_features": 460
+    },
+    "win_untrained": {
+      "expansion_factor": 4,
+      "sparsity_coeff": 0.01,
+      "n_features": 512,
+      "recon_r2": 0.9998052582886355,
+      "mean_l0": 23.0,
+      "n_dead_features": 489
+    }
+  },
+  "probing": {
+    "bin_raw": {
+      "mean_firing_rate": {
+        "r2_trained": 0.027518592958909016,
+        "r2_untrained": 0.023409401376181527,
+        "delta_r2": 0.004109191582727489,
+        "valid": true
+      },
+      "population_rate": {
+        "r2_trained": 0.027518594182093348,
+        "r2_untrained": 0.023409400563833227,
+        "delta_r2": 0.004109193618260121,
+        "valid": true
+      },
+      "trial_variance": {
+        "r2_trained": 0.03545408625896296,
+        "r2_untrained": 0.032238904295341486,
+        "delta_r2": 0.003215181963621472,
+        "valid": true
+      },
+      "temporal_stability": {
+        "r2_trained": 0.041894452584984365,
+        "r2_untrained": 0.03613489288358562,
+        "delta_r2": 0.005759559701398742,
+        "valid": true
+      },
+      "population_synchrony": {
+        "r2_trained": 0.03003347616133689,
+        "r2_untrained": 0.011763217895117029,
+        "delta_r2": 0.018270258266219863,
+        "valid": true
+      }
+    },
+    "bin_sae": {
+      "mean_firing_rate": {
+        "r2_trained": 0.01167020539826824,
+        "r2_untrained": 0.002415149660480953,
+        "delta_r2": 0.009255055737787288,
+        "valid": true
+      },
+      "population_rate": {
+        "r2_trained": 0.011670207414786637,
+        "r2_untrained": 0.002415148935122735,
+        "delta_r2": 0.009255058479663902,
+        "valid": true
+      },
+      "trial_variance": {
+        "r2_trained": 0.015723984231816424,
+        "r2_untrained": 0.0015666576375344965,
+        "delta_r2": 0.014157326594281927,
+        "valid": true
+      },
+      "temporal_stability": {
+        "r2_trained": 0.020614864426934165,
+        "r2_untrained": 0.00043719864695035415,
+        "delta_r2": 0.02017766577998381,
+        "valid": true
+      },
+      "population_synchrony": {
+        "r2_trained": 0.023353165225890926,
+        "r2_untrained": -0.0011383677693574956,
+        "delta_r2": 0.024491532995248422,
+        "valid": true
+      }
+    },
+    "window_raw": {
+      "mean_firing_rate": {
+        "r2_trained": -0.07410596338845088,
+        "r2_untrained": -0.0619841473071574,
+        "delta_r2": -0.01212181608129348,
+        "valid": true
+      },
+      "population_rate": {
+        "r2_trained": -0.07410581326252896,
+        "r2_untrained": -0.06198441918762776,
+        "delta_r2": -0.012121394074901204,
+        "valid": true
+      },
+      "trial_variance": {
+        "r2_trained": -0.13731689327855578,
+        "r2_untrained": -0.06080603184283162,
+        "delta_r2": -0.07651086143572416,
+        "valid": true
+      },
+      "temporal_stability": {
+        "r2_trained": 0.038803593606838716,
+        "r2_untrained": -0.02150942561764224,
+        "delta_r2": 0.06031301922448096,
+        "valid": true
+      },
+      "population_synchrony": {
+        "r2_trained": -0.03904422864662238,
+        "r2_untrained": -0.014983898823956121,
+        "delta_r2": -0.02406032982266626,
+        "valid": true
+      }
+    },
+    "window_sae": {
+      "mean_firing_rate": {
+        "r2_trained": -0.3720442315418544,
+        "r2_untrained": -0.06991839794836952,
+        "delta_r2": -0.3021258335934849,
+        "valid": false
+      },
+      "population_rate": {
+        "r2_trained": -0.3720446535617339,
+        "r2_untrained": -0.06991862598540788,
+        "delta_r2": -0.302126027576326,
+        "valid": false
+      },
+      "trial_variance": {
+        "r2_trained": -0.19043825831701366,
+        "r2_untrained": -0.055554371980388595,
+        "delta_r2": -0.13488388633662507,
+        "valid": true
+      },
+      "temporal_stability": {
+        "r2_trained": -0.004988322401425549,
+        "r2_untrained": -0.04136631120327672,
+        "delta_r2": 0.03637798880185117,
+        "valid": true
+      },
+      "population_synchrony": {
+        "r2_trained": -0.21931926127992685,
+        "r2_untrained": -0.021500887513542732,
+        "delta_r2": -0.19781837376638411,
+        "valid": true
+      }
+    }
+  }
+}

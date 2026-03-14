@@ -1,0 +1,47 @@
+================================================================================
+DESCARTES CIRCUIT 5 RESULTS
+Limbic -> Prefrontal Emotion Transformation
+DANDI 000623, 14 patients, 8-minute movie watching
+================================================================================
+
+PATIENT QUALITY:
+  Patients with CC > 0.3 (reliable):    1/14
+  Patients with CC 0.2-0.3 (marginal):  1/14
+  Patients with CC < 0.2 (unreliable):  12/14
+  Minimum total neurons for CC > 0.3:   ~100 neurons
+
+PROBE TARGET RESULTS (reliable patients only, n=1):
+Target                    | STRONG  | CAND  | zombie  | Mean dR2  
+------------------------------------------------------------
+arousal                   |       0 |     0 |       1 |    +0.0000
+threat_pe                 |       0 |     0 |       1 |    +0.0084
+emotion_category          |       0 |     0 |       1 |    +0.0097
+event_boundaries          |       0 |     0 |       1 |    +0.0292
+population_synchrony      |       0 |     0 |       1 |    -0.0045
+temporal_stability        |       0 |     1 |       0 |    +0.0783
+theta_power               |       0 |     0 |       1 |    +0.0125
+gamma_power               |       0 |     0 |       1 |    -0.0013
+encoding_success          |       0 |     0 |       1 |    +0.0234
+
+COMPARISON TO PREVIOUS CIRCUITS:
+Variable                  | C2:HC    | C3:Mouse | C4:Human | C5:Emotion
+----------------------------------------------------------------------
+theta_power               | MAND     | MAND     | Variable | zombie
+gamma_power               | MAND     | N/A      | N/A      | zombie
+temporal_stability        | N/A      | MAND     | Variable | Learned
+population_synchrony      | N/A      | N/A      | Variable | zombie
+arousal                   | N/A      | N/A      | N/A      | zombie
+emotion_category          | N/A      | N/A      | N/A      | zombie
+encoding_success          | N/A      | N/A      | N/A      | zombie
+event_boundaries          | N/A      | N/A      | N/A      | zombie
+threat_pe                 | N/A      | N/A      | N/A      | zombie
+----------------------------------------------------------------------
+MAND = mandatory (passed ablation in that circuit)
+NOTE: Circuit 5 cannot test mandatoriness (ablation failed).
+
+
+CONCLUSIONS:
+----------------------------------------
+Temporal stability is the most consistently learned intermediate variable in the limbic->prefrontal emotion transformation, replicating its appearance in Circuits 3 and 4.
+
+NOTE: With only 1 reliable patient(s), these are N=1 exemplar findings, not cross-patient conclusions.

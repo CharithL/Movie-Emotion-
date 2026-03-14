@@ -1,0 +1,46 @@
+{
+  "sub-440956_h128": {
+    "sae_recon_r2": 0.9999109724012845,
+    "sae_mean_l0": 3.392405063291139,
+    "proxy_results": {
+      "PC1_trained": {
+        "raw_delta_r2": 0.014006715603588571,
+        "sae_delta_r2": 0.04584723706631255
+      },
+      "PC2_trained": {
+        "raw_delta_r2": 0.2063839573285734,
+        "sae_delta_r2": 1.368737409402442
+      },
+      "trial_variance": {
+        "raw_delta_r2": 0.003972945735680078,
+        "sae_delta_r2": 0.10416188506282875
+      },
+      "trial_norm": {
+        "raw_delta_r2": 0.005505687655654623,
+        "sae_delta_r2": 0.07660388173142674
+      }
+    }
+  },
+  "sub-440959_h128": {
+    "sae_recon_r2": 0.9995769363432127,
+    "sae_mean_l0": 17.235294117647058,
+    "proxy_results": {
+      "PC1_trained": {
+        "raw_delta_r2": 0.3030261351554153,
+        "sae_delta_r2": 0.6144190449855104
+      },
+      "PC2_trained": {
+        "raw_delta_r2": 1.5372928146111717,
+        "sae_delta_r2": 1.7726436112256094
+      },
+      "trial_variance": {
+        "raw_delta_r2": 1.835987179903233,
+        "sae_delta_r2": 0.9664618680499204
+      },
+      "trial_norm": {
+        "raw_delta_r2": 1.8305681661865192,
+        "sae_delta_r2": 1.1643546197126966
+      }
+    }
+  }
+}

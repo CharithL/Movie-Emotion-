@@ -1,0 +1,518 @@
+{
+  "circuit": "Circuit 2 (CA3->CA1)",
+  "hidden_size_label": "h256",
+  "hidden_dim": 512,
+  "sae_config": {
+    "expansion_factor": 4,
+    "sparsity_coeff": 0.01,
+    "n_sae_features": 2048
+  },
+  "sae_metrics": {
+    "trained": {
+      "expansion_factor": 4,
+      "sparsity_coeff": 0.01,
+      "n_features": 2048,
+      "recon_r2": 0.9985557794570923,
+      "mean_l0": 76.78574074074074,
+      "n_dead_features": 1344
+    },
+    "untrained": {
+      "expansion_factor": 4,
+      "sparsity_coeff": 0.01,
+      "n_features": 2048,
+      "recon_r2": 0.9962576031684875,
+      "mean_l0": 67.59560185185185,
+      "n_dead_features": 1549
+    }
+  },
+  "sweep_results": [
+    {
+      "expansion_factor": 4,
+      "sparsity_coeff": 0.0001,
+      "n_features": 2048,
+      "recon_r2": 0.9988781213760376,
+      "mean_l0": 553.7281481481482,
+      "n_dead_features": 909
+    },
+    {
+      "expansion_factor": 4,
+      "sparsity_coeff": 0.0005,
+      "n_features": 2048,
+      "recon_r2": 0.9992997050285339,
+      "mean_l0": 368.837962962963,
+      "n_dead_features": 909
+    },
+    {
+      "expansion_factor": 4,
+      "sparsity_coeff": 0.001,
+      "n_features": 2048,
+      "recon_r2": 0.9989170432090759,
+      "mean_l0": 251.22939814814814,
+      "n_dead_features": 947
+    },
+    {
+      "expansion_factor": 4,
+      "sparsity_coeff": 0.005,
+      "n_features": 2048,
+      "recon_r2": 0.9989417195320129,
+      "mean_l0": 113.1662037037037,
+      "n_dead_features": 1126
+    },
+    {
+      "expansion_factor": 4,
+      "sparsity_coeff": 0.01,
+      "n_features": 2048,
+      "recon_r2": 0.9981911778450012,
+      "mean_l0": 80.52847222222222,
+      "n_dead_features": 1303
+    },
+    {
+      "expansion_factor": 8,
+      "sparsity_coeff": 0.0001,
+      "n_features": 4096,
+      "recon_r2": 0.9994072318077087,
+      "mean_l0": 637.0787037037037,
+      "n_dead_features": 2430
+    },
+    {
+      "expansion_factor": 8,
+      "sparsity_coeff": 0.0005,
+      "n_features": 4096,
+      "recon_r2": 0.9990016222000122,
+      "mean_l0": 486.8459722222222,
+      "n_dead_features": 2470
+    },
+    {
+      "expansion_factor": 8,
+      "sparsity_coeff": 0.001,
+      "n_features": 4096,
+      "recon_r2": 0.9993602633476257,
+      "mean_l0": 342.94300925925927,
+      "n_dead_features": 2460
+    },
+    {
+      "expansion_factor": 8,
+      "sparsity_coeff": 0.005,
+      "n_features": 4096,
+      "recon_r2": 0.9990023374557495,
+      "mean_l0": 152.36884259259259,
+      "n_dead_features": 2660
+    },
+    {
+      "expansion_factor": 8,
+      "sparsity_coeff": 0.01,
+      "n_features": 4096,
+      "recon_r2": 0.9986031651496887,
+      "mean_l0": 109.06833333333333,
+      "n_dead_features": 2960
+    }
+  ],
+  "bin_level": {
+    "raw_ridge": {
+      "gamma_amp": {
+        "r2_trained": -0.6436748174644005,
+        "r2_untrained": -0.8849610366414016,
+        "delta_r2": 0.2412862191770011,
+        "valid": false
+      },
+      "theta_phase": {
+        "r2_trained": -0.0017728821925762305,
+        "r2_untrained": -0.007033440904972621,
+        "delta_r2": 0.00526055871239639,
+        "valid": false
+      },
+      "V_CA1": {
+        "r2_trained": 0.03295406286333753,
+        "r2_untrained": 0.0737339855543605,
+        "delta_r2": -0.04077992269102297,
+        "valid": true
+      },
+      "Ca_i_CA1": {
+        "r2_trained": 0.8782841763086452,
+        "r2_untrained": 0.958454628566334,
+        "delta_r2": -0.08017045225768882,
+        "valid": true
+      },
+      "I_h_CA1": {
+        "r2_trained": 0.1147372461631252,
+        "r2_untrained": 0.01218556620557285,
+        "delta_r2": 0.10255167995755235,
+        "valid": true
+      },
+      "g_GABA_B": {
+        "r2_trained": 0.037750411319345645,
+        "r2_untrained": 0.1882062611054681,
+        "delta_r2": -0.15045584978612245,
+        "valid": true
+      },
+      "I_M_CA1": {
+        "r2_trained": -0.3227616497945629,
+        "r2_untrained": -0.23170916990110485,
+        "delta_r2": -0.09105247989345805,
+        "valid": false
+      },
+      "V_basket": {
+        "r2_trained": -0.0343705580291646,
+        "r2_untrained": -0.038906249897313484,
+        "delta_r2": 0.0045356918681488875,
+        "valid": false
+      },
+      "I_Na_CA1": {
+        "r2_trained": -0.12263695675239923,
+        "r2_untrained": -0.047265636448976876,
+        "delta_r2": -0.07537132030342236,
+        "valid": false
+      },
+      "I_KDR_CA1": {
+        "r2_trained": -0.11896845323596619,
+        "r2_untrained": -0.06434550020792391,
+        "delta_r2": -0.05462295302804228,
+        "valid": false
+      },
+      "I_Ka_CA1": {
+        "r2_trained": -0.15032141236571633,
+        "r2_untrained": -0.04468752235427731,
+        "delta_r2": -0.10563389001143902,
+        "valid": false
+      },
+      "I_CaL_CA1": {
+        "r2_trained": -0.15562463878471594,
+        "r2_untrained": -0.11779125478907457,
+        "delta_r2": -0.03783338399564137,
+        "valid": false
+      },
+      "I_CaN_CA1": {
+        "r2_trained": -0.1573830586139565,
+        "r2_untrained": -0.11994461609107321,
+        "delta_r2": -0.03743844252288328,
+        "valid": false
+      },
+      "I_KCa_CA1": {
+        "r2_trained": 0.8782845082260788,
+        "r2_untrained": 0.9584547743183004,
+        "delta_r2": -0.08017026609222155,
+        "valid": true
+      },
+      "I_AHP_CA1": {
+        "r2_trained": 0.8782843869414642,
+        "r2_untrained": 0.9584547193301466,
+        "delta_r2": -0.08017033238868243,
+        "valid": true
+      },
+      "g_AMPA_SC": {
+        "r2_trained": -0.07142301417852974,
+        "r2_untrained": 0.07941619555720665,
+        "delta_r2": -0.1508392097357364,
+        "valid": false
+      },
+      "g_NMDA_SC": {
+        "r2_trained": 0.31373224974980085,
+        "r2_untrained": 0.3940436565329079,
+        "delta_r2": -0.08031140678310705,
+        "valid": true
+      },
+      "g_GABA_A": {
+        "r2_trained": -0.018597437019682705,
+        "r2_untrained": 0.15159641708700516,
+        "delta_r2": -0.17019385410668786,
+        "valid": false
+      },
+      "h_Na_CA1": {
+        "r2_trained": -0.0889988621626471,
+        "r2_untrained": 0.061815858077671114,
+        "delta_r2": -0.15081472024031822,
+        "valid": false
+      },
+      "n_KDR_CA1": {
+        "r2_trained": -0.20423353421540685,
+        "r2_untrained": -0.0962914990076699,
+        "delta_r2": -0.10794203520773696,
+        "valid": false
+      },
+      "h_Ka_CA1": {
+        "r2_trained": 0.16173858199547822,
+        "r2_untrained": 0.11262546602003956,
+        "delta_r2": 0.04911311597543866,
+        "valid": true
+      },
+      "m_h_CA1": {
+        "r2_trained": 0.18650933952364596,
+        "r2_untrained": 0.07951823119650347,
+        "delta_r2": 0.10699110832714248,
+        "valid": true
+      },
+      "m_CaL_CA1": {
+        "r2_trained": -0.16563364611736484,
+        "r2_untrained": -0.11924602797330948,
+        "delta_r2": -0.046387618144055356,
+        "valid": false
+      },
+      "m_M_CA1": {
+        "r2_trained": -0.2960213993142486,
+        "r2_untrained": -0.19902400686859117,
+        "delta_r2": -0.09699739244565742,
+        "valid": false
+      },
+      "V_OLM": {
+        "r2_trained": 0.0010267993264070352,
+        "r2_untrained": 0.0009435930817948579,
+        "delta_r2": 8.320624461217725e-05,
+        "valid": true
+      }
+    },
+    "sae_probe": {
+      "I_Na_CA1": {
+        "r2_trained": -0.07887964146662167,
+        "r2_untrained": 0.007960168155797965,
+        "delta_r2": -0.08683980962241963,
+        "valid": false
+      },
+      "I_KDR_CA1": {
+        "r2_trained": -0.076995305239548,
+        "r2_untrained": 0.01489728965037027,
+        "delta_r2": -0.09189259488991827,
+        "valid": false
+      },
+      "I_Ka_CA1": {
+        "r2_trained": -0.07442386666677536,
+        "r2_untrained": 0.002665293645917255,
+        "delta_r2": -0.07708916031269261,
+        "valid": false
+      },
+      "I_h_CA1": {
+        "r2_trained": 0.1380112128977845,
+        "r2_untrained": -0.10798531882464109,
+        "delta_r2": 0.24599653172242558,
+        "valid": true
+      },
+      "I_CaL_CA1": {
+        "r2_trained": -0.11515311582161954,
+        "r2_untrained": -0.0039300646484525135,
+        "delta_r2": -0.11122305117316703,
+        "valid": false
+      },
+      "I_CaN_CA1": {
+        "r2_trained": -0.11540913789579801,
+        "r2_untrained": -0.004122901139136448,
+        "delta_r2": -0.11128623675666156,
+        "valid": false
+      },
+      "I_KCa_CA1": {
+        "r2_trained": 0.5973285040829233,
+        "r2_untrained": 0.5629957689085587,
+        "delta_r2": 0.034332735174364526,
+        "valid": true
+      },
+      "I_M_CA1": {
+        "r2_trained": -0.3356637044045736,
+        "r2_untrained": -0.20742190250356765,
+        "delta_r2": -0.12824180190100595,
+        "valid": false
+      },
+      "I_AHP_CA1": {
+        "r2_trained": 0.5973284989979006,
+        "r2_untrained": 0.5629957888755825,
+        "delta_r2": 0.03433271012231809,
+        "valid": true
+      },
+      "Ca_i_CA1": {
+        "r2_trained": 0.5973285327014829,
+        "r2_untrained": 0.5629957667340828,
+        "delta_r2": 0.03433276596740009,
+        "valid": true
+      },
+      "g_AMPA_SC": {
+        "r2_trained": 0.0458863612552568,
+        "r2_untrained": 0.13500243687646957,
+        "delta_r2": -0.08911607562121276,
+        "valid": true
+      },
+      "g_NMDA_SC": {
+        "r2_trained": 0.10595685809401571,
+        "r2_untrained": 0.27856343320043087,
+        "delta_r2": -0.17260657510641514,
+        "valid": true
+      },
+      "g_GABA_A": {
+        "r2_trained": 0.07858719708901536,
+        "r2_untrained": 0.2906007297901429,
+        "delta_r2": -0.21201353270112755,
+        "valid": true
+      },
+      "g_GABA_B": {
+        "r2_trained": 0.10947823188118959,
+        "r2_untrained": 0.3494964161810291,
+        "delta_r2": -0.2400181842998395,
+        "valid": true
+      },
+      "h_Na_CA1": {
+        "r2_trained": 0.032788622752348374,
+        "r2_untrained": 0.05040052361104284,
+        "delta_r2": -0.017611900858694463,
+        "valid": true
+      },
+      "n_KDR_CA1": {
+        "r2_trained": -0.08943457298403634,
+        "r2_untrained": 0.018134379283570402,
+        "delta_r2": -0.10756895226760674,
+        "valid": false
+      },
+      "h_Ka_CA1": {
+        "r2_trained": 0.17682009447662012,
+        "r2_untrained": 0.045373354636361364,
+        "delta_r2": 0.13144673984025876,
+        "valid": true
+      },
+      "m_h_CA1": {
+        "r2_trained": 0.020657883958794265,
+        "r2_untrained": -0.06376074327801004,
+        "delta_r2": 0.08441862723680431,
+        "valid": true
+      },
+      "m_CaL_CA1": {
+        "r2_trained": -0.10875377485210329,
+        "r2_untrained": -0.005801846863464677,
+        "delta_r2": -0.10295192798863861,
+        "valid": false
+      },
+      "m_M_CA1": {
+        "r2_trained": -0.4192952433750451,
+        "r2_untrained": -0.10557213544771833,
+        "delta_r2": -0.31372310792732677,
+        "valid": false
+      },
+      "V_basket": {
+        "r2_trained": -0.028924781560305646,
+        "r2_untrained": -0.06468163845570582,
+        "delta_r2": 0.035756856895400174,
+        "valid": false
+      },
+      "V_OLM": {
+        "r2_trained": 0.0010010714762927586,
+        "r2_untrained": 0.0004966945900031882,
+        "delta_r2": 0.0005043768862895703,
+        "valid": true
+      },
+      "theta_phase": {
+        "r2_trained": -0.001711110556443285,
+        "r2_untrained": 0.0005745497873342664,
+        "delta_r2": -0.0022856603437775513,
+        "valid": false
+      },
+      "gamma_amp": {
+        "r2_trained": -0.7020661985068815,
+        "r2_untrained": -0.840010559673048,
+        "delta_r2": 0.1379443611661666,
+        "valid": false
+      },
+      "V_CA1": {
+        "r2_trained": 0.057898621093602796,
+        "r2_untrained": 0.04734299749313298,
+        "delta_r2": 0.01055562360046982,
+        "valid": true
+      }
+    }
+  },
+  "window_level": {
+    "raw_ridge": {
+      "gamma_amp": {
+        "r2_trained": -0.6048561747809604,
+        "r2_untrained": -0.9932292948112547,
+        "delta_r2": 0.3883731200302942,
+        "valid": false
+      },
+      "theta_phase": {
+        "r2_trained": -0.4186621558837583,
+        "r2_untrained": -0.47893291931886195,
+        "delta_r2": 0.060270763435103625,
+        "valid": false
+      },
+      "V_CA1": {
+        "r2_trained": 0.3564717711275214,
+        "r2_untrained": 0.09962624943011959,
+        "delta_r2": 0.25684552169740177,
+        "valid": true
+      },
+      "Ca_i_CA1": {
+        "r2_trained": 0.0,
+        "r2_untrained": 0.0,
+        "delta_r2": 0.0,
+        "valid": false
+      },
+      "I_h_CA1": {
+        "r2_trained": 0.46984091381860915,
+        "r2_untrained": 0.032110794738637025,
+        "delta_r2": 0.4377301190799721,
+        "valid": true
+      },
+      "g_GABA_B": {
+        "r2_trained": 0.42082004469092615,
+        "r2_untrained": 0.4915831681107372,
+        "delta_r2": -0.07076312341981106,
+        "valid": true
+      },
+      "I_M_CA1": {
+        "r2_trained": -0.011876727758111905,
+        "r2_untrained": -0.11497405761681008,
+        "delta_r2": 0.10309732985869817,
+        "valid": false
+      },
+      "V_basket": {
+        "r2_trained": -0.6225888631450702,
+        "r2_untrained": -0.6427979358448488,
+        "delta_r2": 0.020209072699778563,
+        "valid": false
+      }
+    },
+    "sae_probe": {
+      "gamma_amp": {
+        "r2_trained": -0.5762083251723629,
+        "r2_untrained": -0.8427977757527966,
+        "delta_r2": 0.2665894505804337,
+        "valid": false
+      },
+      "theta_phase": {
+        "r2_trained": -0.6205673421821676,
+        "r2_untrained": -0.47533609815988687,
+        "delta_r2": -0.14523124402228071,
+        "valid": false
+      },
+      "V_CA1": {
+        "r2_trained": 0.31675434729515495,
+        "r2_untrained": 0.06394947910670043,
+        "delta_r2": 0.2528048681884545,
+        "valid": true
+      },
+      "Ca_i_CA1": {
+        "r2_trained": 0.0,
+        "r2_untrained": 0.0,
+        "delta_r2": 0.0,
+        "valid": false
+      },
+      "I_h_CA1": {
+        "r2_trained": 0.4644724811287283,
+        "r2_untrained": -0.16251619560184125,
+        "delta_r2": 0.6269886767305696,
+        "valid": true
+      },
+      "g_GABA_B": {
+        "r2_trained": 0.40739406020272806,
+        "r2_untrained": 0.4490932038627665,
+        "delta_r2": -0.04169914366003846,
+        "valid": true
+      },
+      "I_M_CA1": {
+        "r2_trained": -0.09122182189010168,
+        "r2_untrained": -0.012392442881858302,
+        "delta_r2": -0.07882937900824338,
+        "valid": false
+      },
+      "V_basket": {
+        "r2_trained": -0.6388327002885653,
+        "r2_untrained": -0.7067849752273999,
+        "delta_r2": 0.0679522749388346,
+        "valid": false
+      }
+    }
+  }
+}

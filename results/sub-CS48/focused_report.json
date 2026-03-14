@@ -1,0 +1,251 @@
+{
+  "patient_id": "sub-CS48",
+  "run_type": "focused",
+  "n_output_focused": 10,
+  "selected_neuron_indices": [
+    11,
+    3,
+    4,
+    8,
+    1,
+    10,
+    19,
+    0,
+    6,
+    7
+  ],
+  "pilot_cc_of_selected": [
+    0.7383552045751627,
+    0.7109396027286613,
+    0.688794906261472,
+    0.6706591083476572,
+    0.6307399898154471,
+    0.6026894127153857,
+    0.5925497936210787,
+    0.576146405541117,
+    0.5724791349058622,
+    0.47317932269418095
+  ],
+  "config": {
+    "hidden_size": 128,
+    "n_layers": 2,
+    "n_seeds": 10,
+    "max_epochs": 200,
+    "batch_size": 32,
+    "learning_rate": 0.001,
+    "patience": 20,
+    "device": "cuda"
+  },
+  "data": {
+    "n_input": 46,
+    "n_output": 10,
+    "n_train": 572,
+    "n_val": 191,
+    "n_test": 191
+  },
+  "task4_training": {
+    "cc_per_seed": [
+      0.6277685616638384,
+      0.6254542526695246,
+      0.6285500950227553,
+      0.6282649088397482,
+      0.6301773328943876,
+      0.6283496563942289,
+      0.6272967151268958,
+      0.625831413499933,
+      0.6247946598214021,
+      0.6282970018818903
+    ],
+    "mean_cc": 0.6274784597814604,
+    "std_cc": 0.0015687563014171223,
+    "best_seed": 4,
+    "best_cc": 0.6301773328943876,
+    "cc_below_0_3": 0,
+    "epochs_per_seed": [
+      24,
+      22,
+      23,
+      24,
+      23,
+      24,
+      25,
+      22,
+      24,
+      22
+    ],
+    "val_loss_per_seed": [
+      0.7178363800048828,
+      0.726282000541687,
+      0.7247956395149231,
+      0.7186640501022339,
+      0.7216798067092896,
+      0.7207958102226257,
+      0.7256187796592712,
+      0.7314241528511047,
+      0.7345691323280334,
+      0.7331027388572693
+    ],
+    "cc_per_neuron_best_seed": [
+      0.7477981789596586,
+      0.7225158391913846,
+      0.6951495181784092,
+      0.6788899246345754,
+      0.6204506059831937,
+      0.6141636576537546,
+      0.6093708814492538,
+      0.569421723742099,
+      0.571588313303575,
+      0.47242468584797104
+    ]
+  },
+  "task5_probing": {
+    "arousal": {
+      "delta_r2": -18.857208108901972,
+      "r2_trained": -120.87141466140747,
+      "r2_untrained": -102.0142065525055,
+      "status": "zombie"
+    },
+    "valence": {
+      "delta_r2": -18.857208108901972,
+      "r2_trained": -120.87141466140747,
+      "r2_untrained": -102.0142065525055,
+      "status": "zombie"
+    },
+    "threat_pe": {
+      "delta_r2": -0.9262772798538208,
+      "r2_trained": -3.5589344024658205,
+      "r2_untrained": -2.6326571226119997,
+      "status": "zombie"
+    },
+    "emotion_category": {
+      "delta_r2": 1.5966351509094245,
+      "r2_trained": -7.846968412399292,
+      "r2_untrained": -9.443603563308717,
+      "status": "STRONG"
+    },
+    "event_boundaries": {
+      "delta_r2": -0.12208919525146489,
+      "r2_trained": -0.7215780019760132,
+      "r2_untrained": -0.5994888067245483,
+      "status": "zombie"
+    },
+    "face_presence": {
+      "delta_r2": -0.31811604499817037,
+      "r2_trained": -24.54087839126587,
+      "r2_untrained": -24.2227623462677,
+      "status": "zombie"
+    },
+    "population_synchrony": {
+      "delta_r2": 0.037721776962280275,
+      "r2_trained": -0.01769146919250488,
+      "r2_untrained": -0.055413246154785156,
+      "status": "zombie"
+    },
+    "temporal_stability": {
+      "delta_r2": 0.11951154470443726,
+      "r2_trained": 0.029624831676483155,
+      "r2_untrained": -0.0898867130279541,
+      "status": "CANDIDATE"
+    },
+    "theta_power": {
+      "delta_r2": 0.05239713191986084,
+      "r2_trained": -0.6079585790634155,
+      "r2_untrained": -0.6603557109832764,
+      "status": "CANDIDATE"
+    },
+    "gamma_power": {
+      "delta_r2": -0.0023993015289306557,
+      "r2_trained": -0.12048966884613037,
+      "r2_untrained": -0.11809036731719971,
+      "status": "zombie"
+    },
+    "encoding_success": {
+      "delta_r2": -0.08518328666687003,
+      "r2_trained": -2.3312066555023194,
+      "r2_untrained": -2.2460233688354494,
+      "status": "zombie"
+    }
+  },
+  "task6_ablation": {
+    "emotion_category": {
+      "k=10": {
+        "z_score": -25.25289993771331,
+        "relative_degradation": 0.0008440109618037007,
+        "baseline_mse": 0.7064598202705383,
+        "mean_ablated_mse": 0.7070560801029205,
+        "n_dims": 10,
+        "mandatory": true
+      },
+      "k=25": {
+        "z_score": -24.917883775321606,
+        "relative_degradation": 0.0008358666396567949,
+        "baseline_mse": 0.7064598202705383,
+        "mean_ablated_mse": 0.7070503264665604,
+        "n_dims": 25,
+        "mandatory": true
+      },
+      "k=50": {
+        "z_score": -19.729788569766637,
+        "relative_degradation": 0.0008419869041189659,
+        "baseline_mse": 0.7064598202705383,
+        "mean_ablated_mse": 0.7070546501874924,
+        "n_dims": 50,
+        "mandatory": true
+      }
+    },
+    "temporal_stability": {
+      "k=10": {
+        "z_score": -20.699584931439574,
+        "relative_degradation": 0.0008409094878358097,
+        "baseline_mse": 0.7064598202705383,
+        "mean_ablated_mse": 0.7070538890361786,
+        "n_dims": 10,
+        "mandatory": true
+      },
+      "k=25": {
+        "z_score": -19.434625061484663,
+        "relative_degradation": 0.0008440354293621316,
+        "baseline_mse": 0.7064598202705383,
+        "mean_ablated_mse": 0.7070560973882675,
+        "n_dims": 25,
+        "mandatory": true
+      },
+      "k=50": {
+        "z_score": -24.30902010977126,
+        "relative_degradation": 0.0008454680470981625,
+        "baseline_mse": 0.7064598202705383,
+        "mean_ablated_mse": 0.7070571094751358,
+        "n_dims": 50,
+        "mandatory": true
+      }
+    },
+    "theta_power": {
+      "k=10": {
+        "z_score": -22.603600999781893,
+        "relative_degradation": 0.0008403425154455367,
+        "baseline_mse": 0.7064598202705383,
+        "mean_ablated_mse": 0.7070534884929657,
+        "n_dims": 10,
+        "mandatory": true
+      },
+      "k=25": {
+        "z_score": -21.01781652739679,
+        "relative_degradation": 0.000833118679723831,
+        "baseline_mse": 0.7064598202705383,
+        "mean_ablated_mse": 0.7070483851432801,
+        "n_dims": 25,
+        "mandatory": true
+      },
+      "k=50": {
+        "z_score": -22.42188775170862,
+        "relative_degradation": 0.0008410343567551213,
+        "baseline_mse": 0.7064598202705383,
+        "mean_ablated_mse": 0.7070539772510529,
+        "n_dims": 50,
+        "mandatory": true
+      }
+    }
+  },
+  "elapsed_seconds": 69.05525088310242,
+  "cc_above_0_3": true
+}

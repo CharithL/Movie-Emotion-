@@ -1,0 +1,363 @@
+{
+  "patient_id": "sub-CS42",
+  "n_input": 15,
+  "n_focused": 5,
+  "hidden_size": 128,
+  "sae_config": {
+    "expansion_factor": 4,
+    "sparsity_coeff": 0.01,
+    "n_sae_features": 512
+  },
+  "sae_metrics": {
+    "trained": {
+      "expansion_factor": 4,
+      "sparsity_coeff": 0.01,
+      "n_features": 512,
+      "recon_r2": 0.9986585378646851,
+      "mean_l0": 115.62867924528302,
+      "frac_active": 0.2258372641509434,
+      "n_dead_features": 216,
+      "best_recon_loss": 4.052623173519187e-06
+    },
+    "untrained": {
+      "expansion_factor": 4,
+      "sparsity_coeff": 0.01,
+      "n_features": 512,
+      "recon_r2": 0.9982357621192932,
+      "mean_l0": 105.5783962264151,
+      "frac_active": 0.20620780512971698,
+      "n_dead_features": 256,
+      "best_recon_loss": 2.4374616931350736e-06
+    }
+  },
+  "sweep_results": [
+    {
+      "expansion_factor": 4,
+      "sparsity_coeff": 0.0001,
+      "n_features": 512,
+      "recon_r2": 0.9998961687088013,
+      "mean_l0": 368.81873165618447,
+      "frac_active": 0.7203490852659853,
+      "n_dead_features": 36,
+      "best_recon_loss": 8.915800372471919e-07
+    },
+    {
+      "expansion_factor": 4,
+      "sparsity_coeff": 0.0005,
+      "n_features": 512,
+      "recon_r2": 0.9997533559799194,
+      "mean_l0": 229.632106918239,
+      "frac_active": 0.44850020882468555,
+      "n_dead_features": 77,
+      "best_recon_loss": 1.142345291371009e-06
+    },
+    {
+      "expansion_factor": 4,
+      "sparsity_coeff": 0.001,
+      "n_features": 512,
+      "recon_r2": 0.9998041391372681,
+      "mean_l0": 190.6746960167715,
+      "frac_active": 0.3724115156577568,
+      "n_dead_features": 101,
+      "best_recon_loss": 1.697515346309205e-06
+    },
+    {
+      "expansion_factor": 4,
+      "sparsity_coeff": 0.005,
+      "n_features": 512,
+      "recon_r2": 0.9984225630760193,
+      "mean_l0": 131.48714884696017,
+      "frac_active": 0.2568108375917191,
+      "n_dead_features": 188,
+      "best_recon_loss": 3.0459688897566294e-06
+    },
+    {
+      "expansion_factor": 4,
+      "sparsity_coeff": 0.01,
+      "n_features": 512,
+      "recon_r2": 0.9982429146766663,
+      "mean_l0": 114.11845911949686,
+      "frac_active": 0.2228876154677673,
+      "n_dead_features": 197,
+      "best_recon_loss": 5.27158485953437e-06
+    },
+    {
+      "expansion_factor": 8,
+      "sparsity_coeff": 0.0001,
+      "n_features": 1024,
+      "recon_r2": 0.9998975396156311,
+      "mean_l0": 529.3203878406708,
+      "frac_active": 0.5169144412506551,
+      "n_dead_features": 69,
+      "best_recon_loss": 9.565187523233194e-07
+    },
+    {
+      "expansion_factor": 8,
+      "sparsity_coeff": 0.0005,
+      "n_features": 1024,
+      "recon_r2": 0.9998306632041931,
+      "mean_l0": 276.9824318658281,
+      "frac_active": 0.27049065611897277,
+      "n_dead_features": 131,
+      "best_recon_loss": 1.032016929860856e-06
+    },
+    {
+      "expansion_factor": 8,
+      "sparsity_coeff": 0.001,
+      "n_features": 1024,
+      "recon_r2": 0.9998074769973755,
+      "mean_l0": 229.14894129979035,
+      "frac_active": 0.22377826298807652,
+      "n_dead_features": 163,
+      "best_recon_loss": 1.1593581393997826e-06
+    },
+    {
+      "expansion_factor": 8,
+      "sparsity_coeff": 0.005,
+      "n_features": 1024,
+      "recon_r2": 0.9996760487556458,
+      "mean_l0": 159.82088050314465,
+      "frac_active": 0.1560750786163522,
+      "n_dead_features": 297,
+      "best_recon_loss": 2.256523792423945e-06
+    },
+    {
+      "expansion_factor": 8,
+      "sparsity_coeff": 0.01,
+      "n_features": 1024,
+      "recon_r2": 0.9995781183242798,
+      "mean_l0": 140.23238993710692,
+      "frac_active": 0.13694569329795597,
+      "n_dead_features": 376,
+      "best_recon_loss": 3.2961472832042164e-06
+    }
+  ],
+  "bin_level": {
+    "raw_ridge": {
+      "arousal": {
+        "method": "ridge",
+        "metric_trained": -1.0,
+        "metric_untrained": -1.0,
+        "delta": 0.0,
+        "valid": false
+      },
+      "threat_pe": {
+        "method": "ridge",
+        "metric_trained": -0.37563358777729344,
+        "metric_untrained": -0.45488255960321367,
+        "delta": 0.07924897182592022,
+        "valid": false
+      },
+      "emotion_category": {
+        "method": "classification",
+        "metric_trained": 0.2919927568361541,
+        "metric_untrained": 0.31290001430448716,
+        "delta": -0.02090725746833305,
+        "valid": true
+      },
+      "event_boundaries": {
+        "method": "ridge",
+        "metric_trained": -0.42269917046897565,
+        "metric_untrained": -0.463463560409322,
+        "delta": 0.04076438994034637,
+        "valid": false
+      },
+      "population_synchrony": {
+        "method": "ridge",
+        "metric_trained": -0.05012048728549292,
+        "metric_untrained": -0.09156900088316737,
+        "delta": 0.04144851359767445,
+        "valid": false
+      },
+      "temporal_stability": {
+        "method": "ridge",
+        "metric_trained": 0.03906157414194489,
+        "metric_untrained": 0.06466462689055741,
+        "delta": -0.02560305274861252,
+        "valid": true
+      },
+      "theta_power": {
+        "method": "ridge",
+        "metric_trained": -0.30408114494535454,
+        "metric_untrained": -0.33147370798489545,
+        "delta": 0.027392563039540907,
+        "valid": false
+      },
+      "gamma_power": {
+        "method": "ridge",
+        "metric_trained": -0.1619550512463525,
+        "metric_untrained": -0.18162842049722397,
+        "delta": 0.01967336925087146,
+        "valid": false
+      },
+      "encoding_success": {
+        "method": "ridge",
+        "metric_trained": -1.0,
+        "metric_untrained": -1.0,
+        "delta": 0.0,
+        "valid": false
+      }
+    },
+    "sae_probe": {
+      "arousal": {
+        "method": "ridge",
+        "metric_trained": -1.0,
+        "metric_untrained": -1.0,
+        "delta": 0.0,
+        "valid": false
+      },
+      "threat_pe": {
+        "method": "ridge",
+        "metric_trained": -0.4405258445341461,
+        "metric_untrained": -0.47038281159733925,
+        "delta": 0.02985696706319313,
+        "valid": false
+      },
+      "emotion_category": {
+        "method": "classification",
+        "metric_trained": 0.2940403389106875,
+        "metric_untrained": 0.3204549833726169,
+        "delta": -0.026414644461929426,
+        "valid": true
+      },
+      "event_boundaries": {
+        "method": "ridge",
+        "metric_trained": -0.4773727643245748,
+        "metric_untrained": -0.517835125067833,
+        "delta": 0.04046236074325821,
+        "valid": false
+      },
+      "population_synchrony": {
+        "method": "ridge",
+        "metric_trained": -0.12165079015501509,
+        "metric_untrained": -0.13210909401683843,
+        "delta": 0.010458303861823337,
+        "valid": false
+      },
+      "temporal_stability": {
+        "method": "ridge",
+        "metric_trained": 0.06512884506172756,
+        "metric_untrained": 0.07851299734163039,
+        "delta": -0.013384152279902833,
+        "valid": true
+      },
+      "theta_power": {
+        "method": "ridge",
+        "metric_trained": -0.39828120548478163,
+        "metric_untrained": -0.34828600815631183,
+        "delta": -0.0499951973284698,
+        "valid": false
+      },
+      "gamma_power": {
+        "method": "ridge",
+        "metric_trained": -0.20981891984566375,
+        "metric_untrained": -0.216894791837068,
+        "delta": 0.007075871991404248,
+        "valid": false
+      },
+      "encoding_success": {
+        "method": "ridge",
+        "metric_trained": -1.0,
+        "metric_untrained": -1.0,
+        "delta": 0.0,
+        "valid": false
+      }
+    }
+  },
+  "window_level": {
+    "raw_ridge": {
+      "arousal": {
+        "method": "ridge",
+        "delta": 0.0,
+        "valid": false
+      },
+      "threat_pe": {
+        "method": "ridge",
+        "delta": -0.03689220991116704,
+        "valid": false
+      },
+      "emotion_category": {
+        "method": "classification",
+        "delta": 0.11501915426148163,
+        "valid": true
+      },
+      "event_boundaries": {
+        "method": "ridge",
+        "delta": -0.14584921960941488,
+        "valid": false
+      },
+      "population_synchrony": {
+        "method": "ridge",
+        "delta": -0.10783902799907474,
+        "valid": false
+      },
+      "temporal_stability": {
+        "method": "ridge",
+        "delta": -0.2558153858390667,
+        "valid": false
+      },
+      "theta_power": {
+        "method": "ridge",
+        "delta": -0.2988704458800432,
+        "valid": false
+      },
+      "gamma_power": {
+        "method": "ridge",
+        "delta": 0.1704808905863926,
+        "valid": false
+      },
+      "encoding_success": {
+        "method": "ridge",
+        "delta": 0.0,
+        "valid": false
+      }
+    },
+    "sae_probe": {
+      "arousal": {
+        "method": "ridge",
+        "delta": -0.03029656670140035,
+        "valid": false
+      },
+      "threat_pe": {
+        "method": "ridge",
+        "delta": 0.027016219269588748,
+        "valid": false
+      },
+      "emotion_category": {
+        "method": "classification",
+        "delta": -0.07578119876713224,
+        "valid": false
+      },
+      "event_boundaries": {
+        "method": "ridge",
+        "delta": -0.1427634231512389,
+        "valid": false
+      },
+      "population_synchrony": {
+        "method": "ridge",
+        "delta": -0.07721801053631883,
+        "valid": false
+      },
+      "temporal_stability": {
+        "method": "ridge",
+        "delta": 0.027507849105892046,
+        "valid": false
+      },
+      "theta_power": {
+        "method": "ridge",
+        "delta": -0.24850476468085925,
+        "valid": false
+      },
+      "gamma_power": {
+        "method": "ridge",
+        "delta": 0.0851616926643054,
+        "valid": false
+      },
+      "encoding_success": {
+        "method": "ridge",
+        "delta": 0.0,
+        "valid": false
+      }
+    }
+  }
+}

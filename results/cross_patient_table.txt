@@ -1,0 +1,14 @@
+DESCARTES Circuit 5 -- Cross-Patient Probing Summary
+Patients: 14 completed, 0 excluded, 0 failed
+================================================================================
+Target                    Strong  Cand+ Zombie Invld     Mean D   Learned?
+--------------------------------------------------------------------------------
+temporal_stability             0      1     13     0    +0.0182         no
+emotion_category               0      0     14     0    +0.0055         no
+arousal                        0      0     14     0        N/A         no
+encoding_success               0      0     14     0        N/A         no
+event_boundaries               0      0     14     0        N/A         no
+gamma_power                    0      0     14     0        N/A         no
+population_synchrony           0      0     11     3        N/A         no
+theta_power                    0      0     14     0        N/A         no
+threat_pe                      0      0     14     0        N/A         no

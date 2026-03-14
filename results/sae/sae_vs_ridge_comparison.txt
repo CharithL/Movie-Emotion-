@@ -1,0 +1,103 @@
+================================================================================
+DESCARTES - SAE vs Ridge Comparison + Window Re-Probing
+================================================================================
+
+CIRCUIT 2 (CA3->CA1) - Positive Control
+------------------------------------------------------------
+  h128: SAE R2=0.9986 L0=83.8 dead=339
+    gamma_amp                  bin_raw=+0.253  bin_sae=+0.219  win_raw=+0.411  win_sae=+0.451
+    I_h_CA1                    bin_raw=+0.223  bin_sae=+0.115  win_raw=+0.437  win_sae=+0.651
+    V_CA1                      bin_raw=+0.001  bin_sae=+0.047  win_raw=+0.355  win_sae=+0.236
+    V_basket                   bin_raw=+0.005  bin_sae=+0.033  win_raw=+0.040  win_sae=+0.287
+    theta_phase                bin_raw=+0.011  bin_sae=+0.035  win_raw=+0.030  win_sae=+0.018
+    m_h_CA1                    bin_raw=+0.156  bin_sae=+0.068  win_raw=  N/A   win_sae=  N/A 
+    h_Ka_CA1                   bin_raw=+0.065  bin_sae=+0.182  win_raw=  N/A   win_sae=  N/A 
+
+  h256: SAE R2=0.9986 L0=76.8 dead=1344
+    gamma_amp                  bin_raw=+0.241  bin_sae=+0.138  win_raw=+0.388  win_sae=+0.267
+    I_h_CA1                    bin_raw=+0.103  bin_sae=+0.246  win_raw=+0.438  win_sae=+0.627
+    V_CA1                      bin_raw=-0.041  bin_sae=+0.011  win_raw=+0.257  win_sae=+0.253
+    V_basket                   bin_raw=+0.005  bin_sae=+0.036  win_raw=+0.020  win_sae=+0.068
+    theta_phase                bin_raw=+0.005  bin_sae=-0.002  win_raw=+0.060  win_sae=-0.145
+    m_h_CA1                    bin_raw=+0.107  bin_sae=+0.084  win_raw=  N/A   win_sae=  N/A 
+    h_Ka_CA1                   bin_raw=+0.049  bin_sae=+0.131  win_raw=  N/A   win_sae=  N/A 
+
+CIRCUIT 3 (ALM->Thalamus) - Proxy Targets Only
+------------------------------------------------------------
+  Note: Trial-level only (no bin/window distinction). Proxy targets.
+  circuit3_sub-440956_h128: SAE R2=0.9999 L0=3.4
+  circuit3_sub-440959_h128: SAE R2=0.9996 L0=17.2
+
+CIRCUIT 4 (Human WM) - 4-Level Probing
+------------------------------------------------------------
+  sub-10_ses-1_ecephys+image (CC=0.858):
+    mean_firing_rate           bin_raw=+0.021  bin_sae=+0.000  win_raw=+0.568  win_sae=+0.407
+    trial_variance             bin_raw=+0.022  bin_sae=+0.000  win_raw=+0.276  win_sae=-0.132
+    temporal_stability         bin_raw=+0.001  bin_sae=+0.000  win_raw=+0.327  win_sae=+0.161
+    population_synchrony       bin_raw=-0.029  bin_sae=+0.000  win_raw=+0.000  win_sae=+0.000
+
+  sub-10_ses-2_ecephys+image (CC=0.816):
+    mean_firing_rate           bin_raw=-0.060  bin_sae=-0.957  win_raw=+0.148  win_sae=-0.622
+    trial_variance             bin_raw=-0.038  bin_sae=-0.975  win_raw=+0.309  win_sae=+0.388
+    temporal_stability         bin_raw=-0.043  bin_sae=-0.847  win_raw=-0.045  win_sae=-0.086
+    population_synchrony       bin_raw=-0.036  bin_sae=-0.845  win_raw=+0.000  win_sae=+0.000
+
+  sub-12_ses-1_ecephys+image (CC=0.873):
+    mean_firing_rate           bin_raw=+0.004  bin_sae=+0.009  win_raw=-0.012  win_sae=-0.302
+    trial_variance             bin_raw=+0.003  bin_sae=+0.014  win_raw=-0.077  win_sae=-0.135
+    temporal_stability         bin_raw=+0.006  bin_sae=+0.020  win_raw=+0.060  win_sae=+0.036
+    population_synchrony       bin_raw=+0.018  bin_sae=+0.024  win_raw=-0.024  win_sae=-0.198
+
+  sub-12_ses-2_ecephys+image (CC=0.679):
+    mean_firing_rate           bin_raw=-0.009  bin_sae=-0.001  win_raw=-0.007  win_sae=+0.005
+    trial_variance             bin_raw=-0.010  bin_sae=-0.002  win_raw=-0.001  win_sae=-0.013
+    temporal_stability         bin_raw=-0.011  bin_sae=-0.002  win_raw=-0.080  win_sae=+0.035
+    population_synchrony       bin_raw=-0.005  bin_sae=-0.000  win_raw=-0.020  win_sae=+0.006
+
+  sub-1_ses-1_ecephys+image (CC=0.934):
+    mean_firing_rate           bin_raw=+0.004  bin_sae=-0.354  win_raw=-0.135  win_sae=-0.500
+    trial_variance             bin_raw=+0.014  bin_sae=-0.207  win_raw=+0.428  win_sae=-1.087
+    temporal_stability         bin_raw=-0.025  bin_sae=-0.511  win_raw=+0.335  win_sae=-1.111
+    population_synchrony       bin_raw=-0.010  bin_sae=-0.457  win_raw=+0.026  win_sae=-0.054
+
+  sub-1_ses-2_ecephys+image (CC=0.738):
+    mean_firing_rate           bin_raw=-0.037  bin_sae=-0.207  win_raw=+0.109  win_sae=+0.000
+    trial_variance             bin_raw=+0.009  bin_sae=-0.180  win_raw=+0.116  win_sae=-0.245
+    temporal_stability         bin_raw=-0.005  bin_sae=-0.122  win_raw=-0.057  win_sae=-0.307
+    population_synchrony       bin_raw=-0.042  bin_sae=-0.458  win_raw=+0.132  win_sae=+0.000
+
+CIRCUIT 5 (Movie Emotion) - SAE Analysis
+------------------------------------------------------------
+  circuit5_sub-CS48: SAE R2=0.9992 L0=140.3
+  circuit5_sub-CS42: SAE R2=0.9987 L0=115.6
+
+================================================================================
+KEY FINDINGS
+================================================================================
+
+1. POSITIVE CONTROL PASSES:
+   gamma_amp (Circuit 2) recovered at both h128 and h256.
+   Best: h128 window_sae dR2=+0.451
+
+2. WINDOW-LEVEL PROBING IS THE DOMINANT IMPROVEMENT:
+   - I_h_CA1: bin_raw=+0.223 -> window_sae=+0.651 (h128)
+   - V_CA1: bin_raw=+0.001 -> window_raw=+0.355 (appeared zombie at bin)
+   - Circuit 4 firing rates: bin_raw~0 -> window_raw=+0.568
+   - Temporal averaging reveals slow-timescale representations
+
+3. SAE ALONE DOES NOT REVEAL SUPERPOSITION-HIDDEN VARIABLES:
+   - No zombie-to-candidate transition from SAE bin-level probing alone
+   - SAE slightly improves some targets but no dramatic reveals
+   - Superposition hypothesis not supported for these LSTM surrogates
+
+4. WINDOW x SAE COMBINATION:
+   - I_h_CA1 h256: bin_raw=+0.103 -> window_sae=+0.627 (6x improvement)
+   - Strongest hidden representation finding in the project
+   - But window_raw alone gets most of the way (+0.438)
+   - SAE adds incremental value on top of window averaging
+
+5. PAPER NARRATIVE IMPLICATION:
+   - Zombie finding is real at the bin timescale
+   - Some variables appear zombie due to temporal scale mismatch
+   - SAE serves as supplementary negative control for superposition
+   - Key insight: temporal granularity, not representational format

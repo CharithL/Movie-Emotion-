@@ -1,0 +1,43 @@
+ANNOTATION INVENTORY — bmovie-release-NWB-BIDS/assets/annotations/
+===================================================================
+
+3 files found in assets/annotations/:
+
+1. scanner_questionnaire.csv
+   Format: CSV
+   Shape: 15 rows x 17 columns
+   Columns: ['ID', 'R1 (corrects)', 'R2 (corrects)', 'R1_Q1', 'R1_Q2', 'R1_Q3',
+              'R1_Q4', 'R1_Q5', 'R1_Q6', 'R1_Q7', 'R2_Q1', 'R2_Q2', 'R2_Q3',
+              'R2_Q4', 'R2_Q5', 'R2_Q6', 'R2_Q7']
+   Description: Per-patient questionnaire scores after movie watching.
+                R1 = first viewing run, R2 = second run.
+                7 yes/no comprehension questions per run.
+                ID format: P41CS, P42CS, etc.
+
+2. scenecut_info.csv
+   Format: CSV
+   Shape: 93 rows x 8 columns
+   Columns: ['scene_id', 'shot_start_fr', 'shot_start_t', 'shot_dur_t',
+              'location', 'cut_type', 'cut_dur_t', 'cut_dur_fr']
+   Description: Scene/shot boundary annotations for the movie.
+                93 shots across the 8-minute film.
+                scene_id: scene number (groups of shots)
+                shot_start_fr: shot start in frames
+                shot_start_t: shot start in seconds
+                shot_dur_t: shot duration in seconds
+                location: filming location (e.g., 'backyard')
+                cut_type: type of transition (e.g., 'cut')
+                cut_dur_t/fr: cut transition duration
+
+3. short_faceannots.pkl
+   Format: Python pickle (dict)
+   Keys: frame_118, frame_119, frame_120, ... (per-frame)
+   Structure: dict of dicts, keyed by frame number
+              Each frame maps person IDs (e.g., 'p0') to:
+                - 'coords': numpy array of facial landmark coordinates
+              Used for face annotation in the movie frames.
+   Note: This is a pickle file from the official Rutishauser lab repo,
+         loaded only within the trusted analysis pipeline.
+   Description: Per-frame face bounding box / landmark annotations.
+                Covers frames with visible faces.
+                Coordinate arrays describe facial landmarks per person in frame.

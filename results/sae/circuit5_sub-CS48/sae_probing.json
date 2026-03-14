@@ -1,0 +1,363 @@
+{
+  "patient_id": "sub-CS48",
+  "n_input": 46,
+  "n_focused": 11,
+  "hidden_size": 128,
+  "sae_config": {
+    "expansion_factor": 4,
+    "sparsity_coeff": 0.01,
+    "n_sae_features": 512
+  },
+  "sae_metrics": {
+    "trained": {
+      "expansion_factor": 4,
+      "sparsity_coeff": 0.01,
+      "n_features": 512,
+      "recon_r2": 0.9992042779922485,
+      "mean_l0": 140.28601677148848,
+      "frac_active": 0.27399612650681343,
+      "n_dead_features": 208,
+      "best_recon_loss": 1.0220642801156972e-05
+    },
+    "untrained": {
+      "expansion_factor": 4,
+      "sparsity_coeff": 0.01,
+      "n_features": 512,
+      "recon_r2": 0.9982269406318665,
+      "mean_l0": 128.07679245283018,
+      "frac_active": 0.25014998525943394,
+      "n_dead_features": 169,
+      "best_recon_loss": 2.5307221850825053e-06
+    }
+  },
+  "sweep_results": [
+    {
+      "expansion_factor": 4,
+      "sparsity_coeff": 0.0001,
+      "n_features": 512,
+      "recon_r2": 0.9998828172683716,
+      "mean_l0": 391.803071278826,
+      "frac_active": 0.765240373591457,
+      "n_dead_features": 35,
+      "best_recon_loss": 3.5496844588728783e-06
+    },
+    {
+      "expansion_factor": 4,
+      "sparsity_coeff": 0.0005,
+      "n_features": 512,
+      "recon_r2": 0.9997902512550354,
+      "mean_l0": 324.55007337526206,
+      "frac_active": 0.6338868620610587,
+      "n_dead_features": 51,
+      "best_recon_loss": 4.834410806727064e-06
+    },
+    {
+      "expansion_factor": 4,
+      "sparsity_coeff": 0.001,
+      "n_features": 512,
+      "recon_r2": 0.9997369050979614,
+      "mean_l0": 266.94133123689727,
+      "frac_active": 0.521369787572065,
+      "n_dead_features": 67,
+      "best_recon_loss": 5.469227838345576e-06
+    },
+    {
+      "expansion_factor": 4,
+      "sparsity_coeff": 0.005,
+      "n_features": 512,
+      "recon_r2": 0.999525249004364,
+      "mean_l0": 165.85480083857442,
+      "frac_active": 0.32393515788784066,
+      "n_dead_features": 175,
+      "best_recon_loss": 9.116837290930171e-06
+    },
+    {
+      "expansion_factor": 4,
+      "sparsity_coeff": 0.01,
+      "n_features": 512,
+      "recon_r2": 0.9988915324211121,
+      "mean_l0": 139.23943396226414,
+      "frac_active": 0.27195201945754716,
+      "n_dead_features": 214,
+      "best_recon_loss": 1.523665199071873e-05
+    },
+    {
+      "expansion_factor": 8,
+      "sparsity_coeff": 0.0001,
+      "n_features": 1024,
+      "recon_r2": 0.999187171459198,
+      "mean_l0": 593.858532494759,
+      "frac_active": 0.579939973139413,
+      "n_dead_features": 94,
+      "best_recon_loss": 5.789941504229223e-06
+    },
+    {
+      "expansion_factor": 8,
+      "sparsity_coeff": 0.0005,
+      "n_features": 1024,
+      "recon_r2": 0.9998359084129333,
+      "mean_l0": 427.9540566037736,
+      "frac_active": 0.41792388340212266,
+      "n_dead_features": 148,
+      "best_recon_loss": 5.0711886647015984e-06
+    },
+    {
+      "expansion_factor": 8,
+      "sparsity_coeff": 0.001,
+      "n_features": 1024,
+      "recon_r2": 0.999758243560791,
+      "mean_l0": 334.2760796645702,
+      "frac_active": 0.32644148404743184,
+      "n_dead_features": 168,
+      "best_recon_loss": 5.449665767952473e-06
+    },
+    {
+      "expansion_factor": 8,
+      "sparsity_coeff": 0.005,
+      "n_features": 1024,
+      "recon_r2": 0.9996721148490906,
+      "mean_l0": 196.61746331236898,
+      "frac_active": 0.19200924151598533,
+      "n_dead_features": 469,
+      "best_recon_loss": 8.947971891220903e-06
+    },
+    {
+      "expansion_factor": 8,
+      "sparsity_coeff": 0.01,
+      "n_features": 1024,
+      "recon_r2": 0.999488353729248,
+      "mean_l0": 160.36654088050315,
+      "frac_active": 0.15660795007861636,
+      "n_dead_features": 544,
+      "best_recon_loss": 9.919286232869872e-06
+    }
+  ],
+  "bin_level": {
+    "raw_ridge": {
+      "arousal": {
+        "method": "ridge",
+        "metric_trained": -1.0,
+        "metric_untrained": -1.0,
+        "delta": 0.0,
+        "valid": false
+      },
+      "threat_pe": {
+        "method": "ridge",
+        "metric_trained": -0.7614666034320885,
+        "metric_untrained": -0.8047201683939104,
+        "delta": 0.043253564961821866,
+        "valid": false
+      },
+      "emotion_category": {
+        "method": "classification",
+        "metric_trained": 0.3487275921534225,
+        "metric_untrained": 0.38101497990952343,
+        "delta": -0.032287387756100905,
+        "valid": true
+      },
+      "event_boundaries": {
+        "method": "ridge",
+        "metric_trained": -0.5134911007247935,
+        "metric_untrained": -0.5496819653907472,
+        "delta": 0.03619086466595367,
+        "valid": false
+      },
+      "population_synchrony": {
+        "method": "ridge",
+        "metric_trained": -0.16321912727677207,
+        "metric_untrained": -0.042646018791744525,
+        "delta": -0.12057310848502754,
+        "valid": false
+      },
+      "temporal_stability": {
+        "method": "ridge",
+        "metric_trained": -0.03128704518594856,
+        "metric_untrained": -0.09069718300429264,
+        "delta": 0.059410137818344075,
+        "valid": false
+      },
+      "theta_power": {
+        "method": "ridge",
+        "metric_trained": -0.5081333483010503,
+        "metric_untrained": -0.5710858976426403,
+        "delta": 0.06295254934159,
+        "valid": false
+      },
+      "gamma_power": {
+        "method": "ridge",
+        "metric_trained": -0.09496087894989139,
+        "metric_untrained": -0.07739687737689516,
+        "delta": -0.01756400157299623,
+        "valid": false
+      },
+      "encoding_success": {
+        "method": "ridge",
+        "metric_trained": -0.8394530308827839,
+        "metric_untrained": -0.865820538518466,
+        "delta": 0.026367507635682075,
+        "valid": false
+      }
+    },
+    "sae_probe": {
+      "arousal": {
+        "method": "ridge",
+        "metric_trained": -1.0,
+        "metric_untrained": -1.0,
+        "delta": 0.0,
+        "valid": false
+      },
+      "threat_pe": {
+        "method": "ridge",
+        "metric_trained": -0.8319112527582831,
+        "metric_untrained": -0.8359217746675306,
+        "delta": 0.004010521909247444,
+        "valid": false
+      },
+      "emotion_category": {
+        "method": "classification",
+        "metric_trained": 0.36294531947608544,
+        "metric_untrained": 0.3000363514824768,
+        "delta": 0.06290896799360862,
+        "valid": true
+      },
+      "event_boundaries": {
+        "method": "ridge",
+        "metric_trained": -0.64924672873103,
+        "metric_untrained": -0.5813346103506314,
+        "delta": -0.06791211838039857,
+        "valid": false
+      },
+      "population_synchrony": {
+        "method": "ridge",
+        "metric_trained": -0.30157418788170104,
+        "metric_untrained": -0.18489563724746966,
+        "delta": -0.11667855063423138,
+        "valid": false
+      },
+      "temporal_stability": {
+        "method": "ridge",
+        "metric_trained": -0.19749554327400293,
+        "metric_untrained": 0.01837450991147436,
+        "delta": -0.21587005318547728,
+        "valid": false
+      },
+      "theta_power": {
+        "method": "ridge",
+        "metric_trained": -0.6266939906350117,
+        "metric_untrained": -0.6989808401542101,
+        "delta": 0.07228684951919839,
+        "valid": false
+      },
+      "gamma_power": {
+        "method": "ridge",
+        "metric_trained": -0.2879586813170287,
+        "metric_untrained": -0.12601263201686125,
+        "delta": -0.16194604930016743,
+        "valid": false
+      },
+      "encoding_success": {
+        "method": "ridge",
+        "metric_trained": -0.9074649849009802,
+        "metric_untrained": -0.9077221640808129,
+        "delta": 0.00025717917983270056,
+        "valid": false
+      }
+    }
+  },
+  "window_level": {
+    "raw_ridge": {
+      "arousal": {
+        "method": "ridge",
+        "delta": 0.0,
+        "valid": false
+      },
+      "threat_pe": {
+        "method": "ridge",
+        "delta": 0.4355088969251552,
+        "valid": false
+      },
+      "emotion_category": {
+        "method": "classification",
+        "delta": -0.1553258145363408,
+        "valid": false
+      },
+      "event_boundaries": {
+        "method": "ridge",
+        "delta": 0.0,
+        "valid": false
+      },
+      "population_synchrony": {
+        "method": "ridge",
+        "delta": 0.2832001263216477,
+        "valid": false
+      },
+      "temporal_stability": {
+        "method": "ridge",
+        "delta": 0.07396890100316977,
+        "valid": false
+      },
+      "theta_power": {
+        "method": "ridge",
+        "delta": -0.048790241942841206,
+        "valid": false
+      },
+      "gamma_power": {
+        "method": "ridge",
+        "delta": -0.08830092823590407,
+        "valid": false
+      },
+      "encoding_success": {
+        "method": "ridge",
+        "delta": -0.1552572974821077,
+        "valid": false
+      }
+    },
+    "sae_probe": {
+      "arousal": {
+        "method": "ridge",
+        "delta": 0.0,
+        "valid": false
+      },
+      "threat_pe": {
+        "method": "ridge",
+        "delta": 0.1510232084199613,
+        "valid": false
+      },
+      "emotion_category": {
+        "method": "classification",
+        "delta": -0.12858187134502927,
+        "valid": false
+      },
+      "event_boundaries": {
+        "method": "ridge",
+        "delta": -0.03458640319556461,
+        "valid": false
+      },
+      "population_synchrony": {
+        "method": "ridge",
+        "delta": 0.29662170301915336,
+        "valid": true
+      },
+      "temporal_stability": {
+        "method": "ridge",
+        "delta": -0.011664251473373022,
+        "valid": false
+      },
+      "theta_power": {
+        "method": "ridge",
+        "delta": -0.25284551922268517,
+        "valid": false
+      },
+      "gamma_power": {
+        "method": "ridge",
+        "delta": -0.22145873969235408,
+        "valid": false
+      },
+      "encoding_success": {
+        "method": "ridge",
+        "delta": 0.045820559492626756,
+        "valid": false
+      }
+    }
+  }
+}

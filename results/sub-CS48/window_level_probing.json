@@ -1,0 +1,82 @@
+{
+  "arousal": {
+    "window_delta_r2": -0.005953383445739739,
+    "window_delta_std": 0.008419355610972607,
+    "window_r2_trained": -1.0,
+    "window_r2_untrained": -0.9940466165542602,
+    "window_valid": false,
+    "bin_delta_r2": 0.0,
+    "bin_status": "zombie",
+    "improvement": -0.005953383445739739
+  },
+  "theta_power": {
+    "window_delta_r2": 0.15504238605499265,
+    "window_delta_std": 0.18467182554762598,
+    "window_r2_trained": -0.74874263604482,
+    "window_r2_untrained": -0.9037850220998128,
+    "window_valid": false,
+    "bin_delta_r2": 0.012520080698514824,
+    "bin_status": "zombie",
+    "improvement": 0.14252230535647784
+  },
+  "threat_pe": {
+    "window_delta_r2": 0.031526033083597804,
+    "window_delta_std": 0.05321462044011047,
+    "window_r2_trained": -0.8495930830637614,
+    "window_r2_untrained": -0.8811191161473593,
+    "window_valid": false,
+    "bin_delta_r2": 0.008404759018970165,
+    "bin_status": "zombie",
+    "improvement": 0.02312127406462764
+  },
+  "event_boundaries": {
+    "window_delta_r2": 0.007161839803059881,
+    "window_delta_std": 0.010128370981030739,
+    "window_r2_trained": -0.99283816019694,
+    "window_r2_untrained": -1.0,
+    "window_valid": false,
+    "bin_delta_r2": 0.02915095649458625,
+    "bin_status": "zombie",
+    "improvement": -0.021989116691526367
+  },
+  "temporal_stability": {
+    "window_delta_r2": 0.03541971445083619,
+    "window_delta_std": 0.15862001027604444,
+    "window_r2_trained": -0.6342473983764648,
+    "window_r2_untrained": -0.6696671128273012,
+    "window_valid": false,
+    "bin_delta_r2": 0.07834615426285974,
+    "bin_status": "CANDIDATE",
+    "improvement": -0.04292643981202354
+  },
+  "gamma_power": {
+    "window_delta_r2": 0.0011725902557372752,
+    "window_delta_std": 0.19501801101287186,
+    "window_r2_trained": -0.8484673817952474,
+    "window_r2_untrained": -0.8496399720509847,
+    "window_valid": false,
+    "bin_delta_r2": -0.0012815755473963915,
+    "bin_status": "zombie",
+    "improvement": 0.0024541658031336667
+  },
+  "population_synchrony": {
+    "window_delta_r2": 0.2874083002408346,
+    "window_delta_std": 0.183861280694877,
+    "window_r2_trained": -0.541610062122345,
+    "window_r2_untrained": -0.8290183623631795,
+    "window_valid": false,
+    "bin_delta_r2": -0.004482566045495724,
+    "bin_status": "zombie",
+    "improvement": 0.2918908662863303
+  },
+  "encoding_success": {
+    "window_delta_r2": -0.09938809076944984,
+    "window_delta_std": 0.08160107952712359,
+    "window_r2_trained": -0.9971365769704184,
+    "window_r2_untrained": -0.8977484862009684,
+    "window_valid": false,
+    "bin_delta_r2": 0.023361564903109377,
+    "bin_status": "zombie",
+    "improvement": -0.12274965567255922
+  }
+}

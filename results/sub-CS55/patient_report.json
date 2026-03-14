@@ -1,0 +1,212 @@
+{
+  "patient_id": "sub-CS55",
+  "n_input_neurons": 27,
+  "n_focused_neurons": 5,
+  "focused_neuron_ids": [
+    17,
+    6,
+    13,
+    2,
+    22
+  ],
+  "mean_cc": 0.1034543029005287,
+  "cc_std": 0.015809504129305728,
+  "cc_per_seed": [
+    0.1023629883891872,
+    0.07588754404879222,
+    0.10899922224483242,
+    0.1068771689539596,
+    0.08428122392944065,
+    0.10168191434802235,
+    0.11282077752051325,
+    0.09392854995709943,
+    0.13639152431685325,
+    0.11131211529658654
+  ],
+  "quality_flag": "LOW_QUALITY",
+  "probe_results": {
+    "arousal": {
+      "method": "ridge",
+      "metric_trained": -0.8802374088693681,
+      "metric_untrained": -0.8890686661677073,
+      "delta": 0.00883125729833938,
+      "delta_std_across_seeds": 0.0298977575771375,
+      "seed_consistency": "0/10",
+      "sign_positive_seeds": 7,
+      "valid": false,
+      "status": "zombie"
+    },
+    "threat_pe": {
+      "method": "ridge",
+      "metric_trained": -0.4654275999083257,
+      "metric_untrained": -0.4484441382182728,
+      "delta": -0.016983461690052958,
+      "delta_std_across_seeds": 0.043728945251995825,
+      "seed_consistency": "0/10",
+      "sign_positive_seeds": 4,
+      "valid": false,
+      "status": "zombie"
+    },
+    "emotion_category": {
+      "method": "classification",
+      "metric_trained": 0.41892700167114894,
+      "metric_untrained": 0.39227271655979284,
+      "delta": 0.026654285111356046,
+      "delta_std_across_seeds": 0.021155481063434033,
+      "seed_consistency": "4/10",
+      "sign_positive_seeds": 8,
+      "valid": true,
+      "status": "zombie"
+    },
+    "event_boundaries": {
+      "method": "ridge",
+      "metric_trained": -0.4082945945097761,
+      "metric_untrained": -0.4474494385716432,
+      "delta": 0.03915484406186699,
+      "delta_std_across_seeds": 0.04022943062195132,
+      "seed_consistency": "5/10",
+      "sign_positive_seeds": 7,
+      "valid": false,
+      "status": "zombie"
+    },
+    "population_synchrony": {
+      "method": "ridge",
+      "metric_trained": -0.09060742767810792,
+      "metric_untrained": -0.06595423852887194,
+      "delta": -0.024653189149235987,
+      "delta_std_across_seeds": 0.041182668261958585,
+      "seed_consistency": "0/10",
+      "sign_positive_seeds": 3,
+      "valid": false,
+      "status": "zombie"
+    },
+    "temporal_stability": {
+      "method": "ridge",
+      "metric_trained": -0.06082826633475232,
+      "metric_untrained": -0.030363151254653088,
+      "delta": -0.030465115080099237,
+      "delta_std_across_seeds": 0.07035528474006568,
+      "seed_consistency": "3/10",
+      "sign_positive_seeds": 4,
+      "valid": false,
+      "status": "zombie"
+    },
+    "theta_power": {
+      "method": "ridge",
+      "metric_trained": -0.24167768679970178,
+      "metric_untrained": -0.23285527356103303,
+      "delta": -0.008822413238668794,
+      "delta_std_across_seeds": 0.07413102944105197,
+      "seed_consistency": "2/10",
+      "sign_positive_seeds": 5,
+      "valid": false,
+      "status": "zombie"
+    },
+    "gamma_power": {
+      "method": "ridge",
+      "metric_trained": -0.0425995850284142,
+      "metric_untrained": -0.0406377738922619,
+      "delta": -0.0019618111361523025,
+      "delta_std_across_seeds": 0.013467037558859744,
+      "seed_consistency": "0/10",
+      "sign_positive_seeds": 5,
+      "valid": false,
+      "status": "zombie"
+    },
+    "encoding_success": {
+      "method": "ridge",
+      "metric_trained": -0.997342922223153,
+      "metric_untrained": -1.0,
+      "delta": 0.0026570777768470276,
+      "delta_std_across_seeds": 0.003509126380059846,
+      "seed_consistency": "0/10",
+      "sign_positive_seeds": 4,
+      "valid": false,
+      "status": "zombie"
+    }
+  },
+  "target_validation": {
+    "arousal": {
+      "name": "arousal",
+      "length": 19100,
+      "has_nan": false,
+      "has_inf": false,
+      "std": 0.1533358097076416,
+      "skip": false,
+      "skip_reason": "OK"
+    },
+    "threat_pe": {
+      "name": "threat_pe",
+      "length": 19100,
+      "has_nan": false,
+      "has_inf": false,
+      "std": 0.0020314950961619616,
+      "skip": false,
+      "skip_reason": "OK"
+    },
+    "emotion_category": {
+      "name": "emotion_category",
+      "length": 19100,
+      "has_nan": false,
+      "has_inf": false,
+      "std": 0.9290229678153992,
+      "skip": false,
+      "skip_reason": "OK"
+    },
+    "event_boundaries": {
+      "name": "event_boundaries",
+      "length": 19100,
+      "has_nan": false,
+      "has_inf": false,
+      "std": 0.015767162665724754,
+      "skip": false,
+      "skip_reason": "OK"
+    },
+    "population_synchrony": {
+      "name": "population_synchrony",
+      "length": 19100,
+      "has_nan": false,
+      "has_inf": false,
+      "std": 0.04503902792930603,
+      "skip": false,
+      "skip_reason": "OK"
+    },
+    "temporal_stability": {
+      "name": "temporal_stability",
+      "length": 19100,
+      "has_nan": false,
+      "has_inf": false,
+      "std": 0.21957360208034515,
+      "skip": false,
+      "skip_reason": "OK"
+    },
+    "theta_power": {
+      "name": "theta_power",
+      "length": 19100,
+      "has_nan": false,
+      "has_inf": false,
+      "std": 0.8912971615791321,
+      "skip": false,
+      "skip_reason": "OK"
+    },
+    "gamma_power": {
+      "name": "gamma_power",
+      "length": 19100,
+      "has_nan": false,
+      "has_inf": false,
+      "std": 0.9614100456237793,
+      "skip": false,
+      "skip_reason": "OK"
+    },
+    "encoding_success": {
+      "name": "encoding_success",
+      "length": 19100,
+      "has_nan": false,
+      "has_inf": false,
+      "std": 0.19107194244861603,
+      "skip": false,
+      "skip_reason": "OK"
+    }
+  },
+  "excluded_targets": []
+}

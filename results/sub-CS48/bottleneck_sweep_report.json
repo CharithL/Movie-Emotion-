@@ -1,0 +1,1010 @@
+{
+  "patient_id": "sub-CS48",
+  "run_type": "bottleneck_sweep",
+  "hidden_sizes": [
+    16,
+    32,
+    64,
+    128,
+    256
+  ],
+  "n_seeds": 5,
+  "k_values": [
+    3,
+    5,
+    10
+  ],
+  "n_output_focused": 10,
+  "selected_neuron_indices": [
+    11,
+    3,
+    4,
+    8,
+    1,
+    10,
+    19,
+    0,
+    6,
+    7
+  ],
+  "probe_target_names": [
+    "arousal",
+    "threat_pe",
+    "emotion_category",
+    "event_boundaries",
+    "face_presence",
+    "population_synchrony",
+    "temporal_stability",
+    "theta_power",
+    "gamma_power",
+    "encoding_success"
+  ],
+  "results": {
+    "16": {
+      "mean_cc": 0.6060953798064086,
+      "best_cc": 0.6160011551597552,
+      "std_cc": 0.00984145038274307,
+      "cc_per_seed": [
+        0.6160011551597552,
+        0.6075743610649057,
+        0.5877725801865351,
+        0.6060883582320554,
+        0.6130404443887917
+      ],
+      "cc_pass": true,
+      "epochs_per_seed": [
+        39,
+        39,
+        51,
+        32,
+        35
+      ],
+      "probing": {
+        "arousal": {
+          "delta_metric": 1.547513151168829,
+          "status": "STRONG",
+          "method": "ridge"
+        },
+        "threat_pe": {
+          "delta_metric": 0.06628737449645983,
+          "status": "CANDIDATE",
+          "method": "ridge"
+        },
+        "emotion_category": {
+          "delta_metric": 0.024607329842931902,
+          "status": "CANDIDATE",
+          "method": "logistic"
+        },
+        "event_boundaries": {
+          "delta_metric": 0.041905307769775385,
+          "status": "zombie",
+          "method": "ridge"
+        },
+        "face_presence": {
+          "delta_metric": 1.2338102579116814,
+          "status": "STRONG",
+          "method": "ridge"
+        },
+        "population_synchrony": {
+          "delta_metric": 0.04094805717468261,
+          "status": "zombie",
+          "method": "ridge"
+        },
+        "temporal_stability": {
+          "delta_metric": 0.02823147773742676,
+          "status": "zombie",
+          "method": "ridge"
+        },
+        "theta_power": {
+          "delta_metric": 0.010085272789001454,
+          "status": "zombie",
+          "method": "ridge"
+        },
+        "gamma_power": {
+          "delta_metric": 0.011535429954528808,
+          "status": "zombie",
+          "method": "ridge"
+        },
+        "encoding_success": {
+          "delta_metric": 0.14552712440490723,
+          "status": "CANDIDATE",
+          "method": "ridge"
+        }
+      },
+      "ablation": {
+        "arousal": {
+          "k=3": {
+            "z_score": -22.97044711607837,
+            "random_z": -57.95585049043683,
+            "relative_degradation": 0.006936055351878916,
+            "mandatory": false
+          },
+          "k=5": {
+            "z_score": -26.48137515812622,
+            "random_z": -84.40106299450554,
+            "relative_degradation": 0.006938581038140566,
+            "mandatory": false
+          },
+          "k=10": {
+            "z_score": -23.768915087068304,
+            "random_z": -142.4356035781902,
+            "relative_degradation": 0.006943290838574091,
+            "mandatory": false
+          }
+        },
+        "threat_pe": {
+          "k=3": {
+            "z_score": -23.465916314493704,
+            "random_z": -57.95585049043683,
+            "relative_degradation": 0.006843361124536466,
+            "mandatory": false
+          },
+          "k=5": {
+            "z_score": -23.027830080256,
+            "random_z": -84.40106299450554,
+            "relative_degradation": 0.006930713521378682,
+            "mandatory": false
+          },
+          "k=10": {
+            "z_score": -20.37697897576879,
+            "random_z": -142.4356035781902,
+            "relative_degradation": 0.006912612634613755,
+            "mandatory": false
+          }
+        },
+        "emotion_category": {
+          "k=3": {
+            "z_score": -23.603145094907273,
+            "random_z": -57.95585049043683,
+            "relative_degradation": 0.00691206173805996,
+            "mandatory": false
+          },
+          "k=5": {
+            "z_score": -23.18954442965792,
+            "random_z": -84.40106299450554,
+            "relative_degradation": 0.006906671227451917,
+            "mandatory": false
+          },
+          "k=10": {
+            "z_score": -23.073347222514457,
+            "random_z": -142.4356035781902,
+            "relative_degradation": 0.006884245113105415,
+            "mandatory": false
+          }
+        },
+        "face_presence": {
+          "k=3": {
+            "z_score": -24.665705560235313,
+            "random_z": -57.95585049043683,
+            "relative_degradation": 0.006907404674409959,
+            "mandatory": false
+          },
+          "k=5": {
+            "z_score": -21.453694329322946,
+            "random_z": -84.40106299450554,
+            "relative_degradation": 0.006924363201310915,
+            "mandatory": false
+          },
+          "k=10": {
+            "z_score": -19.941331377580113,
+            "random_z": -142.4356035781902,
+            "relative_degradation": 0.00689335559528749,
+            "mandatory": false
+          }
+        },
+        "encoding_success": {
+          "k=3": {
+            "z_score": -24.89020031995586,
+            "random_z": -57.95585049043683,
+            "relative_degradation": 0.006925368445537847,
+            "mandatory": false
+          },
+          "k=5": {
+            "z_score": -24.97991473303357,
+            "random_z": -84.40106299450554,
+            "relative_degradation": 0.006872991894843112,
+            "mandatory": false
+          },
+          "k=10": {
+            "z_score": -22.365854858465813,
+            "random_z": -142.4356035781902,
+            "relative_degradation": 0.0069226472275096965,
+            "mandatory": false
+          }
+        }
+      },
+      "random_control": {
+        "k=3": {
+          "mean_z": -57.95585049043683,
+          "std_z": 9.858697649157333,
+          "individual_z": [
+            -67.17842811756333,
+            -45.08354508790551,
+            -49.41067715139935,
+            -70.68050325648564,
+            -57.42609883883033
+          ],
+          "k": 3
+        },
+        "k=5": {
+          "mean_z": -84.40106299450554,
+          "std_z": 3.7413192988139405,
+          "individual_z": [
+            -90.45883803053526,
+            -82.28092588801734,
+            -86.45394429171606,
+            -79.58395695271471,
+            -83.22764980954437
+          ],
+          "k": 5
+        },
+        "k=10": {
+          "mean_z": -142.4356035781902,
+          "std_z": 12.554822361814981,
+          "individual_z": [
+            -153.52826816919648,
+            -153.3727009344518,
+            -151.04495965308888,
+            -128.10390279636312,
+            -126.12818633785075
+          ],
+          "k": 10
+        }
+      },
+      "elapsed_s": 25.04866099357605
+    },
+    "32": {
+      "mean_cc": 0.6156808773208201,
+      "best_cc": 0.6212858075579927,
+      "std_cc": 0.005184160136254734,
+      "cc_per_seed": [
+        0.6184505838169898,
+        0.6185715810274226,
+        0.6212858075579927,
+        0.6134746446838103,
+        0.6066217695178853
+      ],
+      "cc_pass": true,
+      "epochs_per_seed": [
+        28,
+        29,
+        28,
+        26,
+        32
+      ],
+      "probing": {
+        "arousal": {
+          "delta_metric": 5.913446283340463,
+          "status": "STRONG",
+          "method": "ridge"
+        },
+        "threat_pe": {
+          "delta_metric": 0.20797629356384273,
+          "status": "STRONG",
+          "method": "ridge"
+        },
+        "emotion_category": {
+          "delta_metric": -0.007905759162303627,
+          "status": "zombie",
+          "method": "logistic"
+        },
+        "event_boundaries": {
+          "delta_metric": 0.055358219146728505,
+          "status": "CANDIDATE",
+          "method": "ridge"
+        },
+        "face_presence": {
+          "delta_metric": 1.1208811521530144,
+          "status": "STRONG",
+          "method": "ridge"
+        },
+        "population_synchrony": {
+          "delta_metric": 0.025106024742126466,
+          "status": "zombie",
+          "method": "ridge"
+        },
+        "temporal_stability": {
+          "delta_metric": 0.07214430570602418,
+          "status": "CANDIDATE",
+          "method": "ridge"
+        },
+        "theta_power": {
+          "delta_metric": 0.07104936838150022,
+          "status": "CANDIDATE",
+          "method": "ridge"
+        },
+        "gamma_power": {
+          "delta_metric": -0.007963633537292479,
+          "status": "zombie",
+          "method": "ridge"
+        },
+        "encoding_success": {
+          "delta_metric": 0.13732509613037092,
+          "status": "CANDIDATE",
+          "method": "ridge"
+        }
+      },
+      "ablation": {
+        "arousal": {
+          "k=3": {
+            "z_score": -25.008085378159983,
+            "random_z": -40.67634171402999,
+            "relative_degradation": 0.003486576370587387,
+            "mandatory": false
+          },
+          "k=5": {
+            "z_score": -25.39716895764933,
+            "random_z": -56.71267142207953,
+            "relative_degradation": 0.003531988062665915,
+            "mandatory": false
+          },
+          "k=10": {
+            "z_score": -21.081866957798287,
+            "random_z": -116.39509048144762,
+            "relative_degradation": 0.003495860684132079,
+            "mandatory": false
+          }
+        },
+        "threat_pe": {
+          "k=3": {
+            "z_score": -23.792723338783787,
+            "random_z": -40.67634171402999,
+            "relative_degradation": 0.0035049873094530047,
+            "mandatory": false
+          },
+          "k=5": {
+            "z_score": -21.953099937953915,
+            "random_z": -56.71267142207953,
+            "relative_degradation": 0.0035081259761151917,
+            "mandatory": false
+          },
+          "k=10": {
+            "z_score": -22.89780285879933,
+            "random_z": -116.39509048144762,
+            "relative_degradation": 0.0035034322351634737,
+            "mandatory": false
+          }
+        },
+        "event_boundaries": {
+          "k=3": {
+            "z_score": -24.053279517236756,
+            "random_z": -40.67634171402999,
+            "relative_degradation": 0.003503501014069511,
+            "mandatory": false
+          },
+          "k=5": {
+            "z_score": -22.4320747939482,
+            "random_z": -56.71267142207953,
+            "relative_degradation": 0.003473516766116485,
+            "mandatory": false
+          },
+          "k=10": {
+            "z_score": -24.411416564666578,
+            "random_z": -116.39509048144762,
+            "relative_degradation": 0.003477747507603374,
+            "mandatory": false
+          }
+        },
+        "face_presence": {
+          "k=3": {
+            "z_score": -24.362465173796053,
+            "random_z": -40.67634171402999,
+            "relative_degradation": 0.0034962347742793355,
+            "mandatory": false
+          },
+          "k=5": {
+            "z_score": -25.002660872981487,
+            "random_z": -56.71267142207953,
+            "relative_degradation": 0.0035107488009824077,
+            "mandatory": false
+          },
+          "k=10": {
+            "z_score": -23.908771280815422,
+            "random_z": -116.39509048144762,
+            "relative_degradation": 0.0034778406107567415,
+            "mandatory": false
+          }
+        },
+        "temporal_stability": {
+          "k=3": {
+            "z_score": -21.3744304675113,
+            "random_z": -40.67634171402999,
+            "relative_degradation": 0.0034807570041250754,
+            "mandatory": false
+          },
+          "k=5": {
+            "z_score": -24.378084053864622,
+            "random_z": -56.71267142207953,
+            "relative_degradation": 0.00349905135435728,
+            "mandatory": false
+          },
+          "k=10": {
+            "z_score": -24.880829595694813,
+            "random_z": -116.39509048144762,
+            "relative_degradation": 0.0034905093497373633,
+            "mandatory": false
+          }
+        },
+        "theta_power": {
+          "k=3": {
+            "z_score": -24.42073318947052,
+            "random_z": -40.67634171402999,
+            "relative_degradation": 0.0034807200983706732,
+            "mandatory": false
+          },
+          "k=5": {
+            "z_score": -24.105766953027203,
+            "random_z": -56.71267142207953,
+            "relative_degradation": 0.0035199995638410526,
+            "mandatory": false
+          },
+          "k=10": {
+            "z_score": -24.58556350619018,
+            "random_z": -116.39509048144762,
+            "relative_degradation": 0.003491063774821148,
+            "mandatory": false
+          }
+        },
+        "encoding_success": {
+          "k=3": {
+            "z_score": -22.796564968999345,
+            "random_z": -40.67634171402999,
+            "relative_degradation": 0.0034925894922607395,
+            "mandatory": false
+          },
+          "k=5": {
+            "z_score": -24.52415052670487,
+            "random_z": -56.71267142207953,
+            "relative_degradation": 0.0034919797085451168,
+            "mandatory": false
+          },
+          "k=10": {
+            "z_score": -25.564605702759213,
+            "random_z": -116.39509048144762,
+            "relative_degradation": 0.0034802520663029216,
+            "mandatory": false
+          }
+        }
+      },
+      "random_control": {
+        "k=3": {
+          "mean_z": -40.67634171402999,
+          "std_z": 5.838185680940196,
+          "individual_z": [
+            -38.58275464559295,
+            -45.26925503348954,
+            -30.24726815528556,
+            -43.10204689488087,
+            -46.180383840901015
+          ],
+          "k": 3
+        },
+        "k=5": {
+          "mean_z": -56.71267142207953,
+          "std_z": 5.591447448493082,
+          "individual_z": [
+            -54.79834441158,
+            -64.48368715661597,
+            -51.94937662525232,
+            -62.038850965572685,
+            -50.29309795137668
+          ],
+          "k": 5
+        },
+        "k=10": {
+          "mean_z": -116.39509048144762,
+          "std_z": 10.65062312706213,
+          "individual_z": [
+            -112.71765562904649,
+            -98.02625065991641,
+            -121.55639132107841,
+            -119.98727511723843,
+            -129.68787967995834
+          ],
+          "k": 10
+        }
+      },
+      "elapsed_s": 37.912487506866455
+    },
+    "64": {
+      "mean_cc": 0.623058598622803,
+      "best_cc": 0.6254653486979223,
+      "std_cc": 0.002405862888091843,
+      "cc_per_seed": [
+        0.6254653486979223,
+        0.6238827752482925,
+        0.6245693309381564,
+        0.6185729179490282,
+        0.6228026202806155
+      ],
+      "cc_pass": true,
+      "epochs_per_seed": [
+        25,
+        25,
+        24,
+        26,
+        25
+      ],
+      "probing": {
+        "arousal": {
+          "delta_metric": -9.735583639144906,
+          "status": "zombie",
+          "method": "ridge"
+        },
+        "threat_pe": {
+          "delta_metric": -0.18330087661743155,
+          "status": "zombie",
+          "method": "ridge"
+        },
+        "emotion_category": {
+          "delta_metric": -0.029371727748691123,
+          "status": "zombie",
+          "method": "logistic"
+        },
+        "event_boundaries": {
+          "delta_metric": -0.018645501136779763,
+          "status": "zombie",
+          "method": "ridge"
+        },
+        "face_presence": {
+          "delta_metric": -1.9579732656478903,
+          "status": "zombie",
+          "method": "ridge"
+        },
+        "population_synchrony": {
+          "delta_metric": 0.023350560665130617,
+          "status": "zombie",
+          "method": "ridge"
+        },
+        "temporal_stability": {
+          "delta_metric": 0.07107789516448974,
+          "status": "CANDIDATE",
+          "method": "ridge"
+        },
+        "theta_power": {
+          "delta_metric": 0.03584735393524169,
+          "status": "zombie",
+          "method": "ridge"
+        },
+        "gamma_power": {
+          "delta_metric": 0.014849305152893066,
+          "status": "zombie",
+          "method": "ridge"
+        },
+        "encoding_success": {
+          "delta_metric": 0.11647055149078356,
+          "status": "CANDIDATE",
+          "method": "ridge"
+        }
+      },
+      "ablation": {
+        "temporal_stability": {
+          "k=3": {
+            "z_score": -22.516051062107042,
+            "random_z": -41.74821991735253,
+            "relative_degradation": 0.0010933045294690552,
+            "mandatory": false
+          },
+          "k=5": {
+            "z_score": -19.42254558322048,
+            "random_z": -61.521245975783586,
+            "relative_degradation": 0.0010954920256933721,
+            "mandatory": false
+          },
+          "k=10": {
+            "z_score": -23.740500316649317,
+            "random_z": -91.97602429442264,
+            "relative_degradation": 0.0011026383536442658,
+            "mandatory": false
+          }
+        },
+        "encoding_success": {
+          "k=3": {
+            "z_score": -20.853579409068452,
+            "random_z": -41.74821991735253,
+            "relative_degradation": 0.001099640579753267,
+            "mandatory": false
+          },
+          "k=5": {
+            "z_score": -18.462204067581634,
+            "random_z": -61.521245975783586,
+            "relative_degradation": 0.0010947620153658724,
+            "mandatory": false
+          },
+          "k=10": {
+            "z_score": -23.185127715177526,
+            "random_z": -91.97602429442264,
+            "relative_degradation": 0.0011000157239492733,
+            "mandatory": false
+          }
+        }
+      },
+      "random_control": {
+        "k=3": {
+          "mean_z": -41.74821991735253,
+          "std_z": 3.172237711153645,
+          "individual_z": [
+            -47.38457223259423,
+            -42.6669687812391,
+            -39.475814462447545,
+            -40.904625055484225,
+            -38.30911905499756
+          ],
+          "k": 3
+        },
+        "k=5": {
+          "mean_z": -61.521245975783586,
+          "std_z": 6.718288552276469,
+          "individual_z": [
+            -49.60348068839035,
+            -67.96196575099795,
+            -62.066171766729866,
+            -60.133660931891406,
+            -67.84095074090838
+          ],
+          "k": 5
+        },
+        "k=10": {
+          "mean_z": -91.97602429442264,
+          "std_z": 6.098682391681054,
+          "individual_z": [
+            -88.84045512144802,
+            -100.84539076022834,
+            -96.3594667561431,
+            -90.59696560626865,
+            -83.23784322802511
+          ],
+          "k": 10
+        }
+      },
+      "elapsed_s": 49.53420448303223
+    },
+    "128": {
+      "mean_cc": 0.6270259025546734,
+      "best_cc": 0.6332778005090252,
+      "std_cc": 0.0043777978657865676,
+      "cc_per_seed": [
+        0.6332778005090252,
+        0.6296558973509063,
+        0.6276437148779249,
+        0.623745502262113,
+        0.620806597773398
+      ],
+      "cc_pass": true,
+      "epochs_per_seed": [
+        23,
+        24,
+        23,
+        23,
+        22
+      ],
+      "probing": {
+        "arousal": {
+          "delta_metric": -2.0472466945648193,
+          "status": "zombie",
+          "method": "ridge"
+        },
+        "threat_pe": {
+          "delta_metric": -0.11013188362121573,
+          "status": "zombie",
+          "method": "ridge"
+        },
+        "emotion_category": {
+          "delta_metric": 0.002251308900523552,
+          "status": "zombie",
+          "method": "logistic"
+        },
+        "event_boundaries": {
+          "delta_metric": 0.10769112110137946,
+          "status": "CANDIDATE",
+          "method": "ridge"
+        },
+        "face_presence": {
+          "delta_metric": 0.4924721479415908,
+          "status": "STRONG",
+          "method": "ridge"
+        },
+        "population_synchrony": {
+          "delta_metric": -0.029671061038970943,
+          "status": "zombie",
+          "method": "ridge"
+        },
+        "temporal_stability": {
+          "delta_metric": 0.046008253097534174,
+          "status": "zombie",
+          "method": "ridge"
+        },
+        "theta_power": {
+          "delta_metric": 0.14753584861755364,
+          "status": "CANDIDATE",
+          "method": "ridge"
+        },
+        "gamma_power": {
+          "delta_metric": 0.002739167213439947,
+          "status": "zombie",
+          "method": "ridge"
+        },
+        "encoding_success": {
+          "delta_metric": 0.3429430246353149,
+          "status": "STRONG",
+          "method": "ridge"
+        }
+      },
+      "ablation": {
+        "event_boundaries": {
+          "k=3": {
+            "z_score": -5.8008729112765955,
+            "random_z": -28.228061900761922,
+            "relative_degradation": 9.725276668080201e-05,
+            "mandatory": false
+          },
+          "k=5": {
+            "z_score": -6.065237095020165,
+            "random_z": -41.535611356051035,
+            "relative_degradation": 9.839813100909562e-05,
+            "mandatory": false
+          },
+          "k=10": {
+            "z_score": -5.788325532964157,
+            "random_z": -69.87015401772496,
+            "relative_degradation": 9.485460724916432e-05,
+            "mandatory": false
+          }
+        },
+        "face_presence": {
+          "k=3": {
+            "z_score": -6.14634684939894,
+            "random_z": -28.228061900761922,
+            "relative_degradation": 9.758182629951887e-05,
+            "mandatory": false
+          },
+          "k=5": {
+            "z_score": -7.055429333367268,
+            "random_z": -41.535611356051035,
+            "relative_degradation": 9.681204672889112e-05,
+            "mandatory": false
+          },
+          "k=10": {
+            "z_score": -6.671463284298418,
+            "random_z": -69.87015401772496,
+            "relative_degradation": 9.559731764805136e-05,
+            "mandatory": false
+          }
+        },
+        "theta_power": {
+          "k=3": {
+            "z_score": -6.320057229247256,
+            "random_z": -28.228061900761922,
+            "relative_degradation": 0.00010044354529682214,
+            "mandatory": false
+          },
+          "k=5": {
+            "z_score": -5.445272034005115,
+            "random_z": -41.535611356051035,
+            "relative_degradation": 9.556263527177829e-05,
+            "mandatory": false
+          },
+          "k=10": {
+            "z_score": -5.022753098244002,
+            "random_z": -69.87015401772496,
+            "relative_degradation": 9.532324228441312e-05,
+            "mandatory": false
+          }
+        },
+        "encoding_success": {
+          "k=3": {
+            "z_score": -6.814375412815627,
+            "random_z": -28.228061900761922,
+            "relative_degradation": 9.697361584758057e-05,
+            "mandatory": false
+          },
+          "k=5": {
+            "z_score": -5.994061203059611,
+            "random_z": -41.535611356051035,
+            "relative_degradation": 9.564468869859759e-05,
+            "mandatory": false
+          },
+          "k=10": {
+            "z_score": -6.614018220977237,
+            "random_z": -69.87015401772496,
+            "relative_degradation": 9.709796485504776e-05,
+            "mandatory": false
+          }
+        }
+      },
+      "random_control": {
+        "k=3": {
+          "mean_z": -28.228061900761922,
+          "std_z": 10.691280515112938,
+          "individual_z": [
+            -41.97366719748492,
+            -9.772727294897287,
+            -26.411150195535324,
+            -34.43898018127245,
+            -28.543784634619644
+          ],
+          "k": 3
+        },
+        "k=5": {
+          "mean_z": -41.535611356051035,
+          "std_z": 9.763612697371801,
+          "individual_z": [
+            -54.59704189229092,
+            -33.46445872679405,
+            -27.45310484013219,
+            -46.87067806533958,
+            -45.292773255698435
+          ],
+          "k": 5
+        },
+        "k=10": {
+          "mean_z": -69.87015401772496,
+          "std_z": 18.522095670978743,
+          "individual_z": [
+            -83.89439833232626,
+            -51.023477093485596,
+            -75.6962560701293,
+            -45.608938630571494,
+            -93.12769996211217
+          ],
+          "k": 10
+        }
+      },
+      "elapsed_s": 110.69339489936829
+    },
+    "256": {
+      "mean_cc": 0.6298034790137514,
+      "best_cc": 0.6354013236898644,
+      "std_cc": 0.0043091152719929166,
+      "cc_per_seed": [
+        0.6250165001128465,
+        0.6268995488026793,
+        0.6345895346026427,
+        0.6354013236898644,
+        0.6271104878607241
+      ],
+      "cc_pass": true,
+      "epochs_per_seed": [
+        23,
+        22,
+        22,
+        22,
+        23
+      ],
+      "probing": {
+        "arousal": {
+          "delta_metric": -0.9089563369750806,
+          "status": "zombie",
+          "method": "ridge"
+        },
+        "threat_pe": {
+          "delta_metric": -0.2598360776901245,
+          "status": "zombie",
+          "method": "ridge"
+        },
+        "emotion_category": {
+          "delta_metric": -0.010785340314136194,
+          "status": "zombie",
+          "method": "logistic"
+        },
+        "event_boundaries": {
+          "delta_metric": -0.16179869174957284,
+          "status": "zombie",
+          "method": "ridge"
+        },
+        "face_presence": {
+          "delta_metric": 1.4469323396682725,
+          "status": "STRONG",
+          "method": "ridge"
+        },
+        "population_synchrony": {
+          "delta_metric": 0.019001495838165267,
+          "status": "zombie",
+          "method": "ridge"
+        },
+        "temporal_stability": {
+          "delta_metric": 0.19881845712661744,
+          "status": "STRONG",
+          "method": "ridge"
+        },
+        "theta_power": {
+          "delta_metric": 0.012894749641418457,
+          "status": "zombie",
+          "method": "ridge"
+        },
+        "gamma_power": {
+          "delta_metric": 0.005623364448547358,
+          "status": "zombie",
+          "method": "ridge"
+        },
+        "encoding_success": {
+          "delta_metric": -0.08526160717010489,
+          "status": "zombie",
+          "method": "ridge"
+        }
+      },
+      "ablation": {
+        "face_presence": {
+          "k=3": {
+            "z_score": 2.1334620747468067,
+            "random_z": 2.7325176741589674,
+            "relative_degradation": -5.193780859503064e-05,
+            "mandatory": false
+          },
+          "k=5": {
+            "z_score": 2.3779033602124775,
+            "random_z": -2.6860016275437273,
+            "relative_degradation": -5.433041025467655e-05,
+            "mandatory": false
+          },
+          "k=10": {
+            "z_score": 2.322739489096224,
+            "random_z": -4.859773542238717,
+            "relative_degradation": -5.115380656664292e-05,
+            "mandatory": false
+          }
+        },
+        "temporal_stability": {
+          "k=3": {
+            "z_score": 2.3845443946525307,
+            "random_z": 2.7325176741589674,
+            "relative_degradation": -4.9612866225926754e-05,
+            "mandatory": false
+          },
+          "k=5": {
+            "z_score": 2.149774903582423,
+            "random_z": -2.6860016275437273,
+            "relative_degradation": -5.1734830723719634e-05,
+            "mandatory": false
+          },
+          "k=10": {
+            "z_score": 2.6689938541403047,
+            "random_z": -4.859773542238717,
+            "relative_degradation": -5.159697491929934e-05,
+            "mandatory": false
+          }
+        }
+      },
+      "random_control": {
+        "k=3": {
+          "mean_z": 2.7325176741589674,
+          "std_z": 6.957983016838497,
+          "individual_z": [
+            11.692377922060576,
+            8.4581721362879,
+            3.043120961467161,
+            -7.634963891360775,
+            -1.8961187576600218
+          ],
+          "k": 3
+        },
+        "k=5": {
+          "mean_z": -2.6860016275437273,
+          "std_z": 7.177329031024267,
+          "individual_z": [
+            -6.2312741109602365,
+            -9.844634765157066,
+            -1.3290140692979187,
+            -6.621590767926548,
+            10.596505575623135
+          ],
+          "k": 5
+        },
+        "k=10": {
+          "mean_z": -4.859773542238717,
+          "std_z": 2.6034503763237216,
+          "individual_z": [
+            -3.692764953982462,
+            -3.8401015238672223,
+            -8.046466758634281,
+            -7.587235515627903,
+            -1.1322989590817172
+          ],
+          "k": 10
+        }
+      },
+      "elapsed_s": 361.1357216835022
+    }
+  },
+  "elapsed_total_s": 584.3901379108429
+}

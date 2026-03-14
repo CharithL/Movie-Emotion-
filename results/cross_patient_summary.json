@@ -1,0 +1,110 @@
+{
+  "arousal": {
+    "n_patients": 14,
+    "n_valid": 0,
+    "n_strong": 0,
+    "n_candidate_or_better": 0,
+    "n_zombie": 14,
+    "n_invalid": 0,
+    "fraction_learned": 0.0,
+    "mean_delta": null,
+    "std_delta": null,
+    "universally_learned": false
+  },
+  "emotion_category": {
+    "n_patients": 14,
+    "n_valid": 14,
+    "n_strong": 0,
+    "n_candidate_or_better": 0,
+    "n_zombie": 14,
+    "n_invalid": 0,
+    "fraction_learned": 0.0,
+    "mean_delta": 0.005503482935824947,
+    "std_delta": 0.012662842221918841,
+    "universally_learned": false
+  },
+  "encoding_success": {
+    "n_patients": 14,
+    "n_valid": 0,
+    "n_strong": 0,
+    "n_candidate_or_better": 0,
+    "n_zombie": 14,
+    "n_invalid": 0,
+    "fraction_learned": 0.0,
+    "mean_delta": null,
+    "std_delta": null,
+    "universally_learned": false
+  },
+  "event_boundaries": {
+    "n_patients": 14,
+    "n_valid": 0,
+    "n_strong": 0,
+    "n_candidate_or_better": 0,
+    "n_zombie": 14,
+    "n_invalid": 0,
+    "fraction_learned": 0.0,
+    "mean_delta": null,
+    "std_delta": null,
+    "universally_learned": false
+  },
+  "gamma_power": {
+    "n_patients": 14,
+    "n_valid": 0,
+    "n_strong": 0,
+    "n_candidate_or_better": 0,
+    "n_zombie": 14,
+    "n_invalid": 0,
+    "fraction_learned": 0.0,
+    "mean_delta": null,
+    "std_delta": null,
+    "universally_learned": false
+  },
+  "population_synchrony": {
+    "n_patients": 14,
+    "n_valid": 0,
+    "n_strong": 0,
+    "n_candidate_or_better": 0,
+    "n_zombie": 11,
+    "n_invalid": 3,
+    "fraction_learned": 0.0,
+    "mean_delta": null,
+    "std_delta": null,
+    "universally_learned": false
+  },
+  "temporal_stability": {
+    "n_patients": 14,
+    "n_valid": 11,
+    "n_strong": 0,
+    "n_candidate_or_better": 1,
+    "n_zombie": 13,
+    "n_invalid": 0,
+    "fraction_learned": 0.09090909090909091,
+    "mean_delta": 0.018191647895919174,
+    "std_delta": 0.03458773517804985,
+    "universally_learned": false
+  },
+  "theta_power": {
+    "n_patients": 14,
+    "n_valid": 0,
+    "n_strong": 0,
+    "n_candidate_or_better": 0,
+    "n_zombie": 14,
+    "n_invalid": 0,
+    "fraction_learned": 0.0,
+    "mean_delta": null,
+    "std_delta": null,
+    "universally_learned": false
+  },
+  "threat_pe": {
+    "n_patients": 14,
+    "n_valid": 0,
+    "n_strong": 0,
+    "n_candidate_or_better": 0,
+    "n_zombie": 14,
+    "n_invalid": 0,
+    "fraction_learned": 0.0,
+    "mean_delta": null,
+    "std_delta": null,
+    "universally_learned": false
+  }
+}
