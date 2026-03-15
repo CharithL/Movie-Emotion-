@@ -71,13 +71,22 @@ movie emotion/
 - No consistent advantage of SAE over raw hidden state probing across any circuit
 
 ### Generalization Testing (5 Levels)
-| Level | Test | Status |
-|-------|------|--------|
-| 1 | Cross-Condition (Temporal Split) | Pending |
-| 2 | Cross-Session (ses-1 → ses-2) | Pending |
-| 3 | Cross-Patient (Leave-One-Out) | Pending |
-| 4 | Cross-Task | NOT TESTABLE (no shared patients) |
-| 5 | Perturbation Robustness | Pending |
+| Level | Test | Ratio | Status |
+|-------|------|-------|--------|
+| 1 | Cross-Condition (Temporal Split) | C5: 1.109, C4: 0.822 | **STRONG** |
+| 2 | Cross-Session (ses-1 → ses-2) | -0.153 | **FAILURE** |
+| 3 | Cross-Patient (Leave-One-Out) | -0.003 | **FAILURE** |
+| 4 | Cross-Task | N/A | NOT TESTABLE (no shared patients) |
+| 5 | Perturbation Robustness (C4 sub-10) | Dropout 30%: 0.86 retention | **ROBUST to 30%** |
+
+**Prosthetic viable: NO** — models generalize temporally (Level 1) but fail across sessions and patients.
+
+| Perturbation Test | Circuit 4 (sub-10) | Circuit 5 (CS48) |
+|-------------------|--------------------|--------------------|
+| 10% neuron dropout | 95% retention | 90% retention |
+| 30% neuron dropout | 86% retention | 71% retention |
+| SNR=5 noise | 90% retention | 101% retention |
+| Gain drift 0.5x | 93% retention | 108% retention |
 
 Run generalization tests:
 ```bash

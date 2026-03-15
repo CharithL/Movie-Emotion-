@@ -6,41 +6,41 @@
     "train_windows": 458,
     "val_windows": 114,
     "test_windows": 382,
-    "cc_same_mean": 0.0729286916158695,
-    "cc_novel_mean": 0.08075141502537328,
-    "ratio_mean": 1.1079229820175065,
-    "ratio_std": 0.05465702643310329,
+    "cc_same_mean": 0.07425173403853545,
+    "cc_novel_mean": 0.08226087209724935,
+    "ratio_mean": 1.1094298946197836,
+    "ratio_std": 0.04715493804086327,
     "status": "STRONG",
     "per_seed": [
       {
         "seed": 0,
-        "cc_same": 0.06954988161563105,
-        "cc_novel": 0.08072056020519447,
-        "ratio": 1.1606139123470895
+        "cc_same": 0.07488378626875435,
+        "cc_novel": 0.08066173103945581,
+        "ratio": 1.0771588224714586
       },
       {
         "seed": 1,
-        "cc_same": 0.07054541581796984,
-        "cc_novel": 0.08174312778294593,
-        "ratio": 1.1587305402504087
+        "cc_same": 0.07189805078966754,
+        "cc_novel": 0.08248572634450803,
+        "ratio": 1.1472595632086597
       },
       {
         "seed": 2,
-        "cc_same": 0.07218008620772984,
-        "cc_novel": 0.07294977211947752,
-        "ratio": 1.010663410812957
+        "cc_same": 0.0785475745865834,
+        "cc_novel": 0.08240180876712282,
+        "ratio": 1.0490687866662372
       },
       {
         "seed": 3,
-        "cc_same": 0.07570189737326702,
-        "cc_novel": 0.08309956229813781,
-        "ratio": 1.0977209975120539
+        "cc_same": 0.07465977625019748,
+        "cc_novel": 0.08175217670690062,
+        "ratio": 1.0949962725971119
       },
       {
         "seed": 4,
-        "cc_same": 0.07666617706474976,
-        "cc_novel": 0.0852440527211107,
-        "ratio": 1.1118860491650229
+        "cc_same": 0.0712694822974745,
+        "cc_novel": 0.08400291762825943,
+        "ratio": 1.17866602815545
       }
     ]
   },
@@ -49,7 +49,7 @@
     "test": "temporal_split",
     "train_fraction": 0.6,
     "n_patients_tested": 3,
-    "overall_ratio_mean": 0.9301499482553139,
+    "overall_ratio_mean": 0.8219505342660298,
     "overall_status": "STRONG",
     "per_patient": [
       {
@@ -58,41 +58,41 @@
         "n_trials": 378,
         "n_input": 36,
         "n_output": 38,
-        "cc_same_mean": 0.03637049324185787,
-        "cc_novel_mean": 0.057608626288663554,
-        "ratio_mean": 1.6328641039350587,
-        "ratio_std": 0.28753836484689776,
+        "cc_same_mean": 0.03802200556703651,
+        "cc_novel_mean": 0.054794297322212235,
+        "ratio_mean": 1.444589280672302,
+        "ratio_std": 0.0602634348699687,
         "status": "STRONG",
         "per_seed": [
           {
             "seed": 0,
-            "cc_same": 0.02749827083277222,
-            "cc_novel": 0.05633840859491488,
-            "ratio": 2.0487982294425295
+            "cc_same": 0.03992631222203937,
+            "cc_novel": 0.053515181978620645,
+            "ratio": 1.3403487324601995
           },
           {
             "seed": 1,
-            "cc_same": 0.03770121085734906,
-            "cc_novel": 0.05985570218556871,
-            "ratio": 1.5876334161267687
+            "cc_same": 0.03964473414587786,
+            "cc_novel": 0.05856462916581949,
+            "ratio": 1.4772360170287298
           },
           {
             "seed": 2,
-            "cc_same": 0.031236674963391328,
-            "cc_novel": 0.05820824465504843,
-            "ratio": 1.8634584098104927
+            "cc_same": 0.04185466678859828,
+            "cc_novel": 0.059344583471112426,
+            "ratio": 1.4178725581750087
           },
           {
             "seed": 3,
-            "cc_same": 0.04433149591378705,
-            "cc_novel": 0.05698181409556711,
-            "ratio": 1.2853573496906479
+            "cc_same": 0.035690372094757505,
+            "cc_novel": 0.052654083312159206,
+            "ratio": 1.4753021675527298
           },
           {
             "seed": 4,
-            "cc_same": 0.04108481364198969,
-            "cc_novel": 0.05665896191221869,
-            "ratio": 1.3790731146048534
+            "cc_same": 0.032993942583909544,
+            "cc_novel": 0.04989300868334944,
+            "ratio": 1.5121869281448412
           }
         ]
       },
@@ -102,41 +102,41 @@
         "n_trials": 378,
         "n_input": 43,
         "n_output": 20,
-        "cc_same_mean": 0.013253250975138168,
-        "cc_novel_mean": 0.00630148973904444,
-        "ratio_mean": 0.4661791778448562,
-        "ratio_std": 0.16229659144974118,
+        "cc_same_mean": 0.011440941438666679,
+        "cc_novel_mean": 0.003279476237659584,
+        "ratio_mean": 0.3001811128194867,
+        "ratio_std": 0.2598362090006284,
         "status": "FAILURE",
         "per_seed": [
           {
             "seed": 0,
-            "cc_same": 0.012810184992614965,
-            "cc_novel": 0.004070637695626366,
-            "ratio": 0.31776572297535727
+            "cc_same": 0.004318405579344825,
+            "cc_novel": 0.005347438372329124,
+            "ratio": 0.5347438372329123
           },
           {
             "seed": 1,
-            "cc_same": 0.017072050302767698,
-            "cc_novel": 0.007010791432800025,
-            "ratio": 0.410659019184324
+            "cc_same": 0.01395664074285376,
+            "cc_novel": 0.004345991905301784,
+            "ratio": 0.31139240347123415
           },
           {
             "seed": 2,
-            "cc_same": 0.004029426666293011,
-            "cc_novel": 0.0076249649075540715,
-            "ratio": 0.7624964907554072
+            "cc_same": 0.01489855340884121,
+            "cc_novel": -0.0014987540678548586,
+            "ratio": -0.10059728798672876
           },
           {
             "seed": 3,
-            "cc_same": 0.020798172786465625,
-            "cc_novel": 0.006962813814159021,
-            "ratio": 0.3347800735019405
+            "cc_same": 0.00950452682951623,
+            "cc_novel": 0.0061198269372217725,
+            "ratio": 0.6119826937221773
           },
           {
             "seed": 4,
-            "cc_same": 0.011556420127549542,
-            "cc_novel": 0.00583824084508272,
-            "ratio": 0.5051945828072519
+            "cc_same": 0.014526580632777364,
+            "cc_novel": 0.0020828780413000986,
+            "ratio": 0.14338391765783834
           }
         ]
       },
@@ -146,44 +146,364 @@
         "n_trials": 324,
         "n_input": 25,
         "n_output": 52,
-        "cc_same_mean": 0.01697669903819487,
-        "cc_novel_mean": 0.011671056331078867,
-        "ratio_mean": 0.691406562986027,
-        "ratio_std": 0.26558029212094997,
+        "cc_same_mean": 0.01815467809229999,
+        "cc_novel_mean": 0.01284846179971893,
+        "ratio_mean": 0.7210812093063006,
+        "ratio_std": 0.20548784334098735,
         "status": "PARTIAL",
         "per_seed": [
           {
             "seed": 0,
-            "cc_same": 0.013431134234491434,
-            "cc_novel": 0.0131376576258847,
-            "ratio": 0.9781495290358219
+            "cc_same": 0.013485497959710817,
+            "cc_novel": 0.01428623303739123,
+            "ratio": 1.0593774942588463
           },
           {
             "seed": 1,
-            "cc_same": 0.014670857000302018,
-            "cc_novel": 0.013738306565412821,
-            "ratio": 0.9364351765633051
+            "cc_same": 0.01857934762893102,
+            "cc_novel": 0.013791775205950598,
+            "ratio": 0.7423175173532247
           },
           {
             "seed": 2,
-            "cc_same": 0.02224572790605398,
-            "cc_novel": 0.01632638689837772,
-            "ratio": 0.7339111117121341
+            "cc_same": 0.02352783134758851,
+            "cc_novel": 0.016557529123188676,
+            "ratio": 0.7037422565036257
           },
           {
             "seed": 3,
-            "cc_same": 0.013238613521565846,
-            "cc_novel": 0.003395039792824686,
-            "ratio": 0.2564498002222158
+            "cc_same": 0.01664705049541804,
+            "cc_novel": 0.006879714984502245,
+            "ratio": 0.41326930475736995
           },
           {
             "seed": 4,
-            "cc_same": 0.02129716252856108,
-            "cc_novel": 0.011757890772894405,
-            "ratio": 0.5520871973966578
+            "cc_same": 0.01853366302985157,
+            "cc_novel": 0.012727056647561899,
+            "ratio": 0.6866994736584365
           }
         ]
       }
     ]
+  },
+  "level2_cross_session": {
+    "level": 2,
+    "test": "cross_session",
+    "n_patients": 3,
+    "overall_ratio_mean": -0.15299415386311585,
+    "per_patient": [
+      {
+        "patient": "sub-1",
+        "n_shared_input": 8,
+        "n_shared_output": 31,
+        "n_trials_ses1": 378,
+        "n_trials_ses2": 135,
+        "ratio_mean": -0.11724032713426913,
+        "status": "FAILURE",
+        "per_seed": [
+          {
+            "seed": 0,
+            "cc_same": -0.007452755216888245,
+            "cc_novel": -0.0009440888840791807,
+            "ratio": -0.09440888840791807
+          },
+          {
+            "seed": 1,
+            "cc_same": -0.003950888634864756,
+            "cc_novel": -0.0023674556590616205,
+            "ratio": -0.23674556590616205
+          },
+          {
+            "seed": 2,
+            "cc_same": -0.00448988070301503,
+            "cc_novel": -0.00020566527088727277,
+            "ratio": -0.020566527088727277
+          }
+        ]
+      },
+      {
+        "patient": "sub-10",
+        "n_shared_input": 12,
+        "n_shared_output": 16,
+        "n_trials_ses1": 378,
+        "n_trials_ses2": 135,
+        "ratio_mean": -0.31531035174974603,
+        "status": "FAILURE",
+        "per_seed": [
+          {
+            "seed": 0,
+            "cc_same": 0.006607147701930451,
+            "cc_novel": -0.003384858882498055,
+            "ratio": -0.33848588824980547
+          },
+          {
+            "seed": 1,
+            "cc_same": 0.007614672871314313,
+            "cc_novel": -0.006914286472263093,
+            "ratio": -0.6914286472263093
+          },
+          {
+            "seed": 2,
+            "cc_same": 0.003923395487617257,
+            "cc_novel": 0.0008398348022687662,
+            "ratio": 0.08398348022687661
+          }
+        ]
+      },
+      {
+        "patient": "sub-12",
+        "n_shared_input": 4,
+        "n_shared_output": 14,
+        "n_trials_ses1": 378,
+        "n_trials_ses2": 135,
+        "ratio_mean": -0.02643178270533243,
+        "status": "FAILURE",
+        "per_seed": [
+          {
+            "seed": 0,
+            "cc_same": 0.030701979105780864,
+            "cc_novel": -0.0003730096206118441,
+            "ratio": -0.012149367287583432
+          },
+          {
+            "seed": 1,
+            "cc_same": -0.0027282528296709413,
+            "cc_novel": -0.000638959791998288,
+            "ratio": -0.0638959791998288
+          },
+          {
+            "seed": 2,
+            "cc_same": 0.02437950667182902,
+            "cc_novel": -7.923343638754432e-05,
+            "ratio": -0.003250001628585046
+          }
+        ]
+      }
+    ]
+  },
+  "level3_cross_patient": {
+    "level": 3,
+    "test": "leave_one_patient_out",
+    "n_patients": 6,
+    "overall_ratio_mean": -0.0031713647335601023,
+    "overall_status": "FAILURE",
+    "per_patient": [
+      {
+        "test_patient": "sub-11_ses-1_ecephys+image",
+        "n_train_patients": 5,
+        "cc_novel": -0.0008993197514136481,
+        "cc_reference": 0.9581844762308505,
+        "generalization_ratio": -0.0009385663968918022
+      },
+      {
+        "test_patient": "sub-8_ses-1_ecephys+image",
+        "n_train_patients": 5,
+        "cc_novel": -0.010611989062265282,
+        "cc_reference": 0.9549835582431976,
+        "generalization_ratio": -0.011112221745248955
+      },
+      {
+        "test_patient": "sub-3_ses-1_ecephys+image",
+        "n_train_patients": 5,
+        "cc_novel": -0.0012228495753335063,
+        "cc_reference": 0.9482687152103545,
+        "generalization_ratio": -0.0012895601802725735
+      },
+      {
+        "test_patient": "sub-7_ses-1_ecephys+image",
+        "n_train_patients": 5,
+        "cc_novel": 0.0012865831902138733,
+        "cc_reference": 0.9362871850484928,
+        "generalization_ratio": 0.0013741330766448947
+      },
+      {
+        "test_patient": "sub-1_ses-1_ecephys+image",
+        "n_train_patients": 5,
+        "cc_novel": -0.003607600759499817,
+        "cc_reference": 0.9344204542624519,
+        "generalization_ratio": -0.0038607895867897447
+      },
+      {
+        "test_patient": "sub-4_ses-1_ecephys+image",
+        "n_train_patients": 5,
+        "cc_novel": -0.0029502202742065103,
+        "cc_reference": 0.9216029667771265,
+        "generalization_ratio": -0.003201183568802431
+      }
+    ]
+  },
+  "level4_cross_task": {
+    "status": "NOT_TESTABLE",
+    "reason": "No shared patients between WM (human MTL/frontal) and movie (human limbic/prefrontal from different dataset)"
+  },
+  "level5_circuit5": {
+    "baseline_cc": 0.08587800847506284,
+    "neuron_dropout": [
+      {
+        "fraction": 0.1,
+        "n_dropped": 4,
+        "cc_mean": 0.077247345465785,
+        "retention": 0.8995008947863061,
+        "robust": "True"
+      },
+      {
+        "fraction": 0.2,
+        "n_dropped": 9,
+        "cc_mean": 0.06865109370416826,
+        "retention": 0.7994024887536032,
+        "robust": "False"
+      },
+      {
+        "fraction": 0.3,
+        "n_dropped": 13,
+        "cc_mean": 0.061251986072338636,
+        "retention": 0.713244137352404,
+        "robust": "False"
+      },
+      {
+        "fraction": 0.5,
+        "n_dropped": 23,
+        "cc_mean": 0.043524481140068426,
+        "retention": 0.5068175416842254,
+        "robust": "False"
+      }
+    ],
+    "noise_injection": [
+      {
+        "snr": 20,
+        "cc_mean": 0.08618184145791453,
+        "retention": 1.0035379602793177
+      },
+      {
+        "snr": 10,
+        "cc_mean": 0.0864470330923949,
+        "retention": 1.0066259642886024
+      },
+      {
+        "snr": 5,
+        "cc_mean": 0.08705118786838133,
+        "retention": 1.0136609990630971
+      },
+      {
+        "snr": 2,
+        "cc_mean": 0.08671103953177631,
+        "retention": 1.0097001673828447
+      },
+      {
+        "snr": 1,
+        "cc_mean": 0.08659308150712426,
+        "retention": 1.0083266140512452
+      }
+    ],
+    "gain_drift": [
+      {
+        "magnitude": 0.1,
+        "cc": 0.08528560512247726,
+        "retention": 0.9931018037899936
+      },
+      {
+        "magnitude": 0.2,
+        "cc": 0.08774624965605833,
+        "retention": 1.021754593686671
+      },
+      {
+        "magnitude": 0.5,
+        "cc": 0.0926043286507036,
+        "retention": 1.0783241285525844
+      },
+      {
+        "magnitude": 1.0,
+        "cc": 0.08994361551252343,
+        "retention": 1.0473416548619796
+      }
+    ]
+  },
+  "level5_circuit4": {
+    "baseline_cc": 0.16187359606049903,
+    "neuron_dropout": [
+      {
+        "fraction": 0.1,
+        "n_dropped": 3,
+        "cc_mean": 0.1538187091102345,
+        "retention": 0.9502396490453325,
+        "robust": "True"
+      },
+      {
+        "fraction": 0.2,
+        "n_dropped": 7,
+        "cc_mean": 0.14807059063362252,
+        "retention": 0.914729728857585,
+        "robust": "True"
+      },
+      {
+        "fraction": 0.3,
+        "n_dropped": 10,
+        "cc_mean": 0.13972469694652284,
+        "retention": 0.8631716372959417,
+        "robust": "True"
+      },
+      {
+        "fraction": 0.5,
+        "n_dropped": 18,
+        "cc_mean": 0.11133141461935395,
+        "retention": 0.6877675997124613,
+        "robust": "False"
+      }
+    ],
+    "noise_injection": [
+      {
+        "snr": 20,
+        "cc_mean": 0.1577390538395718,
+        "retention": 0.9744582049108121
+      },
+      {
+        "snr": 10,
+        "cc_mean": 0.15235385406864996,
+        "retention": 0.9411902730060365
+      },
+      {
+        "snr": 5,
+        "cc_mean": 0.14517720442676346,
+        "retention": 0.8968553733278686
+      },
+      {
+        "snr": 2,
+        "cc_mean": 0.12597504750355576,
+        "retention": 0.7782309812680849
+      },
+      {
+        "snr": 1,
+        "cc_mean": 0.1034271222679227,
+        "retention": 0.6389375709505309
+      }
+    ],
+    "gain_drift": [
+      {
+        "magnitude": 0.1,
+        "cc": 0.1596123640856554,
+        "retention": 0.9860308782292172
+      },
+      {
+        "magnitude": 0.2,
+        "cc": 0.15846834955091457,
+        "retention": 0.9789635456772594
+      },
+      {
+        "magnitude": 0.5,
+        "cc": 0.15115540917671708,
+        "retention": 0.9337866882269291
+      },
+      {
+        "magnitude": 1.0,
+        "cc": 0.14581992446896425,
+        "retention": 0.9008258790671775
+      }
+    ]
+  },
+  "elapsed_seconds": 819.9752848148346,
+  "overall_assessment": {
+    "prosthetic_viable": false,
+    "strongest_generalization_level": 1,
+    "elapsed_minutes": 13.66625474691391
   }
 }

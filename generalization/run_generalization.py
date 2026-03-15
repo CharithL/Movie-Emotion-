@@ -523,9 +523,28 @@ def _load_one_patient(nwb_path, schema):
     return X, Y
 
 
+def _preload_all_patients(manifest, schema, max_trials=64):
+    """Load all patient data ONCE into RAM, cap trials to limit memory.
+    sub-11 has 378 trials × 1247 bins = 177 MB — we subsample trials."""
+    cache = {}
+    for m in manifest:
+        try:
+            X, Y = _load_one_patient(m['nwb_path'], schema)
+            # Cap trials to avoid memory explosion (sub-11: 378×1247×47)
+            if X.shape[0] > max_trials:
+                idx = np.linspace(0, X.shape[0]-1, max_trials, dtype=int)
+                X, Y = X[idx], Y[idx]
+            cache[m['pid']] = (X, Y)
+            mb = (X.nbytes + Y.nbytes) / 1e6
+            print(f"    Cached {m['pid']}: {X.shape} + {Y.shape} = {mb:.1f} MB")
+        except Exception as e:
+            print(f"    Failed to load {m['pid']}: {e}")
+    return cache
+
+
 def level3_cross_patient(n_epochs=50):
     """Leave-one-patient-out with PatientAgnosticSurrogate.
-    Memory-safe: loads only 2 patients at a time (1 train + 1 cycling)."""
+    Pre-loads all data to avoid repeated NWB reads."""
     from human_wm.config import load_nwb_schema
 
     print("\n" + "=" * 70)
@@ -546,6 +565,13 @@ def level3_cross_patient(n_epochs=50):
     n_patients = len(manifest)
     print(f"  Using top {n_patients} patients by CC")
 
+    # Pre-load ALL patient data once (fixes the 250-NWB-opens bug)
+    print("  Pre-loading patient data...")
+    cache = _preload_all_patients(manifest, schema, max_trials=64)
+    manifest = [m for m in manifest if m['pid'] in cache]
+    n_patients = len(manifest)
+    print(f"  Successfully cached {n_patients} patients")
+
     results = []
 
     for test_idx, test_entry in enumerate(manifest):
@@ -555,12 +581,7 @@ def level3_cross_patient(n_epochs=50):
 
         print(f"\n  Test: {test_pid} (CC_ref={cc_ref:.3f})")
 
-        # Load test patient
-        try:
-            X_test, Y_test = _load_one_patient(test_entry['nwb_path'], schema)
-        except Exception as e:
-            print(f"    Error loading test patient: {e}")
-            continue
+        X_test, Y_test = cache[test_pid]
         n_out_test = Y_test.shape[2]
 
         model = PatientAgnosticSurrogate(embed_dim=32, hidden_size=128).to(DEVICE)
@@ -573,16 +594,20 @@ def level3_cross_patient(n_epochs=50):
         for epoch in range(n_epochs):
             model.train()
             epoch_loss = 0.0
+            n_trained = 0
 
-            # Load and train on each patient one at a time
             for train_entry in train_entries:
-                try:
-                    X_tr, Y_tr = _load_one_patient(train_entry['nwb_path'], schema)
-                except Exception:
+                if train_entry['pid'] not in cache:
                     continue
-                X = torch.FloatTensor(X_tr).to(DEVICE)
-                Y = torch.FloatTensor(Y_tr).to(DEVICE)
-                n_out = Y.shape[-1]
+                X_tr, Y_tr = cache[train_entry['pid']]
+                n_out = Y_tr.shape[-1]
+
+                # Mini-batch to avoid GPU OOM on large patients
+                batch_size = min(16, X_tr.shape[0])
+                perm = np.random.permutation(X_tr.shape[0])[:batch_size]
+
+                X = torch.FloatTensor(X_tr[perm]).to(DEVICE)
+                Y = torch.FloatTensor(Y_tr[perm]).to(DEVICE)
 
                 optimizer.zero_grad()
                 y_pred = model(X, n_output_neurons=n_out)
@@ -591,11 +616,12 @@ def level3_cross_patient(n_epochs=50):
                 torch.nn.utils.clip_grad_norm_(model.parameters(), 1.0)
                 optimizer.step()
                 epoch_loss += loss.item()
+                n_trained += 1
 
-                del X, Y, X_tr, Y_tr
-                cleanup_memory()
+                del X, Y
 
-            epoch_loss /= len(train_entries)
+            if n_trained > 0:
+                epoch_loss /= n_trained
             if epoch_loss < best_loss:
                 best_loss = epoch_loss
                 best_state = {k: v.clone() for k, v in model.state_dict().items()}
@@ -604,9 +630,16 @@ def level3_cross_patient(n_epochs=50):
             model.load_state_dict(best_state)
         model.train(False)
 
+        # Evaluate in batches to avoid OOM on sub-11
         with torch.no_grad():
-            X_t = torch.FloatTensor(X_test).to(DEVICE)
-            y_pred = model(X_t, n_output_neurons=n_out_test).cpu().numpy()
+            all_preds = []
+            batch_sz = 16
+            for i in range(0, len(X_test), batch_sz):
+                X_b = torch.FloatTensor(X_test[i:i+batch_sz]).to(DEVICE)
+                yp = model(X_b, n_output_neurons=n_out_test).cpu().numpy()
+                all_preds.append(yp)
+                del X_b
+            y_pred = np.concatenate(all_preds, axis=0)
             cc_novel = compute_cc(y_pred, Y_test)
 
         gen_ratio = cc_novel / max(cc_ref, 0.01)
@@ -621,8 +654,12 @@ def level3_cross_patient(n_epochs=50):
         print(f"    CC_novel={cc_novel:.3f}, CC_ref={cc_ref:.3f}, "
               f"ratio={gen_ratio:.3f}")
 
-        del X_test, Y_test, model, best_state
+        del model, best_state
         cleanup_memory()
+
+    # Free the cache
+    del cache
+    cleanup_memory()
 
     ratios = [r['generalization_ratio'] for r in results]
     mean_ratio = float(np.mean(ratios)) if ratios else 0.0
