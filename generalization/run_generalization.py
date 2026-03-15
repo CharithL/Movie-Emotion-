@@ -26,9 +26,22 @@ import torch.nn as nn
 
 warnings.filterwarnings('ignore')
 
-# Paths
-MOVIE_DIR = Path("C:/Users/chari/OneDrive/Documents/Descartes_Cogito/movie emotion")
-WM_DIR = Path("C:/Users/chari/OneDrive/Documents/Descartes_Cogito/Working memory")
+# Paths — auto-detect Windows vs Linux (Vast.ai)
+import os
+
+_SCRIPT_DIR = Path(__file__).resolve().parent
+if os.name == 'nt':
+    # Windows local
+    MOVIE_DIR = Path("C:/Users/chari/OneDrive/Documents/Descartes_Cogito/movie emotion")
+    WM_DIR = Path("C:/Users/chari/OneDrive/Documents/Descartes_Cogito/Working memory")
+else:
+    # Linux / Vast.ai — expect repo root is parent of generalization/
+    MOVIE_DIR = _SCRIPT_DIR.parent
+    # WM data extracted alongside or inside the repo
+    WM_DIR = MOVIE_DIR.parent / "Working memory"
+    if not WM_DIR.exists():
+        WM_DIR = MOVIE_DIR / "Working memory"
+
 PREPROCESSED_DIR = MOVIE_DIR / "preprocessed_data"
 RESULTS_DIR = MOVIE_DIR / "results" / "generalization"
 RESULTS_DIR.mkdir(parents=True, exist_ok=True)
@@ -37,7 +50,6 @@ CHECKPOINT_DIR = WM_DIR / "data" / "results" / "cross_patient" / "cross_patient"
 RAW_NWB_DIR = WM_DIR / "data" / "raw" / "000469"
 
 # Use CPU locally to avoid GPU OOM crashes; CUDA on cloud instances
-import os
 DEVICE = 'cuda' if (torch.cuda.is_available() and os.environ.get('ALLOW_GPU', '0') == '1') else 'cpu'
 
 
